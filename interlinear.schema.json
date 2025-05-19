@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Passage",
+  "type": "object",
+  "required": ["offset", "length", "tokens", "glosses"],
+  "properties": {
+    "offset": {
+      "type": "integer",
+      "description": "Offset into the full text where this passage begins"
+    },
+    "length": {
+      "type": "integer",
+      "description": "Length of the passage in UTF-16 code units"
+    },
+    "tokens": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Token" }
+    },
+    "glosses": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Gloss" }
+    }
+  },
+  "$defs": {
+    "Token": {
+      "type": "object",
+      "required": ["offset", "content", "transliteration", "translation"],
+      "properties": {
+        "offset": {
+          "type": "integer",
+          "description": "UTF-16 offset from beginning of full text"
+        },
+        "content": {
+          "type": "string",
+          "description": "The original token (e.g. Greek, Japanese, etc.)"
+        },
+        "transliteration": {
+          "type": "string",
+          "description": "Latin-alphabet phonetic rendering"
+        },
+        "translation": {
+          "type": "string",
+          "description": "Literal or idiomatic translation"
+        }
+      }
+    },
+    "Gloss": {
+      "type": "object",
+      "required": ["start", "end", "content"],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "description": "Start offset (UTF-16) in full text"
+        },
+        "end": {
+          "type": "integer",
+          "description": "End offset (exclusive) in full text"
+        },
+        "content": {
+          "type": "string",
+          "description": "Text of the gloss (grammar, commentary, etc.)"
+        }
+      }
+    }
+  }
+}

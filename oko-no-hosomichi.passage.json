@@ -1,0 +1,60 @@
+{
+  "offset": 0,
+  "length": 7,
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "月日",
+      "transliteration": "tsukihi",
+      "translation": "the moon and sun"
+    },
+    {
+      "offset": 1,
+      "content": "は",
+      "transliteration": "wa",
+      "translation": "topic particle"
+    },
+    {
+      "offset": 2,
+      "content": "百代",
+      "transliteration": "hyakudai",
+      "translation": "hundred generations"
+    },
+    {
+      "offset": 3,
+      "content": "の",
+      "transliteration": "no",
+      "translation": "of"
+    },
+    {
+      "offset": 4,
+      "content": "過客",
+      "transliteration": "kakaku",
+      "translation": "passing traveler"
+    },
+    {
+      "offset": 5,
+      "content": "に",
+      "transliteration": "ni",
+      "translation": "as / in the role of"
+    },
+    {
+      "offset": 6,
+      "content": "して",
+      "transliteration": "shite",
+      "translation": "being / acting as"
+    }
+  ],
+  "glosses": [
+    {
+      "start": 0,
+      "end": 6,
+      "content": "月日は百代の過客にして — 'The moon and sun are travelers through a hundred generations.' A metaphor about the transient nature of time."
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "content": "百代の過客 — 'Passing guests of a hundred generations', suggesting ephemerality of life."
+    }
+  ]
+}
