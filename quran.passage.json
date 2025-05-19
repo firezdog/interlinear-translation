@@ -1,0 +1,42 @@
+{
+  "offset": 0,
+  "length": 4,
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "بِسْمِ",
+      "transliteration": "bismi",
+      "translation": "in the name (of)"
+    },
+    {
+      "offset": 1,
+      "content": "اللَّهِ",
+      "transliteration": "allāhi",
+      "translation": "Allah"
+    },
+    {
+      "offset": 2,
+      "content": "الرَّحْمَـٰنِ",
+      "transliteration": "ar-raḥmāni",
+      "translation": "the Most Merciful"
+    },
+    {
+      "offset": 3,
+      "content": "الرَّحِيمِ",
+      "transliteration": "ar-raḥīmi",
+      "translation": "the Most Compassionate"
+    }
+  ],
+  "glosses": [
+    {
+      "start": 0,
+      "end": 3,
+      "content": "The phrase 'In the name of Allah, the Most Merciful, the Most Compassionate' opens the Qur’an and nearly every surah, invoking divine mercy before all speech or action."
+    },
+    {
+      "start": 2,
+      "end": 3,
+      "content": "'ar-Raḥmān' and 'ar-Raḥīm' both derive from the root R-Ḥ-M (mercy), emphasizing God's encompassing and ongoing compassion."
+    }
+  ]
+}
