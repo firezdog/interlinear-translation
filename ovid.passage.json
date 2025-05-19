@@ -1,0 +1,71 @@
+{
+  "offset": 0,
+  "length": 8,
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "In",
+      "transliteration": "in",
+      "translation": "into"
+    },
+    {
+      "offset": 1,
+      "content": "nova",
+      "transliteration": "nova",
+      "translation": "new"
+    },
+    {
+      "offset": 2,
+      "content": "fert",
+      "transliteration": "fert",
+      "translation": "carries"
+    },
+    {
+      "offset": 3,
+      "content": "animus",
+      "transliteration": "animus",
+      "translation": "mind"
+    },
+    {
+      "offset": 4,
+      "content": "mutatas",
+      "transliteration": "mutātās",
+      "translation": "changed"
+    },
+    {
+      "offset": 5,
+      "content": "dicere",
+      "transliteration": "dīcere",
+      "translation": "to speak"
+    },
+    {
+      "offset": 6,
+      "content": "formas",
+      "transliteration": "fōrmās",
+      "translation": "forms"
+    },
+    {
+      "offset": 7,
+      "content": "corpora",
+      "transliteration": "corpora",
+      "translation": "bodies"
+    }
+  ],
+  "glosses": [
+    {
+      "start": 0,
+      "end": 7,
+      "content": "The poet opens with a declaration of theme: transformations — bodies (corpora) changed into new forms (nova formas)."
+    },
+    {
+      "start": 2,
+      "end": 3,
+      "content": "Fert animus — 'my spirit carries me': a poetic way of saying 'I am inspired'."
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "content": "Mutatas dicere formas — 'to speak of changed forms': the core of the Metamorphoses’ theme."
+    }
+  ]
+}
