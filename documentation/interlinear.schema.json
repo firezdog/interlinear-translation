@@ -6,22 +6,22 @@
   "properties": {
     "offset": {
       "type": "integer",
-      "description": "Offset into the full text where this passage begins"
+      "description": "Offset into the full text where this passage begins (position of first token)"
     },
     "length": {
       "type": "integer",
-      "description": "Length of the passage in UTF-16 code units"
+      "description": "Length of the passage in tokens"
     },
     "tokens": {
       "type": "array",
-      "items": { "$ref": "#/$defs/Token" }
+      "items": { "$ref": "#/$subtypes/Token" }
     },
     "glosses": {
       "type": "array",
-      "items": { "$ref": "#/$defs/Gloss" }
+      "items": { "$ref": "#/$subtypes/Gloss" }
     }
   },
-  "$defs": {
+  "$subtypes": {
     "Token": {
       "type": "object",
       "required": ["offset", "content", "transliteration", "translation"],
