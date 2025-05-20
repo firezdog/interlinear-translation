@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    container_name: interlinear-ui-dev
+    volumes:
+      - .:/workspace:delegated
+      - node_modules:/workspace/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: sleep infinity
+
+volumes:
+  node_modules:

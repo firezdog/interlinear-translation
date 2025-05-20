@@ -1,0 +1,20 @@
+{
+  "name": "interlinear-ui-dev",
+  "dockerComposeFile": ["../compose-dev.yaml"],
+  "service": "frontend",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+        "settings": {
+            "terminal.integrated.defaultProfile.linux": "bash"
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-vscode.vscode-typescript-next"
+        ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000]
+}
