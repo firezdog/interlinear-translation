@@ -6,7 +6,12 @@
         "jsx": "react-jsx",
         "strict": true,
         "esModuleInterop": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "baseUrl": "src",
+        "paths": {
+            "@/*": ["*"]
+        }
     },
     "include": ["src"]
 }

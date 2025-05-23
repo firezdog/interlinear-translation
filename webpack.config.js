@@ -17,7 +17,10 @@ module.exports = {
         host: "0.0.0.0"
     },
     resolve: {
-        extensions: [".ts", ".tsx", ".js"]
+        extensions: [".ts", ".tsx", ".js"],
+        alias: {
+            "@": path.resolve(__dirname, "src")
+        }
     },
     module: {
         rules: [
