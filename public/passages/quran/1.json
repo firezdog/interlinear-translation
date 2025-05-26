@@ -6,7 +6,7 @@
       "offset": 0,
       "content": "بِسْمِ",
       "transliteration": "bismi",
-      "translation": "in the name (of)"
+      "translation": "in name"
     },
     {
       "offset": 1,
@@ -18,13 +18,13 @@
       "offset": 2,
       "content": "الرَّحْمَـٰنِ",
       "transliteration": "ar-raḥmāni",
-      "translation": "the Most Merciful"
+      "translation": "most merciful"
     },
     {
       "offset": 3,
       "content": "الرَّحِيمِ",
       "transliteration": "ar-raḥīmi",
-      "translation": "the Most Compassionate"
+      "translation": "most compassionate"
     }
   ],
   "glosses": [

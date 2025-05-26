@@ -6,19 +6,19 @@
       "offset": 0,
       "content": "月日",
       "transliteration": "tsukihi",
-      "translation": "time (lit. the moon and sun)"
+      "translation": "moon / sun"
     },
     {
       "offset": 1,
       "content": "は",
       "transliteration": "wa",
-      "translation": "topic particle"
+      "translation": "[topic]"
     },
     {
       "offset": 2,
       "content": "百代",
       "transliteration": "hyakudai",
-      "translation": "many ages (lit. hundred generations)"
+      "translation": "hundred generations"
     },
     {
       "offset": 3,
@@ -30,19 +30,19 @@
       "offset": 4,
       "content": "過客",
       "transliteration": "kakaku",
-      "translation": "passing traveler"
+      "translation": "traveler"
     },
     {
       "offset": 5,
       "content": "に",
       "transliteration": "ni",
-      "translation": "as / in the role of"
+      "translation": "in"
     },
     {
       "offset": 6,
       "content": "して",
       "transliteration": "shite",
-      "translation": "being / acting as"
+      "translation": "is"
     }
   ],
   "glosses": [
