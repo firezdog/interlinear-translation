@@ -8,6 +8,7 @@ const passageOptions = [
     { key: 'oku-no-hosomichi', name: 'Oku No Hosomichi'},
     { key: 'ovid', name: 'Ovid\'s Metamorphoses'},
     { key: 'quran', name: 'The Quran'},
+    { key: 'lun-yu', name: 'Analects of Confucius'}
 ]
 
 function App() {

@@ -1,0 +1,67 @@
+{
+  "offset": 0,
+  "length": 10,
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "學",
+      "transliteration": "xué",
+      "translation": "study"
+    },
+    {
+      "offset": 1,
+      "content": "而",
+      "transliteration": "ér",
+      "translation": "and"
+    },
+    {
+      "offset": 2,
+      "content": "時",
+      "transliteration": "shí",
+      "translation": "time"
+    },
+    {
+      "offset": 3,
+      "content": "習",
+      "transliteration": "xí",
+      "translation": "practice"
+    },
+    {
+      "offset": 4,
+      "content": "之",
+      "transliteration": "zhī",
+      "translation": "it"
+    },
+    {
+      "offset": 5,
+      "content": "，",
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 6,
+      "content": "不",
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 7,
+      "content": "亦",
+      "transliteration": "yì",
+      "translation": "also"
+    },
+    {
+      "offset": 8,
+      "content": "說",
+      "transliteration": "yuè",
+      "translation": "pleasant"
+    },
+    {
+      "offset": 9,
+      "content": "乎",
+      "transliteration": "hū",
+      "translation": "?"
+    }
+  ],
+  "glosses": []
+}
