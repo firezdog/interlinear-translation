@@ -1,0 +1,95 @@
+{
+  "offset": 0,
+  "length": 12,
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "Я",
+      "transliteration": "Ya",
+      "translation": "I"
+    },
+    {
+      "offset": 1,
+      "content": "человек",
+      "transliteration": "chelovek",
+      "translation": "person"
+    },
+    {
+      "offset": 2,
+      "content": "больной",
+      "transliteration": "bol'noy",
+      "translation": "sick"
+    },
+    {
+      "offset": 3,
+      "content": "...",
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 4,
+      "content": "Я",
+      "transliteration": "Ya",
+      "translation": "I"
+    },
+    {
+      "offset": 5,
+      "content": "злой",
+      "transliteration": "zloy",
+      "translation": "mean"
+    },
+    {
+      "offset": 6,
+      "content": "человек",
+      "transliteration": "chelovek",
+      "translation": "person"
+    },
+    {
+      "offset": 7,
+      "content": ".",
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 8,
+      "content": "Непривлекательный",
+      "transliteration": "Neprivlekatel'nyy",
+      "translation": "Unattractive"
+    },
+    {
+      "offset": 9,
+      "content": "я",
+      "transliteration": "ya",
+      "translation": "I"
+    },
+    {
+      "offset": 10,
+      "content": "человек",
+      "transliteration": "chelovek",
+      "translation": "person"
+    },
+    {
+      "offset": 11,
+      "content": ".",
+      "transliteration": "",
+      "translation": ""
+    }
+  ],
+  "glosses": [
+    {
+      "start": 2,
+      "end": 2,
+      "content": "больной – short-form adjective; masculine; 'sick'"
+    },
+    {
+      "start": 5,
+      "end": 5,
+      "content": "злой – 'mean', also used as 'angry' or 'evil'; here likely 'mean-spirited'"
+    },
+    {
+      "start": 8,
+      "end": 8,
+      "content": "непривлекательный – 'unattractive'; formed from prefix 'не-' + 'привлекательный'"
+    }
+  ]
+}
