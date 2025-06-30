@@ -96,11 +96,7 @@ function App() {
                 </select>
             </label>
             <div
-                className="grid gap-2 w-full max-w-5xl mx-auto my-4"
-                style={{
-                    gridTemplateRows: `repeat(${tokenRows * 3}, auto)`,
-                    gridTemplateColumns: `repeat(${colsPerRow}, 1fr)`
-                }}
+                className={`grid gap-2 w-full max-w-5xl mx-auto my-4 grid-rows-${tokenRows * 3} grid-cols-${colsPerRow}`}
                 dir="auto"
             >
                 {tokenDivs}
