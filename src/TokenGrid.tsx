@@ -1,5 +1,5 @@
 import React from "react";
-import { Token } from "./types/passage";
+import { Token } from "@/types/passage";
 
 function TokenGrid({
     token,

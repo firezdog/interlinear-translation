@@ -65,21 +65,6 @@ function App() {
     const tokens = passage?.tokens ?? [];
     const tokenRows = Math.ceil(tokens.length / colsPerRow);
 
-    const tokenDivs = tokens.flatMap((token, i) => {
-        const col = i % colsPerRow;
-        const row = Math.floor(i / colsPerRow);
-        return (
-            <TokenGrid
-                key={token.offset}
-                token={token}
-                col={col}
-                row={row}
-                isSelected={selectedToken === token.offset}
-                onClick={() => setSelectedToken(selectedToken === token.offset ? -1 : token.offset)}
-            />
-        );
-    });
-
     return (
         <div className="px-5 py-5">
             <h1 className="py-3 text-3xl font-bold tracking-tight">Interlinear Translation</h1>
@@ -99,7 +84,22 @@ function App() {
                 className={`grid gap-2 w-full max-w-5xl mx-auto my-4 grid-rows-${tokenRows * 3} grid-cols-${colsPerRow}`}
                 dir="auto"
             >
-                {tokenDivs}
+            {
+                tokens.map((token, i) => {
+                    const col = i % colsPerRow;
+                    const row = Math.floor(i / colsPerRow);
+                    return (
+                        <TokenGrid
+                            key={token.offset}
+                            token={token}
+                            col={col}
+                            row={row}
+                            isSelected={selectedToken === token.offset}
+                            onClick={() => setSelectedToken(selectedToken === token.offset ? -1 : token.offset)}
+                        />
+                    );
+                })
+            }
             </div>
             <div>
                 {selectedGlosses.map((gloss, i) => (
