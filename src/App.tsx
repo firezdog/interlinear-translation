@@ -65,6 +65,17 @@ function App() {
     const tokens = passage?.tokens ?? [];
     const tokenRows = Math.ceil(tokens.length / colsPerRow);
 
+    /* 
+        TODO: 
+        init the pointers
+        when i loop through tokens
+        if the current token is greater than the current start, add that to the set and advance the start pointer
+        if the current token is greater tahn the current end, remove it from the set and advance the end pointer
+        associate all glosses in current set with current token
+    */
+    const glossesByStart = passage?.glosses?.sort((a, b) => a.start - b.start).map((passage) => passage.start);
+    const glossesByEnd = passage?.glosses?.sort((a, b) => a.end - b.end).map((passage) => passage.end);
+
     return (
         <div className="px-5 py-5">
             <h1 className="py-3 text-3xl font-bold tracking-tight">Interlinear Translation</h1>
@@ -85,6 +96,7 @@ function App() {
                 dir="auto"
             >
             {
+
                 tokens.map((token, i) => {
                     const col = i % colsPerRow;
                     const row = Math.floor(i / colsPerRow);
