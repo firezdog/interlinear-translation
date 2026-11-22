@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import React from "react";
-import { Gloss, Passage } from "@/types/passage";
+import { Gloss, Passage, Token } from "@/types/passage";
 import { FileClient } from "@/clients/file";
 import { TokenGrid } from "@/TokenGrid";
 
@@ -13,7 +13,29 @@ const passageOptions = [
     { key: 'notes-underground', name: 'Notes From Underground'}
 ];
 
+/** Sweep tokens left-to-right, activating/deactivating glosses via start/end pointers. */
+function buildGlossesByToken(tokens: Token[], glosses: Gloss[]): Map<number, Gloss[]> {
+    const byStart = [...glosses].sort((a, b) => a.start - b.start);
+    const byEnd = [...glosses].sort((a, b) => a.end - b.end);
+    let startPtr = 0;
+    let endPtr = 0;
+    const active = new Set<Gloss>();
+    const glossesByToken = new Map<number, Gloss[]>();
 
+    for (const token of tokens) {
+        while (endPtr < byEnd.length && byEnd[endPtr].end < token.offset) {
+            active.delete(byEnd[endPtr]);
+            endPtr++;
+        }
+        while (startPtr < byStart.length && byStart[startPtr].start <= token.offset) {
+            active.add(byStart[startPtr]);
+            startPtr++;
+        }
+        glossesByToken.set(token.offset, [...active]);
+    }
+
+    return glossesByToken;
+}
 
 function App() {
     const [selectedKey, setSelectedKey] = useState("oku-no-hosomichi");
@@ -22,6 +44,11 @@ function App() {
     const [selectedToken, setSelectedToken] = useState<number>(-1);
     const [selectedGlosses, setSelectedGlosses] = useState<Gloss[]>([]);
     const [colsPerRow, setColsPerRow] = useState(2);
+
+    const glossesByToken = useMemo(
+        () => (passage ? buildGlossesByToken(passage.tokens, passage.glosses) : new Map<number, Gloss[]>()),
+        [passage]
+    );
 
     useEffect(() => {
         function updateCols() {
@@ -50,31 +77,17 @@ function App() {
     }, [selectedKey]);
 
     useEffect(() => {
-        if (selectedToken === -1 || !passage) {
+        if (selectedToken === -1) {
             setSelectedGlosses([]);
             return;
         }
-        const updatedGlosses = passage.glosses.filter(
-            (gloss) => gloss.start <= selectedToken && selectedToken <= gloss.end
-        );
-        setSelectedGlosses(updatedGlosses);
-    }, [selectedToken, passage]);
+        setSelectedGlosses(glossesByToken.get(selectedToken) ?? []);
+    }, [selectedToken, glossesByToken]);
 
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
 
     const tokens = passage?.tokens ?? [];
     const tokenRows = Math.ceil(tokens.length / colsPerRow);
-
-    /* 
-        TODO: 
-        init the pointers
-        when i loop through tokens
-        if the current token is greater than the current start, add that to the set and advance the start pointer
-        if the current token is greater tahn the current end, remove it from the set and advance the end pointer
-        associate all glosses in current set with current token
-    */
-    const glossesByStart = passage?.glosses?.sort((a, b) => a.start - b.start).map((passage) => passage.start);
-    const glossesByEnd = passage?.glosses?.sort((a, b) => a.end - b.end).map((passage) => passage.end);
 
     return (
         <div className="px-5 py-5">
