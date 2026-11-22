@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import React from "react";
-import { Gloss, Passage, Token } from "@/types/passage";
+import { Gloss, Passage } from "@/types/passage";
 import { FileClient } from "@/clients/file";
 import { TokenGrid } from "@/TokenGrid";
+import { buildGlossesByToken } from "@/buildGlossesByToken";
 
 
 const passageOptions = [
@@ -13,42 +14,19 @@ const passageOptions = [
     { key: 'notes-underground', name: 'Notes From Underground'}
 ];
 
-/** Sweep tokens left-to-right, activating/deactivating glosses via start/end pointers. */
-function buildGlossesByToken(tokens: Token[], glosses: Gloss[]): Map<number, Gloss[]> {
-    const byStart = [...glosses].sort((a, b) => a.start - b.start);
-    const byEnd = [...glosses].sort((a, b) => a.end - b.end);
-    let startPtr = 0;
-    let endPtr = 0;
-    const active = new Set<Gloss>();
-    const glossesByToken = new Map<number, Gloss[]>();
-
-    for (const token of tokens) {
-        while (endPtr < byEnd.length && byEnd[endPtr].end < token.offset) {
-            active.delete(byEnd[endPtr]);
-            endPtr++;
-        }
-        while (startPtr < byStart.length && byStart[startPtr].start <= token.offset) {
-            active.add(byStart[startPtr]);
-            startPtr++;
-        }
-        glossesByToken.set(token.offset, [...active]);
-    }
-
-    return glossesByToken;
-}
-
 function App() {
     const [selectedKey, setSelectedKey] = useState("oku-no-hosomichi");
     const [passage, setPassage] = useState<Passage | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [selectedToken, setSelectedToken] = useState<number>(-1);
-    const [selectedGlosses, setSelectedGlosses] = useState<Gloss[]>([]);
     const [colsPerRow, setColsPerRow] = useState(2);
 
     const glossesByToken = useMemo(
         () => (passage ? buildGlossesByToken(passage.tokens, passage.glosses) : new Map<number, Gloss[]>()),
         [passage]
     );
+    const selectedGlosses: Gloss[] =
+        selectedToken === -1 ? [] : (glossesByToken.get(selectedToken) ?? []);
 
     useEffect(() => {
         function updateCols() {
@@ -71,18 +49,10 @@ function App() {
                 setPassage(data);
                 setSelectedToken(-1);
             } catch (err) {
-                setError(err instanceof Error ? err.message : String(error));
+                setError(err instanceof Error ? err.message : String(err));
             }
         })();
     }, [selectedKey]);
-
-    useEffect(() => {
-        if (selectedToken === -1) {
-            setSelectedGlosses([]);
-            return;
-        }
-        setSelectedGlosses(glossesByToken.get(selectedToken) ?? []);
-    }, [selectedToken, glossesByToken]);
 
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
 
@@ -105,7 +75,11 @@ function App() {
                 </select>
             </label>
             <div
-                className={`grid gap-2 w-full max-w-5xl mx-auto my-4 grid-rows-${tokenRows * 3} grid-cols-${colsPerRow}`}
+                className="grid gap-2 w-full max-w-5xl mx-auto my-4"
+                style={{
+                    gridTemplateColumns: `repeat(${colsPerRow}, minmax(0, 1fr))`,
+                    gridTemplateRows: `repeat(${tokenRows * 3}, auto)`,
+                }}
                 dir="auto"
             >
             {

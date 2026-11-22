@@ -1,5 +1,6 @@
 import { Passage } from "@/types/passage"
 import { InterlinearClient } from "@/types/client"
+import { assertPassage } from "@/validatePassage"
 
 
 class FileClient implements InterlinearClient {
@@ -22,7 +23,7 @@ class FileClient implements InterlinearClient {
         }
 
         const data = await response.json();
-        return data as Passage; // TODO: validation
+        return assertPassage(data);
     }
 }
 

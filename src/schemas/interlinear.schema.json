@@ -1,8 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interlinear.local/schemas/passage.json",
   "title": "Passage",
   "type": "object",
   "required": ["offset", "length", "tokens", "glosses"],
+  "additionalProperties": false,
   "properties": {
     "offset": {
       "type": "integer",
@@ -14,17 +16,18 @@
     },
     "tokens": {
       "type": "array",
-      "items": { "$ref": "#/$subtypes/Token" }
+      "items": { "$ref": "#/$defs/Token" }
     },
     "glosses": {
       "type": "array",
-      "items": { "$ref": "#/$subtypes/Gloss" }
+      "items": { "$ref": "#/$defs/Gloss" }
     }
   },
-  "$subtypes": {
+  "$defs": {
     "Token": {
       "type": "object",
       "required": ["offset", "content", "transliteration", "translation"],
+      "additionalProperties": false,
       "properties": {
         "offset": {
           "type": "integer",
@@ -47,6 +50,7 @@
     "Gloss": {
       "type": "object",
       "required": ["start", "end", "content"],
+      "additionalProperties": false,
       "properties": {
         "start": {
           "type": "integer",
@@ -54,7 +58,7 @@
         },
         "end": {
           "type": "integer",
-          "description": "End offset (exclusive) in full text"
+          "description": "End offset (inclusive) in full text; must be >= start"
         },
         "content": {
           "type": "string",
