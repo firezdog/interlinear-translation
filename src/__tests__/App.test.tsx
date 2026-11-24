@@ -202,4 +202,47 @@ describe("App component", () => {
         });
         expect(screen.queryByRole("heading")).not.toBeInTheDocument();
     });
+
+    it("shift-click extends a token range and highlights the span", async () => {
+        read.mockResolvedValue(okuPassage);
+        render(<App />);
+
+        const first = await screen.findByRole("button", { name: "月日" });
+        const last = screen.getByRole("button", { name: "百代" });
+        fireEvent.click(first);
+        fireEvent.click(last, { shiftKey: true });
+
+        const readingBtns = first
+            .closest(".reading-orig")
+            ?.querySelectorAll("button.tok");
+        expect(readingBtns).toHaveLength(3);
+        readingBtns?.forEach((btn) => expect(btn).toHaveClass("tok-in-span"));
+        expect(screen.getByText(/Span: 月日は百代/)).toBeInTheDocument();
+        expect(screen.getByText("Selected span")).toBeInTheDocument();
+    });
+
+    it("adds an in-memory gloss for the selected range", async () => {
+        read.mockResolvedValue(jingPassage);
+        render(<App />);
+
+        fireEvent.change(await screen.findByRole("combobox"), {
+            target: { value: "jing-ye-si" },
+        });
+
+        const first = await screen.findByText("床前");
+        const last = screen.getByText("光");
+        fireEvent.click(first);
+        fireEvent.click(last, { shiftKey: true });
+
+        fireEvent.change(screen.getByLabelText("New gloss commentary"), {
+            target: { value: "opening line" },
+        });
+        fireEvent.click(screen.getByRole("button", { name: "Add gloss" }));
+
+        const card = screen.getByText("opening line").closest("button");
+        expect(card).toHaveClass("is-span-focus");
+        expect(screen.getByText("Gloss span (aligned study)")).toBeInTheDocument();
+        expect(first).toHaveClass("tok-in-span");
+        expect(last).toHaveClass("tok-in-span");
+    });
 });

@@ -1,11 +1,13 @@
 import React, { useMemo } from "react";
 import { Gloss, Passage } from "@/passage/types";
 import { projectPassage } from "@/passage/projectPassage";
+import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
 
 function ReadingColumn({
     passage,
     glossesByToken,
     selectedToken,
+    selectionRange,
     focusedGloss,
     showTransliteration,
     onSelectToken,
@@ -13,18 +15,30 @@ function ReadingColumn({
     passage: Passage;
     glossesByToken: Map<number, Gloss[]>;
     selectedToken: number;
+    selectionRange: TokenRange | null;
     focusedGloss: Gloss | null;
     showTransliteration: boolean;
-    onSelectToken: (offset: number) => void;
+    onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
 }) {
     const { paragraphs } = useMemo(() => projectPassage(passage), [passage]);
 
-    const inFocusedGloss = (offset: number) =>
-        !!(focusedGloss && offset >= focusedGloss.start && offset <= focusedGloss.end);
+    const inSpan = (offset: number) => {
+        if (focusedGloss) {
+            return offset >= focusedGloss.start && offset <= focusedGloss.end;
+        }
+        return !!(
+            selectionRange &&
+            offset >= selectionRange.start &&
+            offset <= selectionRange.end
+        );
+    };
 
     const segmentIsFocus = (start: number, end: number) => {
         if (focusedGloss) {
             return focusedGloss.start <= end && focusedGloss.end >= start;
+        }
+        if (selectionRange) {
+            return selectionRange.start <= end && selectionRange.end >= start;
         }
         return selectedToken >= start && selectedToken <= end;
     };
@@ -56,7 +70,7 @@ function ReadingColumn({
                                 const cls = [
                                     "tok",
                                     hasGloss ? "tok-has-gloss" : "",
-                                    inFocusedGloss(token.offset) ? "tok-in-span" : "",
+                                    inSpan(token.offset) ? "tok-in-span" : "",
                                 ]
                                     .filter(Boolean)
                                     .join(" ");
@@ -66,7 +80,11 @@ function ReadingColumn({
                                         type="button"
                                         className={cls}
                                         aria-pressed={selectedToken === token.offset}
-                                        onClick={() => onSelectToken(token.offset)}
+                                        onClick={(e) =>
+                                            onSelectToken(token.offset, {
+                                                shiftKey: e.shiftKey,
+                                            })
+                                        }
                                     >
                                         {token.content}
                                     </button>
@@ -85,12 +103,14 @@ function ReadingColumn({
                                               {i > 0 ? " " : null}
                                               <button
                                                   type="button"
-                                                  className="tok"
+                                                  className={`tok${inSpan(token.offset) ? " tok-in-span" : ""}`}
                                                   aria-pressed={
                                                       selectedToken === token.offset
                                                   }
-                                                  onClick={() =>
-                                                      onSelectToken(token.offset)
+                                                  onClick={(e) =>
+                                                      onSelectToken(token.offset, {
+                                                          shiftKey: e.shiftKey,
+                                                      })
                                                   }
                                               >
                                                   {token.transliteration}

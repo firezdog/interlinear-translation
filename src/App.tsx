@@ -6,6 +6,8 @@ import { buildGlossesByToken } from "@/passage/buildGlossesByToken";
 import { studyTokensFor } from "@/passage/projectPassage";
 import { ReadingColumn } from "@/components/ReadingColumn";
 import { StudyRail } from "@/components/StudyRail";
+import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
+
 const passageOptions = [
     { key: "oku-no-hosomichi", name: "Oku No Hosomichi" },
     { key: "ovid", name: "Ovid's Metamorphoses" },
@@ -19,6 +21,8 @@ function App() {
     const [passage, setPassage] = useState<Passage | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [selectedToken, setSelectedToken] = useState<number>(-1);
+    const [selectionAnchor, setSelectionAnchor] = useState<number>(-1);
+    const [selectionRange, setSelectionRange] = useState<TokenRange | null>(null);
     const [focusedGloss, setFocusedGloss] = useState<Gloss | null>(null);
     const [showTransliteration, setShowTransliteration] = useState(false);
 
@@ -37,12 +41,25 @@ function App() {
             ? (passage.tokens.find((t) => t.offset === selectedToken) ?? null)
             : null;
 
+    const studyFocus = useMemo(() => {
+        if (focusedGloss) return focusedGloss;
+        if (selectionRange && selectionRange.start !== selectionRange.end) {
+            return {
+                id: "__selection",
+                start: selectionRange.start,
+                end: selectionRange.end,
+                content: "",
+            };
+        }
+        return null;
+    }, [focusedGloss, selectionRange]);
+
     const studyTokens = useMemo(
         () =>
             passage
-                ? studyTokensFor(passage, selectedToken, focusedGloss)
+                ? studyTokensFor(passage, selectedToken, studyFocus)
                 : ([] as Token[]),
-        [passage, selectedToken, focusedGloss]
+        [passage, selectedToken, studyFocus]
     );
 
     useEffect(() => {
@@ -54,6 +71,8 @@ function App() {
                 if (cancelled) return;
                 setPassage(data);
                 setSelectedToken(-1);
+                setSelectionAnchor(-1);
+                setSelectionRange(null);
                 setFocusedGloss(null);
                 setError(null);
             } catch (err) {
@@ -66,19 +85,38 @@ function App() {
         };
     }, [selectedKey]);
 
-    const onSelectToken = useCallback((offset: number) => {
-        setSelectedToken((prev) => {
-            if (prev === offset) {
+    const onSelectToken = useCallback(
+        (offset: number, opts?: SelectTokenOpts) => {
+            const shiftKey = !!opts?.shiftKey;
+
+            if (shiftKey && selectionAnchor >= 0) {
+                setSelectedToken(offset);
+                setSelectionRange({
+                    start: Math.min(selectionAnchor, offset),
+                    end: Math.max(selectionAnchor, offset),
+                });
                 setFocusedGloss(null);
-                return -1;
+                return;
             }
-            setFocusedGloss((g) => {
-                if (g && (offset < g.start || offset > g.end)) return null;
-                return g;
+
+            setSelectedToken((prev) => {
+                if (prev === offset) {
+                    setFocusedGloss(null);
+                    setSelectionAnchor(-1);
+                    setSelectionRange(null);
+                    return -1;
+                }
+                setSelectionAnchor(offset);
+                setSelectionRange({ start: offset, end: offset });
+                setFocusedGloss((g) => {
+                    if (g && (offset < g.start || offset > g.end)) return null;
+                    return g;
+                });
+                return offset;
             });
-            return offset;
-        });
-    }, []);
+        },
+        [selectionAnchor]
+    );
 
     const onSelectGloss = useCallback((gloss: Gloss) => {
         setFocusedGloss((prev) => {
@@ -89,6 +127,26 @@ function App() {
             return gloss;
         });
     }, []);
+
+    const onAddGloss = useCallback(
+        (content: string) => {
+            if (!passage || !selectionRange) return;
+            const text = content.trim();
+            if (!text) return;
+            const gloss: Gloss = {
+                id: crypto.randomUUID(),
+                start: selectionRange.start,
+                end: selectionRange.end,
+                content: text,
+            };
+            setPassage({
+                ...passage,
+                glosses: [...passage.glosses, gloss],
+            });
+            setFocusedGloss(gloss);
+        },
+        [passage, selectionRange]
+    );
 
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
 
@@ -127,6 +185,7 @@ function App() {
                         passage={passage}
                         glossesByToken={glossesByToken}
                         selectedToken={selectedToken}
+                        selectionRange={selectionRange}
                         focusedGloss={focusedGloss}
                         showTransliteration={showTransliteration}
                         onSelectToken={onSelectToken}
@@ -138,9 +197,11 @@ function App() {
                     passage={passage}
                     selectedGlosses={selectedGlosses}
                     selectedToken={selectedToken}
+                    selectionRange={selectionRange}
                     focusedGloss={focusedGloss}
                     onSelectToken={onSelectToken}
                     onSelectGloss={onSelectGloss}
+                    onAddGloss={onAddGloss}
                 />
             </div>
         </div>

@@ -1,16 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import { Gloss, Token } from "@/passage/types";
+import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
 
 function LineStudyPanel({
     tokens,
     selectedToken,
+    selectionRange,
     focusedGloss,
     onSelectToken,
 }: {
     tokens: Token[];
     selectedToken: number;
+    selectionRange: TokenRange | null;
     focusedGloss: Gloss | null;
-    onSelectToken: (offset: number) => void;
+    onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
 }) {
     const selectedRef = useRef<HTMLButtonElement | null>(null);
 
@@ -24,12 +27,22 @@ function LineStudyPanel({
 
     const caption = focusedGloss
         ? "Gloss span (aligned study)"
-        : tokens.length > 0
-          ? "Paragraph in focus"
-          : "\u00a0";
+        : selectionRange && selectionRange.start !== selectionRange.end
+          ? "Selected span"
+          : tokens.length > 0
+            ? "Paragraph in focus"
+            : "\u00a0";
 
-    const inFocusedGloss = (offset: number) =>
-        !!(focusedGloss && offset >= focusedGloss.start && offset <= focusedGloss.end);
+    const inSpan = (offset: number) => {
+        if (focusedGloss) {
+            return offset >= focusedGloss.start && offset <= focusedGloss.end;
+        }
+        return !!(
+            selectionRange &&
+            offset >= selectionRange.start &&
+            offset <= selectionRange.end
+        );
+    };
 
     return (
         <section className="study-panel study-panel-study" aria-label="Line study">
@@ -52,9 +65,13 @@ function LineStudyPanel({
                                         : undefined
                                 }
                                 type="button"
-                                className={`study-unit${inFocusedGloss(token.offset) ? " tok-in-span" : ""}`}
+                                className={`study-unit${inSpan(token.offset) ? " tok-in-span" : ""}`}
                                 aria-pressed={selectedToken === token.offset}
-                                onClick={() => onSelectToken(token.offset)}
+                                onClick={(e) =>
+                                    onSelectToken(token.offset, {
+                                        shiftKey: e.shiftKey,
+                                    })
+                                }
                             >
                                 <span className="o">{token.content || "\u00a0"}</span>
                                 <span className="r">

@@ -28,6 +28,7 @@ describe("LineStudyPanel", () => {
             <LineStudyPanel
                 tokens={tokens}
                 selectedToken={0}
+                selectionRange={{ start: 0, end: 0 }}
                 focusedGloss={null}
                 onSelectToken={() => {}}
             />
@@ -44,12 +45,13 @@ describe("LineStudyPanel", () => {
             <LineStudyPanel
                 tokens={tokens}
                 selectedToken={-1}
+                selectionRange={null}
                 focusedGloss={null}
                 onSelectToken={onSelectToken}
             />
         );
         fireEvent.click(screen.getByText("は"));
-        expect(onSelectToken).toHaveBeenCalledWith(1);
+        expect(onSelectToken).toHaveBeenCalledWith(1, { shiftKey: false });
     });
 
     it("shows gloss-span caption when a gloss is focused", () => {
@@ -57,6 +59,7 @@ describe("LineStudyPanel", () => {
             <LineStudyPanel
                 tokens={tokens}
                 selectedToken={0}
+                selectionRange={null}
                 focusedGloss={{ id: "note", start: 0, end: 1, content: "note" }}
                 onSelectToken={() => {}}
             />

@@ -49,12 +49,16 @@ describe("GlossPanel", () => {
                 passage={passage}
                 glosses={glosses}
                 selectedToken={2}
+                selectionRange={{ start: 2, end: 2 }}
                 focusedGloss={null}
                 onSelectGloss={onSelectGloss}
+                onAddGloss={() => {}}
             />
         );
 
-        const cards = screen.getAllByRole("button");
+        const cards = screen.getAllByRole("button").filter((b) =>
+            b.classList.contains("gloss-card")
+        );
         expect(cards[0]).toHaveTextContent("mid gloss");
         expect(cards[1]).toHaveTextContent("full-line gloss");
         expect(cards[1]).toHaveTextContent("月日は百代");
@@ -69,12 +73,36 @@ describe("GlossPanel", () => {
                 passage={passage}
                 glosses={glosses}
                 selectedToken={2}
+                selectionRange={{ start: 2, end: 2 }}
                 focusedGloss={glosses[1]}
                 onSelectGloss={() => {}}
+                onAddGloss={() => {}}
             />
         );
         expect(screen.getByText("mid gloss").closest("button")).toHaveClass(
             "is-span-focus"
         );
+    });
+
+    it("shows compose form for a selection range and submits gloss text", () => {
+        const onAddGloss = jest.fn();
+        render(
+            <GlossPanel
+                passage={passage}
+                glosses={[]}
+                selectedToken={0}
+                selectionRange={{ start: 0, end: 2 }}
+                focusedGloss={null}
+                onSelectGloss={() => {}}
+                onAddGloss={onAddGloss}
+            />
+        );
+
+        expect(screen.getByText(/Span: 月日は百代/)).toBeInTheDocument();
+        fireEvent.change(screen.getByLabelText("New gloss commentary"), {
+            target: { value: "  a new note  " },
+        });
+        fireEvent.click(screen.getByRole("button", { name: "Add gloss" }));
+        expect(onAddGloss).toHaveBeenCalledWith("  a new note  ");
     });
 });

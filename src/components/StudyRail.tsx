@@ -3,6 +3,7 @@ import { Gloss, Passage, Token } from "@/passage/types";
 import { LineStudyPanel } from "@/components/LineStudyPanel";
 import { WordPanel } from "@/components/WordPanel";
 import { GlossPanel } from "@/components/GlossPanel";
+import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
 
 function StudyRail({
     studyTokens,
@@ -10,24 +11,29 @@ function StudyRail({
     passage,
     selectedGlosses,
     selectedToken,
+    selectionRange,
     focusedGloss,
     onSelectToken,
     onSelectGloss,
+    onAddGloss,
 }: {
     studyTokens: Token[];
     wordToken: Token | null;
     passage: Passage | null;
     selectedGlosses: Gloss[];
     selectedToken: number;
+    selectionRange: TokenRange | null;
     focusedGloss: Gloss | null;
-    onSelectToken: (offset: number) => void;
+    onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
     onSelectGloss: (gloss: Gloss) => void;
+    onAddGloss: (content: string) => void;
 }) {
     return (
         <aside className="study-rail" aria-label="Study rail">
             <LineStudyPanel
                 tokens={studyTokens}
                 selectedToken={selectedToken}
+                selectionRange={selectionRange}
                 focusedGloss={focusedGloss}
                 onSelectToken={onSelectToken}
             />
@@ -37,8 +43,10 @@ function StudyRail({
                     passage={passage}
                     glosses={selectedGlosses}
                     selectedToken={selectedToken}
+                    selectionRange={selectionRange}
                     focusedGloss={focusedGloss}
                     onSelectGloss={onSelectGloss}
+                    onAddGloss={onAddGloss}
                 />
             ) : (
                 <section className="study-panel study-panel-gloss" aria-label="Glosses">
