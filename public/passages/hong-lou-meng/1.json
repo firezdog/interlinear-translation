@@ -1,0 +1,2693 @@
+{
+  "offset": 0,
+  "length": 310,
+  "segments": [
+    {
+      "text": "此開卷第一回也．作者自云：因曾歷過一番夢幻之后，故將真事隱去，而借\"通靈\"之說，撰此《石頭記》一書也．故曰\"甄士隱\"云云．但書中所記何事何人？自又云：“今風塵碌碌，一事無成，忽念及當日所有之女子，一一細考較去，覺其行止見識，皆出于我之上．何我堂堂須眉，誠不若彼裙釵哉？實愧則有余，悔又無益之大無可如何之日也！當此，則自欲將已往所賴天恩祖德，錦衣紈褲之時，飫甘饜肥之日，背父兄教育之恩，負師友規談之德，以至今日一技無成，半生潦倒之罪，編述一集，以告天下人：我之罪固不免，然閨閣中本自歷歷有人，万不可因我之不肖，自護己短，一并使其泯滅也．雖今日之茅椽蓬牖，瓦灶繩床，其晨夕風露，階柳庭花，亦未有妨我之襟怀筆墨者．雖我未學，下筆無文，又何妨用假語村言，敷演出一段故事來，亦可使閨閣昭傳，复可悅世之目，破人愁悶，不亦宜乎？\"故曰\"賈雨村\"云云．",
+      "start": 0,
+      "end": 309
+    }
+  ],
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "此",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "ci3",
+      "translation": "this"
+    },
+    {
+      "offset": 1,
+      "content": "開",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "kai1",
+      "translation": "open/begin"
+    },
+    {
+      "offset": 2,
+      "content": "卷",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "juan4",
+      "translation": "scroll; volume"
+    },
+    {
+      "offset": 3,
+      "content": "第",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "di4",
+      "translation": "ordinal marker"
+    },
+    {
+      "offset": 4,
+      "content": "一",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 5,
+      "content": "回",
+      "charStart": 5,
+      "charEnd": 6,
+      "transliteration": "hui2",
+      "translation": "chapter"
+    },
+    {
+      "offset": 6,
+      "content": "也",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "ye3",
+      "translation": "final particle"
+    },
+    {
+      "offset": 7,
+      "content": "作",
+      "charStart": 8,
+      "charEnd": 9,
+      "transliteration": "zuo4",
+      "translation": "make; write"
+    },
+    {
+      "offset": 8,
+      "content": "者",
+      "charStart": 9,
+      "charEnd": 10,
+      "transliteration": "zhe3",
+      "translation": "nominalizer; one who"
+    },
+    {
+      "offset": 9,
+      "content": "自",
+      "charStart": 10,
+      "charEnd": 11,
+      "transliteration": "zi4",
+      "translation": "self; oneself"
+    },
+    {
+      "offset": 10,
+      "content": "云",
+      "charStart": 11,
+      "charEnd": 12,
+      "transliteration": "yun2",
+      "translation": "say"
+    },
+    {
+      "offset": 11,
+      "content": "因",
+      "charStart": 13,
+      "charEnd": 14,
+      "transliteration": "yin1",
+      "translation": "because"
+    },
+    {
+      "offset": 12,
+      "content": "曾",
+      "charStart": 14,
+      "charEnd": 15,
+      "transliteration": "ceng2",
+      "translation": "once; previously"
+    },
+    {
+      "offset": 13,
+      "content": "歷",
+      "charStart": 15,
+      "charEnd": 16,
+      "transliteration": "li4",
+      "translation": "experience; undergo"
+    },
+    {
+      "offset": 14,
+      "content": "過",
+      "charStart": 16,
+      "charEnd": 17,
+      "transliteration": "guo4",
+      "translation": "undergo; have experienced"
+    },
+    {
+      "offset": 15,
+      "content": "一",
+      "charStart": 17,
+      "charEnd": 18,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 16,
+      "content": "番",
+      "charStart": 18,
+      "charEnd": 19,
+      "transliteration": "fan1",
+      "translation": "classifier; occasion"
+    },
+    {
+      "offset": 17,
+      "content": "夢",
+      "charStart": 19,
+      "charEnd": 20,
+      "transliteration": "meng4",
+      "translation": "dream"
+    },
+    {
+      "offset": 18,
+      "content": "幻",
+      "charStart": 20,
+      "charEnd": 21,
+      "transliteration": "huan4",
+      "translation": "illusion"
+    },
+    {
+      "offset": 19,
+      "content": "之",
+      "charStart": 21,
+      "charEnd": 22,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 20,
+      "content": "后",
+      "charStart": 22,
+      "charEnd": 23,
+      "transliteration": "hou4",
+      "translation": "after"
+    },
+    {
+      "offset": 21,
+      "content": "故",
+      "charStart": 24,
+      "charEnd": 25,
+      "transliteration": "gu4",
+      "translation": "therefore"
+    },
+    {
+      "offset": 22,
+      "content": "將",
+      "charStart": 25,
+      "charEnd": 26,
+      "transliteration": "jiang1",
+      "translation": "take; (disposal marker)"
+    },
+    {
+      "offset": 23,
+      "content": "真",
+      "charStart": 26,
+      "charEnd": 27,
+      "transliteration": "zhen1",
+      "translation": "real"
+    },
+    {
+      "offset": 24,
+      "content": "事",
+      "charStart": 27,
+      "charEnd": 28,
+      "transliteration": "shi4",
+      "translation": "matter; event"
+    },
+    {
+      "offset": 25,
+      "content": "隱",
+      "charStart": 28,
+      "charEnd": 29,
+      "transliteration": "yin3",
+      "translation": "conceal"
+    },
+    {
+      "offset": 26,
+      "content": "去",
+      "charStart": 29,
+      "charEnd": 30,
+      "transliteration": "qu4",
+      "translation": "away"
+    },
+    {
+      "offset": 27,
+      "content": "而",
+      "charStart": 31,
+      "charEnd": 32,
+      "transliteration": "er2",
+      "translation": "and; but"
+    },
+    {
+      "offset": 28,
+      "content": "借",
+      "charStart": 32,
+      "charEnd": 33,
+      "transliteration": "jie4",
+      "translation": "borrow; make use of"
+    },
+    {
+      "offset": 29,
+      "content": "通",
+      "charStart": 34,
+      "charEnd": 35,
+      "transliteration": "tong1",
+      "translation": "communicate; penetrate"
+    },
+    {
+      "offset": 30,
+      "content": "靈",
+      "charStart": 35,
+      "charEnd": 36,
+      "transliteration": "ling2",
+      "translation": "spirit"
+    },
+    {
+      "offset": 31,
+      "content": "之",
+      "charStart": 37,
+      "charEnd": 38,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 32,
+      "content": "說",
+      "charStart": 38,
+      "charEnd": 39,
+      "transliteration": "shuo1",
+      "translation": "account; explanation"
+    },
+    {
+      "offset": 33,
+      "content": "撰",
+      "charStart": 40,
+      "charEnd": 41,
+      "transliteration": "zhuan4",
+      "translation": "compose"
+    },
+    {
+      "offset": 34,
+      "content": "此",
+      "charStart": 41,
+      "charEnd": 42,
+      "transliteration": "ci3",
+      "translation": "this"
+    },
+    {
+      "offset": 35,
+      "content": "石",
+      "charStart": 43,
+      "charEnd": 44,
+      "transliteration": "shi2",
+      "translation": "stone"
+    },
+    {
+      "offset": 36,
+      "content": "頭",
+      "charStart": 44,
+      "charEnd": 45,
+      "transliteration": "tou2",
+      "translation": "head"
+    },
+    {
+      "offset": 37,
+      "content": "記",
+      "charStart": 45,
+      "charEnd": 46,
+      "transliteration": "ji4",
+      "translation": "record"
+    },
+    {
+      "offset": 38,
+      "content": "一",
+      "charStart": 47,
+      "charEnd": 48,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 39,
+      "content": "書",
+      "charStart": 48,
+      "charEnd": 49,
+      "transliteration": "shu1",
+      "translation": "book"
+    },
+    {
+      "offset": 40,
+      "content": "也",
+      "charStart": 49,
+      "charEnd": 50,
+      "transliteration": "ye3",
+      "translation": "final particle"
+    },
+    {
+      "offset": 41,
+      "content": "故",
+      "charStart": 51,
+      "charEnd": 52,
+      "transliteration": "gu4",
+      "translation": "therefore"
+    },
+    {
+      "offset": 42,
+      "content": "曰",
+      "charStart": 52,
+      "charEnd": 53,
+      "transliteration": "yue1",
+      "translation": "say; be called"
+    },
+    {
+      "offset": 43,
+      "content": "甄",
+      "charStart": 54,
+      "charEnd": 55,
+      "transliteration": "zhen1",
+      "translation": "Zhen (surname)"
+    },
+    {
+      "offset": 44,
+      "content": "士",
+      "charStart": 55,
+      "charEnd": 56,
+      "transliteration": "shi4",
+      "translation": "scholar; gentleman"
+    },
+    {
+      "offset": 45,
+      "content": "隱",
+      "charStart": 56,
+      "charEnd": 57,
+      "transliteration": "yin3",
+      "translation": "conceal"
+    },
+    {
+      "offset": 46,
+      "content": "云",
+      "charStart": 58,
+      "charEnd": 59,
+      "transliteration": "yun2",
+      "translation": "say"
+    },
+    {
+      "offset": 47,
+      "content": "云",
+      "charStart": 59,
+      "charEnd": 60,
+      "transliteration": "yun2",
+      "translation": "say"
+    },
+    {
+      "offset": 48,
+      "content": "但",
+      "charStart": 61,
+      "charEnd": 62,
+      "transliteration": "dan4",
+      "translation": "but"
+    },
+    {
+      "offset": 49,
+      "content": "書",
+      "charStart": 62,
+      "charEnd": 63,
+      "transliteration": "shu1",
+      "translation": "book"
+    },
+    {
+      "offset": 50,
+      "content": "中",
+      "charStart": 63,
+      "charEnd": 64,
+      "transliteration": "zhong1",
+      "translation": "in; within"
+    },
+    {
+      "offset": 51,
+      "content": "所",
+      "charStart": 64,
+      "charEnd": 65,
+      "transliteration": "suo3",
+      "translation": "that which; nominalizer"
+    },
+    {
+      "offset": 52,
+      "content": "記",
+      "charStart": 65,
+      "charEnd": 66,
+      "transliteration": "ji4",
+      "translation": "record"
+    },
+    {
+      "offset": 53,
+      "content": "何",
+      "charStart": 66,
+      "charEnd": 67,
+      "transliteration": "he2",
+      "translation": "what"
+    },
+    {
+      "offset": 54,
+      "content": "事",
+      "charStart": 67,
+      "charEnd": 68,
+      "transliteration": "shi4",
+      "translation": "matter; event"
+    },
+    {
+      "offset": 55,
+      "content": "何",
+      "charStart": 68,
+      "charEnd": 69,
+      "transliteration": "he2",
+      "translation": "what"
+    },
+    {
+      "offset": 56,
+      "content": "人",
+      "charStart": 69,
+      "charEnd": 70,
+      "transliteration": "ren2",
+      "translation": "person"
+    },
+    {
+      "offset": 57,
+      "content": "自",
+      "charStart": 71,
+      "charEnd": 72,
+      "transliteration": "zi4",
+      "translation": "self; oneself"
+    },
+    {
+      "offset": 58,
+      "content": "又",
+      "charStart": 72,
+      "charEnd": 73,
+      "transliteration": "you4",
+      "translation": "again; also"
+    },
+    {
+      "offset": 59,
+      "content": "云",
+      "charStart": 73,
+      "charEnd": 74,
+      "transliteration": "yun2",
+      "translation": "say"
+    },
+    {
+      "offset": 60,
+      "content": "今",
+      "charStart": 76,
+      "charEnd": 77,
+      "transliteration": "jin1",
+      "translation": "now"
+    },
+    {
+      "offset": 61,
+      "content": "風",
+      "charStart": 77,
+      "charEnd": 78,
+      "transliteration": "feng1",
+      "translation": "wind"
+    },
+    {
+      "offset": 62,
+      "content": "塵",
+      "charStart": 78,
+      "charEnd": 79,
+      "transliteration": "chen2",
+      "translation": "dust; worldly affairs"
+    },
+    {
+      "offset": 63,
+      "content": "碌",
+      "charStart": 79,
+      "charEnd": 80,
+      "transliteration": "lu4",
+      "translation": "busy; toiling"
+    },
+    {
+      "offset": 64,
+      "content": "碌",
+      "charStart": 80,
+      "charEnd": 81,
+      "transliteration": "lu4",
+      "translation": "busy; toiling"
+    },
+    {
+      "offset": 65,
+      "content": "一",
+      "charStart": 82,
+      "charEnd": 83,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 66,
+      "content": "事",
+      "charStart": 83,
+      "charEnd": 84,
+      "transliteration": "shi4",
+      "translation": "matter; event"
+    },
+    {
+      "offset": 67,
+      "content": "無",
+      "charStart": 84,
+      "charEnd": 85,
+      "transliteration": "wu2",
+      "translation": "not have; without"
+    },
+    {
+      "offset": 68,
+      "content": "成",
+      "charStart": 85,
+      "charEnd": 86,
+      "transliteration": "cheng2",
+      "translation": "accomplish"
+    },
+    {
+      "offset": 69,
+      "content": "忽",
+      "charStart": 87,
+      "charEnd": 88,
+      "transliteration": "hu1",
+      "translation": "suddenly"
+    },
+    {
+      "offset": 70,
+      "content": "念",
+      "charStart": 88,
+      "charEnd": 89,
+      "transliteration": "nian4",
+      "translation": "think of"
+    },
+    {
+      "offset": 71,
+      "content": "及",
+      "charStart": 89,
+      "charEnd": 90,
+      "transliteration": "ji2",
+      "translation": "reach; extend to"
+    },
+    {
+      "offset": 72,
+      "content": "當",
+      "charStart": 90,
+      "charEnd": 91,
+      "transliteration": "dang1",
+      "translation": "that; those"
+    },
+    {
+      "offset": 73,
+      "content": "日",
+      "charStart": 91,
+      "charEnd": 92,
+      "transliteration": "ri4",
+      "translation": "day; time"
+    },
+    {
+      "offset": 74,
+      "content": "所",
+      "charStart": 92,
+      "charEnd": 93,
+      "transliteration": "suo3",
+      "translation": "that which; nominalizer"
+    },
+    {
+      "offset": 75,
+      "content": "有",
+      "charStart": 93,
+      "charEnd": 94,
+      "transliteration": "you3",
+      "translation": "have; exist"
+    },
+    {
+      "offset": 76,
+      "content": "之",
+      "charStart": 94,
+      "charEnd": 95,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 77,
+      "content": "女",
+      "charStart": 95,
+      "charEnd": 96,
+      "transliteration": "nv3",
+      "translation": "woman"
+    },
+    {
+      "offset": 78,
+      "content": "子",
+      "charStart": 96,
+      "charEnd": 97,
+      "transliteration": "zi3",
+      "translation": "person; suffix"
+    },
+    {
+      "offset": 79,
+      "content": "一",
+      "charStart": 98,
+      "charEnd": 99,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 80,
+      "content": "一",
+      "charStart": 99,
+      "charEnd": 100,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 81,
+      "content": "細",
+      "charStart": 100,
+      "charEnd": 101,
+      "transliteration": "xi4",
+      "translation": "closely; in detail"
+    },
+    {
+      "offset": 82,
+      "content": "考",
+      "charStart": 101,
+      "charEnd": 102,
+      "transliteration": "kao3",
+      "translation": "examine"
+    },
+    {
+      "offset": 83,
+      "content": "較",
+      "charStart": 102,
+      "charEnd": 103,
+      "transliteration": "jiao4",
+      "translation": "compare"
+    },
+    {
+      "offset": 84,
+      "content": "去",
+      "charStart": 103,
+      "charEnd": 104,
+      "transliteration": "qu4",
+      "translation": "away"
+    },
+    {
+      "offset": 85,
+      "content": "覺",
+      "charStart": 105,
+      "charEnd": 106,
+      "transliteration": "jue2",
+      "translation": "feel; realize"
+    },
+    {
+      "offset": 86,
+      "content": "其",
+      "charStart": 106,
+      "charEnd": 107,
+      "transliteration": "qi2",
+      "translation": "their; it"
+    },
+    {
+      "offset": 87,
+      "content": "行",
+      "charStart": 107,
+      "charEnd": 108,
+      "transliteration": "xing2",
+      "translation": "conduct"
+    },
+    {
+      "offset": 88,
+      "content": "止",
+      "charStart": 108,
+      "charEnd": 109,
+      "transliteration": "zhi3",
+      "translation": "behavior"
+    },
+    {
+      "offset": 89,
+      "content": "見",
+      "charStart": 109,
+      "charEnd": 110,
+      "transliteration": "jian4",
+      "translation": "insight; see"
+    },
+    {
+      "offset": 90,
+      "content": "識",
+      "charStart": 110,
+      "charEnd": 111,
+      "transliteration": "shi4",
+      "translation": "understanding"
+    },
+    {
+      "offset": 91,
+      "content": "皆",
+      "charStart": 112,
+      "charEnd": 113,
+      "transliteration": "jie1",
+      "translation": "all"
+    },
+    {
+      "offset": 92,
+      "content": "出",
+      "charStart": 113,
+      "charEnd": 114,
+      "transliteration": "chu1",
+      "translation": "exceed; come out"
+    },
+    {
+      "offset": 93,
+      "content": "于",
+      "charStart": 114,
+      "charEnd": 115,
+      "transliteration": "yu2",
+      "translation": "than; at"
+    },
+    {
+      "offset": 94,
+      "content": "我",
+      "charStart": 115,
+      "charEnd": 116,
+      "transliteration": "wo3",
+      "translation": "I; me"
+    },
+    {
+      "offset": 95,
+      "content": "之",
+      "charStart": 116,
+      "charEnd": 117,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 96,
+      "content": "上",
+      "charStart": 117,
+      "charEnd": 118,
+      "transliteration": "shang4",
+      "translation": "above"
+    },
+    {
+      "offset": 97,
+      "content": "何",
+      "charStart": 119,
+      "charEnd": 120,
+      "transliteration": "he2",
+      "translation": "what"
+    },
+    {
+      "offset": 98,
+      "content": "我",
+      "charStart": 120,
+      "charEnd": 121,
+      "transliteration": "wo3",
+      "translation": "I; me"
+    },
+    {
+      "offset": 99,
+      "content": "堂",
+      "charStart": 121,
+      "charEnd": 122,
+      "transliteration": "tang2",
+      "translation": "lofty; imposing"
+    },
+    {
+      "offset": 100,
+      "content": "堂",
+      "charStart": 122,
+      "charEnd": 123,
+      "transliteration": "tang2",
+      "translation": "lofty; imposing"
+    },
+    {
+      "offset": 101,
+      "content": "須",
+      "charStart": 123,
+      "charEnd": 124,
+      "transliteration": "xu1",
+      "translation": "beard"
+    },
+    {
+      "offset": 102,
+      "content": "眉",
+      "charStart": 124,
+      "charEnd": 125,
+      "transliteration": "mei2",
+      "translation": "eyebrows"
+    },
+    {
+      "offset": 103,
+      "content": "誠",
+      "charStart": 126,
+      "charEnd": 127,
+      "transliteration": "cheng2",
+      "translation": "truly"
+    },
+    {
+      "offset": 104,
+      "content": "不",
+      "charStart": 127,
+      "charEnd": 128,
+      "transliteration": "bu4",
+      "translation": "not"
+    },
+    {
+      "offset": 105,
+      "content": "若",
+      "charStart": 128,
+      "charEnd": 129,
+      "transliteration": "ruo4",
+      "translation": "be equal to; like"
+    },
+    {
+      "offset": 106,
+      "content": "彼",
+      "charStart": 129,
+      "charEnd": 130,
+      "transliteration": "bi3",
+      "translation": "those; them"
+    },
+    {
+      "offset": 107,
+      "content": "裙",
+      "charStart": 130,
+      "charEnd": 131,
+      "transliteration": "qun2",
+      "translation": "skirt"
+    },
+    {
+      "offset": 108,
+      "content": "釵",
+      "charStart": 131,
+      "charEnd": 132,
+      "transliteration": "chai1",
+      "translation": "hairpin"
+    },
+    {
+      "offset": 109,
+      "content": "哉",
+      "charStart": 132,
+      "charEnd": 133,
+      "transliteration": "zai1",
+      "translation": "exclamatory particle"
+    },
+    {
+      "offset": 110,
+      "content": "實",
+      "charStart": 134,
+      "charEnd": 135,
+      "transliteration": "shi2",
+      "translation": "truly"
+    },
+    {
+      "offset": 111,
+      "content": "愧",
+      "charStart": 135,
+      "charEnd": 136,
+      "transliteration": "kui4",
+      "translation": "feel ashamed"
+    },
+    {
+      "offset": 112,
+      "content": "則",
+      "charStart": 136,
+      "charEnd": 137,
+      "transliteration": "ze2",
+      "translation": "then; as for"
+    },
+    {
+      "offset": 113,
+      "content": "有",
+      "charStart": 137,
+      "charEnd": 138,
+      "transliteration": "you3",
+      "translation": "have; exist"
+    },
+    {
+      "offset": 114,
+      "content": "余",
+      "charStart": 138,
+      "charEnd": 139,
+      "transliteration": "yu2",
+      "translation": "surplus; remaining"
+    },
+    {
+      "offset": 115,
+      "content": "悔",
+      "charStart": 140,
+      "charEnd": 141,
+      "transliteration": "hui3",
+      "translation": "regret"
+    },
+    {
+      "offset": 116,
+      "content": "又",
+      "charStart": 141,
+      "charEnd": 142,
+      "transliteration": "you4",
+      "translation": "again; also"
+    },
+    {
+      "offset": 117,
+      "content": "無",
+      "charStart": 142,
+      "charEnd": 143,
+      "transliteration": "wu2",
+      "translation": "not have; without"
+    },
+    {
+      "offset": 118,
+      "content": "益",
+      "charStart": 143,
+      "charEnd": 144,
+      "transliteration": "yi4",
+      "translation": "benefit"
+    },
+    {
+      "offset": 119,
+      "content": "之",
+      "charStart": 144,
+      "charEnd": 145,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 120,
+      "content": "大",
+      "charStart": 145,
+      "charEnd": 146,
+      "transliteration": "da4",
+      "translation": "great"
+    },
+    {
+      "offset": 121,
+      "content": "無",
+      "charStart": 146,
+      "charEnd": 147,
+      "transliteration": "wu2",
+      "translation": "not have; without"
+    },
+    {
+      "offset": 122,
+      "content": "可",
+      "charStart": 147,
+      "charEnd": 148,
+      "transliteration": "ke3",
+      "translation": "can"
+    },
+    {
+      "offset": 123,
+      "content": "如",
+      "charStart": 148,
+      "charEnd": 149,
+      "transliteration": "ru2",
+      "translation": "how; what"
+    },
+    {
+      "offset": 124,
+      "content": "何",
+      "charStart": 149,
+      "charEnd": 150,
+      "transliteration": "he2",
+      "translation": "what"
+    },
+    {
+      "offset": 125,
+      "content": "之",
+      "charStart": 150,
+      "charEnd": 151,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 126,
+      "content": "日",
+      "charStart": 151,
+      "charEnd": 152,
+      "transliteration": "ri4",
+      "translation": "day; time"
+    },
+    {
+      "offset": 127,
+      "content": "也",
+      "charStart": 152,
+      "charEnd": 153,
+      "transliteration": "ye3",
+      "translation": "final particle"
+    },
+    {
+      "offset": 128,
+      "content": "當",
+      "charStart": 154,
+      "charEnd": 155,
+      "transliteration": "dang1",
+      "translation": "that; those"
+    },
+    {
+      "offset": 129,
+      "content": "此",
+      "charStart": 155,
+      "charEnd": 156,
+      "transliteration": "ci3",
+      "translation": "this"
+    },
+    {
+      "offset": 130,
+      "content": "則",
+      "charStart": 157,
+      "charEnd": 158,
+      "transliteration": "ze2",
+      "translation": "then; as for"
+    },
+    {
+      "offset": 131,
+      "content": "自",
+      "charStart": 158,
+      "charEnd": 159,
+      "transliteration": "zi4",
+      "translation": "self; oneself"
+    },
+    {
+      "offset": 132,
+      "content": "欲",
+      "charStart": 159,
+      "charEnd": 160,
+      "transliteration": "yu4",
+      "translation": "wish; intend"
+    },
+    {
+      "offset": 133,
+      "content": "將",
+      "charStart": 160,
+      "charEnd": 161,
+      "transliteration": "jiang1",
+      "translation": "take; (disposal marker)"
+    },
+    {
+      "offset": 134,
+      "content": "已",
+      "charStart": 161,
+      "charEnd": 162,
+      "transliteration": "yi3",
+      "translation": "already; past"
+    },
+    {
+      "offset": 135,
+      "content": "往",
+      "charStart": 162,
+      "charEnd": 163,
+      "transliteration": "wang3",
+      "translation": "past"
+    },
+    {
+      "offset": 136,
+      "content": "所",
+      "charStart": 163,
+      "charEnd": 164,
+      "transliteration": "suo3",
+      "translation": "that which; nominalizer"
+    },
+    {
+      "offset": 137,
+      "content": "賴",
+      "charStart": 164,
+      "charEnd": 165,
+      "transliteration": "lai4",
+      "translation": "depend on; rely on"
+    },
+    {
+      "offset": 138,
+      "content": "天",
+      "charStart": 165,
+      "charEnd": 166,
+      "transliteration": "tian1",
+      "translation": "heaven"
+    },
+    {
+      "offset": 139,
+      "content": "恩",
+      "charStart": 166,
+      "charEnd": 167,
+      "transliteration": "en1",
+      "translation": "grace; favor"
+    },
+    {
+      "offset": 140,
+      "content": "祖",
+      "charStart": 167,
+      "charEnd": 168,
+      "transliteration": "zu3",
+      "translation": "ancestors"
+    },
+    {
+      "offset": 141,
+      "content": "德",
+      "charStart": 168,
+      "charEnd": 169,
+      "transliteration": "de2",
+      "translation": "virtue"
+    },
+    {
+      "offset": 142,
+      "content": "錦",
+      "charStart": 170,
+      "charEnd": 171,
+      "transliteration": "jin3",
+      "translation": "brocade"
+    },
+    {
+      "offset": 143,
+      "content": "衣",
+      "charStart": 171,
+      "charEnd": 172,
+      "transliteration": "yi1",
+      "translation": "clothing"
+    },
+    {
+      "offset": 144,
+      "content": "紈",
+      "charStart": 172,
+      "charEnd": 173,
+      "transliteration": "wan2",
+      "translation": "fine silk"
+    },
+    {
+      "offset": 145,
+      "content": "褲",
+      "charStart": 173,
+      "charEnd": 174,
+      "transliteration": "ku4",
+      "translation": "trousers"
+    },
+    {
+      "offset": 146,
+      "content": "之",
+      "charStart": 174,
+      "charEnd": 175,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 147,
+      "content": "時",
+      "charStart": 175,
+      "charEnd": 176,
+      "transliteration": "shi2",
+      "translation": "time"
+    },
+    {
+      "offset": 148,
+      "content": "飫",
+      "charStart": 177,
+      "charEnd": 178,
+      "transliteration": "yu4",
+      "translation": "eat one’s fill"
+    },
+    {
+      "offset": 149,
+      "content": "甘",
+      "charStart": 178,
+      "charEnd": 179,
+      "transliteration": "gan1",
+      "translation": "sweet foods"
+    },
+    {
+      "offset": 150,
+      "content": "饜",
+      "charStart": 179,
+      "charEnd": 180,
+      "transliteration": "yan4",
+      "translation": "be satiated with"
+    },
+    {
+      "offset": 151,
+      "content": "肥",
+      "charStart": 180,
+      "charEnd": 181,
+      "transliteration": "fei2",
+      "translation": "rich foods"
+    },
+    {
+      "offset": 152,
+      "content": "之",
+      "charStart": 181,
+      "charEnd": 182,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 153,
+      "content": "日",
+      "charStart": 182,
+      "charEnd": 183,
+      "transliteration": "ri4",
+      "translation": "day; time"
+    },
+    {
+      "offset": 154,
+      "content": "背",
+      "charStart": 184,
+      "charEnd": 185,
+      "transliteration": "bei4",
+      "translation": "betray; go against"
+    },
+    {
+      "offset": 155,
+      "content": "父",
+      "charStart": 185,
+      "charEnd": 186,
+      "transliteration": "fu4",
+      "translation": "father"
+    },
+    {
+      "offset": 156,
+      "content": "兄",
+      "charStart": 186,
+      "charEnd": 187,
+      "transliteration": "xiong1",
+      "translation": "elder brother"
+    },
+    {
+      "offset": 157,
+      "content": "教",
+      "charStart": 187,
+      "charEnd": 188,
+      "transliteration": "jiao4",
+      "translation": "teach"
+    },
+    {
+      "offset": 158,
+      "content": "育",
+      "charStart": 188,
+      "charEnd": 189,
+      "transliteration": "yu4",
+      "translation": "educate"
+    },
+    {
+      "offset": 159,
+      "content": "之",
+      "charStart": 189,
+      "charEnd": 190,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 160,
+      "content": "恩",
+      "charStart": 190,
+      "charEnd": 191,
+      "transliteration": "en1",
+      "translation": "grace; favor"
+    },
+    {
+      "offset": 161,
+      "content": "負",
+      "charStart": 192,
+      "charEnd": 193,
+      "transliteration": "fu4",
+      "translation": "fail; betray"
+    },
+    {
+      "offset": 162,
+      "content": "師",
+      "charStart": 193,
+      "charEnd": 194,
+      "transliteration": "shi1",
+      "translation": "teacher"
+    },
+    {
+      "offset": 163,
+      "content": "友",
+      "charStart": 194,
+      "charEnd": 195,
+      "transliteration": "you3",
+      "translation": "friend"
+    },
+    {
+      "offset": 164,
+      "content": "規",
+      "charStart": 195,
+      "charEnd": 196,
+      "transliteration": "gui1",
+      "translation": "admonition; correction"
+    },
+    {
+      "offset": 165,
+      "content": "談",
+      "charStart": 196,
+      "charEnd": 197,
+      "transliteration": "tan2",
+      "translation": "counsel; words"
+    },
+    {
+      "offset": 166,
+      "content": "之",
+      "charStart": 197,
+      "charEnd": 198,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 167,
+      "content": "德",
+      "charStart": 198,
+      "charEnd": 199,
+      "transliteration": "de2",
+      "translation": "virtue"
+    },
+    {
+      "offset": 168,
+      "content": "以",
+      "charStart": 200,
+      "charEnd": 201,
+      "transliteration": "yi3",
+      "translation": "in order to; by"
+    },
+    {
+      "offset": 169,
+      "content": "至",
+      "charStart": 201,
+      "charEnd": 202,
+      "transliteration": "zhi4",
+      "translation": "arrive at; up to"
+    },
+    {
+      "offset": 170,
+      "content": "今",
+      "charStart": 202,
+      "charEnd": 203,
+      "transliteration": "jin1",
+      "translation": "now"
+    },
+    {
+      "offset": 171,
+      "content": "日",
+      "charStart": 203,
+      "charEnd": 204,
+      "transliteration": "ri4",
+      "translation": "day; time"
+    },
+    {
+      "offset": 172,
+      "content": "一",
+      "charStart": 204,
+      "charEnd": 205,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 173,
+      "content": "技",
+      "charStart": 205,
+      "charEnd": 206,
+      "transliteration": "ji4",
+      "translation": "skill"
+    },
+    {
+      "offset": 174,
+      "content": "無",
+      "charStart": 206,
+      "charEnd": 207,
+      "transliteration": "wu2",
+      "translation": "not have; without"
+    },
+    {
+      "offset": 175,
+      "content": "成",
+      "charStart": 207,
+      "charEnd": 208,
+      "transliteration": "cheng2",
+      "translation": "accomplish"
+    },
+    {
+      "offset": 176,
+      "content": "半",
+      "charStart": 209,
+      "charEnd": 210,
+      "transliteration": "ban4",
+      "translation": "half"
+    },
+    {
+      "offset": 177,
+      "content": "生",
+      "charStart": 210,
+      "charEnd": 211,
+      "transliteration": "sheng1",
+      "translation": "life"
+    },
+    {
+      "offset": 178,
+      "content": "潦",
+      "charStart": 211,
+      "charEnd": 212,
+      "transliteration": "liao2",
+      "translation": "down-and-out"
+    },
+    {
+      "offset": 179,
+      "content": "倒",
+      "charStart": 212,
+      "charEnd": 213,
+      "transliteration": "dao3",
+      "translation": "fallen; destitute"
+    },
+    {
+      "offset": 180,
+      "content": "之",
+      "charStart": 213,
+      "charEnd": 214,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 181,
+      "content": "罪",
+      "charStart": 214,
+      "charEnd": 215,
+      "transliteration": "zui4",
+      "translation": "fault; guilt"
+    },
+    {
+      "offset": 182,
+      "content": "編",
+      "charStart": 216,
+      "charEnd": 217,
+      "transliteration": "bian1",
+      "translation": "compile"
+    },
+    {
+      "offset": 183,
+      "content": "述",
+      "charStart": 217,
+      "charEnd": 218,
+      "transliteration": "shu4",
+      "translation": "narrate"
+    },
+    {
+      "offset": 184,
+      "content": "一",
+      "charStart": 218,
+      "charEnd": 219,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 185,
+      "content": "集",
+      "charStart": 219,
+      "charEnd": 220,
+      "transliteration": "ji2",
+      "translation": "collection"
+    },
+    {
+      "offset": 186,
+      "content": "以",
+      "charStart": 221,
+      "charEnd": 222,
+      "transliteration": "yi3",
+      "translation": "in order to; by"
+    },
+    {
+      "offset": 187,
+      "content": "告",
+      "charStart": 222,
+      "charEnd": 223,
+      "transliteration": "gao4",
+      "translation": "tell"
+    },
+    {
+      "offset": 188,
+      "content": "天",
+      "charStart": 223,
+      "charEnd": 224,
+      "transliteration": "tian1",
+      "translation": "heaven"
+    },
+    {
+      "offset": 189,
+      "content": "下",
+      "charStart": 224,
+      "charEnd": 225,
+      "transliteration": "xia4",
+      "translation": "under; all (天下)"
+    },
+    {
+      "offset": 190,
+      "content": "人",
+      "charStart": 225,
+      "charEnd": 226,
+      "transliteration": "ren2",
+      "translation": "person"
+    },
+    {
+      "offset": 191,
+      "content": "我",
+      "charStart": 227,
+      "charEnd": 228,
+      "transliteration": "wo3",
+      "translation": "I; me"
+    },
+    {
+      "offset": 192,
+      "content": "之",
+      "charStart": 228,
+      "charEnd": 229,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 193,
+      "content": "罪",
+      "charStart": 229,
+      "charEnd": 230,
+      "transliteration": "zui4",
+      "translation": "fault; guilt"
+    },
+    {
+      "offset": 194,
+      "content": "固",
+      "charStart": 230,
+      "charEnd": 231,
+      "transliteration": "gu4",
+      "translation": "certainly"
+    },
+    {
+      "offset": 195,
+      "content": "不",
+      "charStart": 231,
+      "charEnd": 232,
+      "transliteration": "bu4",
+      "translation": "not"
+    },
+    {
+      "offset": 196,
+      "content": "免",
+      "charStart": 232,
+      "charEnd": 233,
+      "transliteration": "mian3",
+      "translation": "escape"
+    },
+    {
+      "offset": 197,
+      "content": "然",
+      "charStart": 234,
+      "charEnd": 235,
+      "transliteration": "ran2",
+      "translation": "however"
+    },
+    {
+      "offset": 198,
+      "content": "閨",
+      "charStart": 235,
+      "charEnd": 236,
+      "transliteration": "gui1",
+      "translation": "women’s quarters"
+    },
+    {
+      "offset": 199,
+      "content": "閣",
+      "charStart": 236,
+      "charEnd": 237,
+      "transliteration": "ge2",
+      "translation": "chambers"
+    },
+    {
+      "offset": 200,
+      "content": "中",
+      "charStart": 237,
+      "charEnd": 238,
+      "transliteration": "zhong1",
+      "translation": "in; within"
+    },
+    {
+      "offset": 201,
+      "content": "本",
+      "charStart": 238,
+      "charEnd": 239,
+      "transliteration": "ben3",
+      "translation": "originally; inherently"
+    },
+    {
+      "offset": 202,
+      "content": "自",
+      "charStart": 239,
+      "charEnd": 240,
+      "transliteration": "zi4",
+      "translation": "self; oneself"
+    },
+    {
+      "offset": 203,
+      "content": "歷",
+      "charStart": 240,
+      "charEnd": 241,
+      "transliteration": "li4",
+      "translation": "experience; undergo"
+    },
+    {
+      "offset": 204,
+      "content": "歷",
+      "charStart": 241,
+      "charEnd": 242,
+      "transliteration": "li4",
+      "translation": "experience; undergo"
+    },
+    {
+      "offset": 205,
+      "content": "有",
+      "charStart": 242,
+      "charEnd": 243,
+      "transliteration": "you3",
+      "translation": "have; exist"
+    },
+    {
+      "offset": 206,
+      "content": "人",
+      "charStart": 243,
+      "charEnd": 244,
+      "transliteration": "ren2",
+      "translation": "person"
+    },
+    {
+      "offset": 207,
+      "content": "万",
+      "charStart": 245,
+      "charEnd": 246,
+      "transliteration": "wan4",
+      "translation": "absolutely; by no means (萬)"
+    },
+    {
+      "offset": 208,
+      "content": "不",
+      "charStart": 246,
+      "charEnd": 247,
+      "transliteration": "bu4",
+      "translation": "not"
+    },
+    {
+      "offset": 209,
+      "content": "可",
+      "charStart": 247,
+      "charEnd": 248,
+      "transliteration": "ke3",
+      "translation": "can"
+    },
+    {
+      "offset": 210,
+      "content": "因",
+      "charStart": 248,
+      "charEnd": 249,
+      "transliteration": "yin1",
+      "translation": "because"
+    },
+    {
+      "offset": 211,
+      "content": "我",
+      "charStart": 249,
+      "charEnd": 250,
+      "transliteration": "wo3",
+      "translation": "I; me"
+    },
+    {
+      "offset": 212,
+      "content": "之",
+      "charStart": 250,
+      "charEnd": 251,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 213,
+      "content": "不",
+      "charStart": 251,
+      "charEnd": 252,
+      "transliteration": "bu4",
+      "translation": "not"
+    },
+    {
+      "offset": 214,
+      "content": "肖",
+      "charStart": 252,
+      "charEnd": 253,
+      "transliteration": "xiao4",
+      "translation": "worthy; resembling"
+    },
+    {
+      "offset": 215,
+      "content": "自",
+      "charStart": 254,
+      "charEnd": 255,
+      "transliteration": "zi4",
+      "translation": "self; oneself"
+    },
+    {
+      "offset": 216,
+      "content": "護",
+      "charStart": 255,
+      "charEnd": 256,
+      "transliteration": "hu4",
+      "translation": "protect"
+    },
+    {
+      "offset": 217,
+      "content": "己",
+      "charStart": 256,
+      "charEnd": 257,
+      "transliteration": "ji3",
+      "translation": "oneself"
+    },
+    {
+      "offset": 218,
+      "content": "短",
+      "charStart": 257,
+      "charEnd": 258,
+      "transliteration": "duan3",
+      "translation": "shortcoming"
+    },
+    {
+      "offset": 219,
+      "content": "一",
+      "charStart": 259,
+      "charEnd": 260,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 220,
+      "content": "并",
+      "charStart": 260,
+      "charEnd": 261,
+      "transliteration": "bing4",
+      "translation": "together; also"
+    },
+    {
+      "offset": 221,
+      "content": "使",
+      "charStart": 261,
+      "charEnd": 262,
+      "transliteration": "shi3",
+      "translation": "cause; let"
+    },
+    {
+      "offset": 222,
+      "content": "其",
+      "charStart": 262,
+      "charEnd": 263,
+      "transliteration": "qi2",
+      "translation": "their; it"
+    },
+    {
+      "offset": 223,
+      "content": "泯",
+      "charStart": 263,
+      "charEnd": 264,
+      "transliteration": "min3",
+      "translation": "obliterate"
+    },
+    {
+      "offset": 224,
+      "content": "滅",
+      "charStart": 264,
+      "charEnd": 265,
+      "transliteration": "mie4",
+      "translation": "extinguish"
+    },
+    {
+      "offset": 225,
+      "content": "也",
+      "charStart": 265,
+      "charEnd": 266,
+      "transliteration": "ye3",
+      "translation": "final particle"
+    },
+    {
+      "offset": 226,
+      "content": "雖",
+      "charStart": 267,
+      "charEnd": 268,
+      "transliteration": "sui1",
+      "translation": "although"
+    },
+    {
+      "offset": 227,
+      "content": "今",
+      "charStart": 268,
+      "charEnd": 269,
+      "transliteration": "jin1",
+      "translation": "now"
+    },
+    {
+      "offset": 228,
+      "content": "日",
+      "charStart": 269,
+      "charEnd": 270,
+      "transliteration": "ri4",
+      "translation": "day; time"
+    },
+    {
+      "offset": 229,
+      "content": "之",
+      "charStart": 270,
+      "charEnd": 271,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 230,
+      "content": "茅",
+      "charStart": 271,
+      "charEnd": 272,
+      "transliteration": "mao2",
+      "translation": "thatch"
+    },
+    {
+      "offset": 231,
+      "content": "椽",
+      "charStart": 272,
+      "charEnd": 273,
+      "transliteration": "chuan2",
+      "translation": "rafter"
+    },
+    {
+      "offset": 232,
+      "content": "蓬",
+      "charStart": 273,
+      "charEnd": 274,
+      "transliteration": "peng2",
+      "translation": "straw; humble"
+    },
+    {
+      "offset": 233,
+      "content": "牖",
+      "charStart": 274,
+      "charEnd": 275,
+      "transliteration": "you3",
+      "translation": "window"
+    },
+    {
+      "offset": 234,
+      "content": "瓦",
+      "charStart": 276,
+      "charEnd": 277,
+      "transliteration": "wa3",
+      "translation": "tile; earthen"
+    },
+    {
+      "offset": 235,
+      "content": "灶",
+      "charStart": 277,
+      "charEnd": 278,
+      "transliteration": "zao4",
+      "translation": "stove"
+    },
+    {
+      "offset": 236,
+      "content": "繩",
+      "charStart": 278,
+      "charEnd": 279,
+      "transliteration": "sheng2",
+      "translation": "rope"
+    },
+    {
+      "offset": 237,
+      "content": "床",
+      "charStart": 279,
+      "charEnd": 280,
+      "transliteration": "chuang2",
+      "translation": "bed"
+    },
+    {
+      "offset": 238,
+      "content": "其",
+      "charStart": 281,
+      "charEnd": 282,
+      "transliteration": "qi2",
+      "translation": "their; it"
+    },
+    {
+      "offset": 239,
+      "content": "晨",
+      "charStart": 282,
+      "charEnd": 283,
+      "transliteration": "chen2",
+      "translation": "morning"
+    },
+    {
+      "offset": 240,
+      "content": "夕",
+      "charStart": 283,
+      "charEnd": 284,
+      "transliteration": "xi4",
+      "translation": "evening"
+    },
+    {
+      "offset": 241,
+      "content": "風",
+      "charStart": 284,
+      "charEnd": 285,
+      "transliteration": "feng1",
+      "translation": "wind"
+    },
+    {
+      "offset": 242,
+      "content": "露",
+      "charStart": 285,
+      "charEnd": 286,
+      "transliteration": "lu4",
+      "translation": "dew"
+    },
+    {
+      "offset": 243,
+      "content": "階",
+      "charStart": 287,
+      "charEnd": 288,
+      "transliteration": "jie1",
+      "translation": "steps"
+    },
+    {
+      "offset": 244,
+      "content": "柳",
+      "charStart": 288,
+      "charEnd": 289,
+      "transliteration": "liu3",
+      "translation": "willow"
+    },
+    {
+      "offset": 245,
+      "content": "庭",
+      "charStart": 289,
+      "charEnd": 290,
+      "transliteration": "ting2",
+      "translation": "courtyard"
+    },
+    {
+      "offset": 246,
+      "content": "花",
+      "charStart": 290,
+      "charEnd": 291,
+      "transliteration": "hua1",
+      "translation": "flower"
+    },
+    {
+      "offset": 247,
+      "content": "亦",
+      "charStart": 292,
+      "charEnd": 293,
+      "transliteration": "yi4",
+      "translation": "also"
+    },
+    {
+      "offset": 248,
+      "content": "未",
+      "charStart": 293,
+      "charEnd": 294,
+      "transliteration": "wei4",
+      "translation": "not yet"
+    },
+    {
+      "offset": 249,
+      "content": "有",
+      "charStart": 294,
+      "charEnd": 295,
+      "transliteration": "you3",
+      "translation": "have; exist"
+    },
+    {
+      "offset": 250,
+      "content": "妨",
+      "charStart": 295,
+      "charEnd": 296,
+      "transliteration": "fang2",
+      "translation": "hinder"
+    },
+    {
+      "offset": 251,
+      "content": "我",
+      "charStart": 296,
+      "charEnd": 297,
+      "transliteration": "wo3",
+      "translation": "I; me"
+    },
+    {
+      "offset": 252,
+      "content": "之",
+      "charStart": 297,
+      "charEnd": 298,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 253,
+      "content": "襟",
+      "charStart": 298,
+      "charEnd": 299,
+      "transliteration": "jin1",
+      "translation": "breast; mind"
+    },
+    {
+      "offset": 254,
+      "content": "怀",
+      "charStart": 299,
+      "charEnd": 300,
+      "transliteration": "huai2",
+      "translation": "bosom; mind"
+    },
+    {
+      "offset": 255,
+      "content": "筆",
+      "charStart": 300,
+      "charEnd": 301,
+      "transliteration": "bi3",
+      "translation": "writing brush"
+    },
+    {
+      "offset": 256,
+      "content": "墨",
+      "charStart": 301,
+      "charEnd": 302,
+      "transliteration": "mo4",
+      "translation": "ink"
+    },
+    {
+      "offset": 257,
+      "content": "者",
+      "charStart": 302,
+      "charEnd": 303,
+      "transliteration": "zhe3",
+      "translation": "nominalizer; one who"
+    },
+    {
+      "offset": 258,
+      "content": "雖",
+      "charStart": 304,
+      "charEnd": 305,
+      "transliteration": "sui1",
+      "translation": "although"
+    },
+    {
+      "offset": 259,
+      "content": "我",
+      "charStart": 305,
+      "charEnd": 306,
+      "transliteration": "wo3",
+      "translation": "I; me"
+    },
+    {
+      "offset": 260,
+      "content": "未",
+      "charStart": 306,
+      "charEnd": 307,
+      "transliteration": "wei4",
+      "translation": "not yet"
+    },
+    {
+      "offset": 261,
+      "content": "學",
+      "charStart": 307,
+      "charEnd": 308,
+      "transliteration": "xue2",
+      "translation": "learned"
+    },
+    {
+      "offset": 262,
+      "content": "下",
+      "charStart": 309,
+      "charEnd": 310,
+      "transliteration": "xia4",
+      "translation": "under; all (天下)"
+    },
+    {
+      "offset": 263,
+      "content": "筆",
+      "charStart": 310,
+      "charEnd": 311,
+      "transliteration": "bi3",
+      "translation": "writing brush"
+    },
+    {
+      "offset": 264,
+      "content": "無",
+      "charStart": 311,
+      "charEnd": 312,
+      "transliteration": "wu2",
+      "translation": "not have; without"
+    },
+    {
+      "offset": 265,
+      "content": "文",
+      "charStart": 312,
+      "charEnd": 313,
+      "transliteration": "wen2",
+      "translation": "literary writing"
+    },
+    {
+      "offset": 266,
+      "content": "又",
+      "charStart": 314,
+      "charEnd": 315,
+      "transliteration": "you4",
+      "translation": "again; also"
+    },
+    {
+      "offset": 267,
+      "content": "何",
+      "charStart": 315,
+      "charEnd": 316,
+      "transliteration": "he2",
+      "translation": "what"
+    },
+    {
+      "offset": 268,
+      "content": "妨",
+      "charStart": 316,
+      "charEnd": 317,
+      "transliteration": "fang2",
+      "translation": "hinder"
+    },
+    {
+      "offset": 269,
+      "content": "用",
+      "charStart": 317,
+      "charEnd": 318,
+      "transliteration": "yong4",
+      "translation": "use"
+    },
+    {
+      "offset": 270,
+      "content": "假",
+      "charStart": 318,
+      "charEnd": 319,
+      "transliteration": "jia3",
+      "translation": "false; fictive"
+    },
+    {
+      "offset": 271,
+      "content": "語",
+      "charStart": 319,
+      "charEnd": 320,
+      "transliteration": "yu3",
+      "translation": "words"
+    },
+    {
+      "offset": 272,
+      "content": "村",
+      "charStart": 320,
+      "charEnd": 321,
+      "transliteration": "cun1",
+      "translation": "rustic"
+    },
+    {
+      "offset": 273,
+      "content": "言",
+      "charStart": 321,
+      "charEnd": 322,
+      "transliteration": "yan2",
+      "translation": "speech"
+    },
+    {
+      "offset": 274,
+      "content": "敷",
+      "charStart": 323,
+      "charEnd": 324,
+      "transliteration": "fu1",
+      "translation": "unfold; elaborate"
+    },
+    {
+      "offset": 275,
+      "content": "演",
+      "charStart": 324,
+      "charEnd": 325,
+      "transliteration": "yan3",
+      "translation": "develop; narrate"
+    },
+    {
+      "offset": 276,
+      "content": "出",
+      "charStart": 325,
+      "charEnd": 326,
+      "transliteration": "chu1",
+      "translation": "exceed; come out"
+    },
+    {
+      "offset": 277,
+      "content": "一",
+      "charStart": 326,
+      "charEnd": 327,
+      "transliteration": "yi1",
+      "translation": "one; a"
+    },
+    {
+      "offset": 278,
+      "content": "段",
+      "charStart": 327,
+      "charEnd": 328,
+      "transliteration": "duan4",
+      "translation": "section; passage"
+    },
+    {
+      "offset": 279,
+      "content": "故",
+      "charStart": 328,
+      "charEnd": 329,
+      "transliteration": "gu4",
+      "translation": "therefore"
+    },
+    {
+      "offset": 280,
+      "content": "事",
+      "charStart": 329,
+      "charEnd": 330,
+      "transliteration": "shi4",
+      "translation": "matter; event"
+    },
+    {
+      "offset": 281,
+      "content": "來",
+      "charStart": 330,
+      "charEnd": 331,
+      "transliteration": "lai2",
+      "translation": "come; (resultative)"
+    },
+    {
+      "offset": 282,
+      "content": "亦",
+      "charStart": 332,
+      "charEnd": 333,
+      "transliteration": "yi4",
+      "translation": "also"
+    },
+    {
+      "offset": 283,
+      "content": "可",
+      "charStart": 333,
+      "charEnd": 334,
+      "transliteration": "ke3",
+      "translation": "can"
+    },
+    {
+      "offset": 284,
+      "content": "使",
+      "charStart": 334,
+      "charEnd": 335,
+      "transliteration": "shi3",
+      "translation": "cause; let"
+    },
+    {
+      "offset": 285,
+      "content": "閨",
+      "charStart": 335,
+      "charEnd": 336,
+      "transliteration": "gui1",
+      "translation": "women’s quarters"
+    },
+    {
+      "offset": 286,
+      "content": "閣",
+      "charStart": 336,
+      "charEnd": 337,
+      "transliteration": "ge2",
+      "translation": "chambers"
+    },
+    {
+      "offset": 287,
+      "content": "昭",
+      "charStart": 337,
+      "charEnd": 338,
+      "transliteration": "zhao1",
+      "translation": "make manifest"
+    },
+    {
+      "offset": 288,
+      "content": "傳",
+      "charStart": 338,
+      "charEnd": 339,
+      "transliteration": "chuan2",
+      "translation": "transmit; be handed down"
+    },
+    {
+      "offset": 289,
+      "content": "复",
+      "charStart": 340,
+      "charEnd": 341,
+      "transliteration": "fu4",
+      "translation": "again; moreover"
+    },
+    {
+      "offset": 290,
+      "content": "可",
+      "charStart": 341,
+      "charEnd": 342,
+      "transliteration": "ke3",
+      "translation": "can"
+    },
+    {
+      "offset": 291,
+      "content": "悅",
+      "charStart": 342,
+      "charEnd": 343,
+      "transliteration": "yue4",
+      "translation": "delight"
+    },
+    {
+      "offset": 292,
+      "content": "世",
+      "charStart": 343,
+      "charEnd": 344,
+      "transliteration": "shi4",
+      "translation": "world"
+    },
+    {
+      "offset": 293,
+      "content": "之",
+      "charStart": 344,
+      "charEnd": 345,
+      "transliteration": "zhi1",
+      "translation": "of; nominal linker"
+    },
+    {
+      "offset": 294,
+      "content": "目",
+      "charStart": 345,
+      "charEnd": 346,
+      "transliteration": "mu4",
+      "translation": "eyes"
+    },
+    {
+      "offset": 295,
+      "content": "破",
+      "charStart": 347,
+      "charEnd": 348,
+      "transliteration": "po4",
+      "translation": "dispel"
+    },
+    {
+      "offset": 296,
+      "content": "人",
+      "charStart": 348,
+      "charEnd": 349,
+      "transliteration": "ren2",
+      "translation": "person"
+    },
+    {
+      "offset": 297,
+      "content": "愁",
+      "charStart": 349,
+      "charEnd": 350,
+      "transliteration": "chou2",
+      "translation": "sorrow"
+    },
+    {
+      "offset": 298,
+      "content": "悶",
+      "charStart": 350,
+      "charEnd": 351,
+      "transliteration": "men4",
+      "translation": "distress"
+    },
+    {
+      "offset": 299,
+      "content": "不",
+      "charStart": 352,
+      "charEnd": 353,
+      "transliteration": "bu4",
+      "translation": "not"
+    },
+    {
+      "offset": 300,
+      "content": "亦",
+      "charStart": 353,
+      "charEnd": 354,
+      "transliteration": "yi4",
+      "translation": "also"
+    },
+    {
+      "offset": 301,
+      "content": "宜",
+      "charStart": 354,
+      "charEnd": 355,
+      "transliteration": "yi2",
+      "translation": "appropriate"
+    },
+    {
+      "offset": 302,
+      "content": "乎",
+      "charStart": 355,
+      "charEnd": 356,
+      "transliteration": "hu1",
+      "translation": "interrogative/exclamatory particle"
+    },
+    {
+      "offset": 303,
+      "content": "故",
+      "charStart": 358,
+      "charEnd": 359,
+      "transliteration": "gu4",
+      "translation": "therefore"
+    },
+    {
+      "offset": 304,
+      "content": "曰",
+      "charStart": 359,
+      "charEnd": 360,
+      "transliteration": "yue1",
+      "translation": "say; be called"
+    },
+    {
+      "offset": 305,
+      "content": "賈",
+      "charStart": 361,
+      "charEnd": 362,
+      "transliteration": "jia3",
+      "translation": "Jia (surname)"
+    },
+    {
+      "offset": 306,
+      "content": "雨",
+      "charStart": 362,
+      "charEnd": 363,
+      "transliteration": "yu3",
+      "translation": "rain"
+    },
+    {
+      "offset": 307,
+      "content": "村",
+      "charStart": 363,
+      "charEnd": 364,
+      "transliteration": "cun1",
+      "translation": "rustic"
+    },
+    {
+      "offset": 308,
+      "content": "云",
+      "charStart": 365,
+      "charEnd": 366,
+      "transliteration": "yun2",
+      "translation": "say"
+    },
+    {
+      "offset": 309,
+      "content": "云",
+      "charStart": 366,
+      "charEnd": 367,
+      "transliteration": "yun2",
+      "translation": "say"
+    }
+  ],
+  "glosses": [
+    {
+      "id": "gloss-001",
+      "start": 0,
+      "end": 6,
+      "content": "此開卷第一回也: This is the opening chapter of the book. Grammar: topic-comment clause; 也 marks a declarative/explanatory ending"
+    },
+    {
+      "id": "gloss-002",
+      "start": 7,
+      "end": 10,
+      "content": "作者自云: the author himself says Grammar: 自 is reflexive/emphatic; 云 introduces a quotation"
+    },
+    {
+      "id": "gloss-003",
+      "start": 11,
+      "end": 20,
+      "content": "因曾歷過一番夢幻之后: because he had once undergone an episode of dream and illusion Grammar: 因 introduces reason; 曾 marks prior experience; 過 is experiential aspect; 之 links noun modifiers; 后 means 'after'"
+    },
+    {
+      "id": "gloss-004",
+      "start": 21,
+      "end": 26,
+      "content": "故將真事隱去: therefore he conceals the true events Grammar: 故 marks result; 將 introduces the object affected; 去 is directional/resultative"
+    },
+    {
+      "id": "gloss-005",
+      "start": 27,
+      "end": 32,
+      "content": "而借通靈之說: and instead borrows the account of '通靈' Grammar: 而 links clauses; 之 is an attributive linker"
+    },
+    {
+      "id": "gloss-006",
+      "start": 33,
+      "end": 40,
+      "content": "撰此石頭記一書也: to compose this book, The Story of the Stone Grammar: 此 demonstrative; 一書 is a numeral-classifier/noun phrase; 也 marks assertion"
+    },
+    {
+      "id": "gloss-007",
+      "start": 41,
+      "end": 47,
+      "content": "故曰甄士隱云云: hence the name 'Zhen Shiyin,' and so forth Grammar: 曰 introduces a name/quotation; 云云 signals 'and so on'"
+    },
+    {
+      "id": "gloss-008",
+      "start": 48,
+      "end": 56,
+      "content": "但書中所記何事何人: But what events and what people are recorded in the book? Grammar: 但 marks contrast; 所 + verb nominalizes 'that which is recorded'; 何 is interrogative"
+    },
+    {
+      "id": "gloss-009",
+      "start": 57,
+      "end": 59,
+      "content": "自又云: he himself further says Grammar: 自 is reflexive/emphatic; 又 means 'further'; 云 introduces quotation"
+    },
+    {
+      "id": "gloss-010",
+      "start": 60,
+      "end": 68,
+      "content": "今風塵碌碌一事無成: now, amid the dust and bustle of the world, I have accomplished nothing Grammar: 今 sets time; 碌碌 is reduplicative descriptive expression; 一事無成 is a fixed negative-result phrase"
+    },
+    {
+      "id": "gloss-011",
+      "start": 69,
+      "end": 78,
+      "content": "忽念及當日所有之女子: suddenly I think of the women who were there in those days Grammar: 及 means 'come to'; 所有 is 'those who/that which existed'; 之 links modifier to noun"
+    },
+    {
+      "id": "gloss-012",
+      "start": 79,
+      "end": 84,
+      "content": "一一細考較去: examining and comparing them one by one in detail Grammar: 一一 is distributive reduplication; 細 modifies the verbal phrase; 去 is a directional/completive complement"
+    },
+    {
+      "id": "gloss-013",
+      "start": 85,
+      "end": 96,
+      "content": "覺其行止見識皆出于我之上: I realize that their conduct and understanding all surpass mine Grammar: 其 is possessive; 皆 scopes over the predicate; 出于 means 'exceed/be above'; 之 links 我 to 上"
+    },
+    {
+      "id": "gloss-014",
+      "start": 97,
+      "end": 109,
+      "content": "何我堂堂須眉誠不若彼裙釵哉: How is it that I, a full-grown bearded man, am truly not the equal of those women? Grammar: 何 introduces rhetorical question; 誠 is an adverb 'truly'; 不若 means 'not equal to'; 哉 marks exclamation/question"
+    },
+    {
+      "id": "gloss-015",
+      "start": 110,
+      "end": 118,
+      "content": "實愧則有余悔又無益: I have more than enough shame, but regret is useless Grammar: 則 marks contrast/qualification; 有余 means 'more than enough'; 又 adds the second clause"
+    },
+    {
+      "id": "gloss-016",
+      "start": 119,
+      "end": 127,
+      "content": "之大無可如何之日也: this is a day of utter helplessness Grammar: 之 links modifiers; 無可如何 is an idiom meaning 'there is nothing one can do'; 也 closes the clause"
+    },
+    {
+      "id": "gloss-017",
+      "start": 128,
+      "end": 141,
+      "content": "當此則自欲將已往所賴天恩祖德: At this point, I wish to take the former days in which I relied on Heaven's grace and ancestral virtue... Grammar: 當此 means 'at this point'; 則 marks consequence; 欲 marks intention; 將 introduces the object; 所 nominalizes 賴"
+    },
+    {
+      "id": "gloss-018",
+      "start": 142,
+      "end": 153,
+      "content": "錦衣紈褲之時飫甘饜肥之日: the time of brocade clothes and silk trousers, the days of eating one's fill of delicacies Grammar: 之 links descriptive phrases to 時/日; paired parallel phrases"
+    },
+    {
+      "id": "gloss-019",
+      "start": 154,
+      "end": 167,
+      "content": "背父兄教育之恩負師友規談之德: when I went against the kindness of my father and elder brother's education, and failed the moral instruction of teachers and friends Grammar: 之 links modifiers to 恩/德; 背 and 負 are parallel verbs"
+    },
+    {
+      "id": "gloss-020",
+      "start": 168,
+      "end": 181,
+      "content": "以至今日一技無成半生潦倒之罪: and so came to the present with no skill accomplished—the fault of a half-life spent in failure Grammar: 以至 marks endpoint/result; 一技無成 is a compact negative construction; 之 nominalizes the preceding description as 罪's modifier"
+    },
+    {
+      "id": "gloss-021",
+      "start": 182,
+      "end": 190,
+      "content": "編述一集以告天下人: I compile and narrate a collection in order to tell the people under heaven Grammar: 一集 is numeral + classifier/noun; 以 introduces purpose"
+    },
+    {
+      "id": "gloss-022",
+      "start": 191,
+      "end": 196,
+      "content": "我之罪固不免: My guilt certainly cannot be escaped Grammar: 之 marks possession/attributive relation; 固 is an adverb 'certainly'; 不免 means 'cannot avoid'"
+    },
+    {
+      "id": "gloss-023",
+      "start": 197,
+      "end": 206,
+      "content": "然閨閣中本自歷歷有人: nevertheless, there have always plainly been remarkable people in the women's quarters Grammar: 然 marks concession/contrast; 本自 emphasizes 'from the beginning/inherently'; 歷歷 means clearly, distinctly"
+    },
+    {
+      "id": "gloss-024",
+      "start": 207,
+      "end": 225,
+      "content": "万不可因我之不肖自護己短一并使其泯滅也: one absolutely must not, because of my unworthiness, protect my own shortcomings and thereby cause them all to be obliterated Grammar: 万 (萬) is emphatic 'absolutely'; 因 introduces cause; 之 nominalizes 不肖; 使 introduces causative construction; 其 refers back to those women/people; 也 closes the assertion"
+    },
+    {
+      "id": "gloss-025",
+      "start": 226,
+      "end": 237,
+      "content": "雖今日之茅椽蓬牖瓦灶繩床: Although today I have thatched rafters and a humble window, an earthen stove and a rope bed Grammar: 雖 introduces concessive clause; 之 links 今日 to its description"
+    },
+    {
+      "id": "gloss-026",
+      "start": 238,
+      "end": 246,
+      "content": "其晨夕風露階柳庭花: its morning and evening winds and dew, the willows by the steps and flowers in the courtyard Grammar: 其 is possessive; paired time/place phrases create parallel imagery"
+    },
+    {
+      "id": "gloss-027",
+      "start": 247,
+      "end": 257,
+      "content": "亦未有妨我之襟怀筆墨者: these things still do not hinder my mind and my writing Grammar: 亦 means 'also/still'; 未有妨 is 'have not hindered'; 之 links 我 to 襟懷筆墨; 者 nominalizes the clause/subject"
+    },
+    {
+      "id": "gloss-028",
+      "start": 258,
+      "end": 265,
+      "content": "雖我未學下筆無文: Although I am unlearned and have no literary skill when I put brush to paper Grammar: 雖 introduces concession; 未 marks lack/not having; 下筆 is 'put brush to paper'"
+    },
+    {
+      "id": "gloss-029",
+      "start": 266,
+      "end": 281,
+      "content": "又何妨用假語村言敷演出一段故事來: why should it matter if I use fictive words and rustic speech to develop a story? Grammar: 何妨 is rhetorical 'why should it matter'; 用 introduces means; 敷演 is coordinated verb; 出/來 are directional-resultative complements"
+    },
+    {
+      "id": "gloss-030",
+      "start": 282,
+      "end": 288,
+      "content": "亦可使閨閣昭傳: it can also cause the women of the inner chambers to be made manifest and transmitted Grammar: 可 marks possibility; 使 introduces causative construction; 昭傳 means 'be clearly made known and passed down'"
+    },
+    {
+      "id": "gloss-031",
+      "start": 289,
+      "end": 298,
+      "content": "复可悅世之目破人愁悶: and can also delight the eyes of the world and dispel people's sorrow and distress Grammar: 复 (復) means 'also/further'; 之 links 世 to 目; 破 is transitive 'dispel'"
+    },
+    {
+      "id": "gloss-032",
+      "start": 299,
+      "end": 302,
+      "content": "不亦宜乎: would that not be appropriate? Grammar: 不亦...乎 is a rhetorical question pattern: 'is it not also...?'"
+    },
+    {
+      "id": "gloss-033",
+      "start": 303,
+      "end": 309,
+      "content": "hence the name 'Jia Yucun,' and so forth\n故 marks conclusion; 曰 introduces the name; 云云 signals 'and so on'"
+    }
+  ]
+}

@@ -453,3 +453,83 @@ button.tok.tok-in-span[aria-pressed="true"] {
 .gloss-compose-submit:hover {
   border-color: #d6d3d1;
 }
+
+.gloss-compose-submit:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.create-passage-dialog {
+  width: min(36rem, calc(100vw - 2rem));
+  padding: 0;
+  border: 1px solid var(--color-panel-border);
+  border-radius: 8px;
+  background: var(--color-passage-bg);
+  color: inherit;
+  box-shadow: 0 12px 40px rgba(28, 25, 23, 0.18);
+}
+
+.create-passage-dialog::backdrop {
+  background: rgba(28, 25, 23, 0.35);
+}
+
+.create-passage-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.create-passage-heading {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.create-passage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.create-passage-field > span,
+.create-passage-mode > legend {
+  color: var(--color-panel-body);
+}
+
+.create-passage-mode {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.create-passage-mode > legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.create-passage-text {
+  min-height: 10rem;
+  font-family: var(--font-reading);
+  line-height: 1.5;
+}
+
+.create-passage-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.85rem;
+}
+
+.create-passage-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

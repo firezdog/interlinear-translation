@@ -6,19 +6,25 @@ import { buildGlossesByToken } from "@/passage/buildGlossesByToken";
 import { studyTokensFor } from "@/passage/projectPassage";
 import { ReadingColumn } from "@/components/ReadingColumn";
 import { StudyRail } from "@/components/StudyRail";
+import {
+    CreatePassageDialog,
+    type CreatePassageResult,
+} from "@/components/CreatePassageDialog";
 import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
 
-const passageOptions = [
+const initialPassageOptions = [
     { key: "oku-no-hosomichi", name: "Oku No Hosomichi" },
     { key: "ovid", name: "Ovid's Metamorphoses" },
     { key: "quran", name: "The Quran" },
     { key: "jing-ye-si", name: "靜夜思 (Jing Ye Si)" },
     { key: "notes-underground", name: "Notes From Underground" },
+    { key: "hong-lou-meng", name: "Dream of the Red Chamber" },
 ];
 
 type SaveStatus = "idle" | "saving" | "saved" | "error";
 
 function App() {
+    const [passageOptions, setPassageOptions] = useState(initialPassageOptions);
     const [selectedKey, setSelectedKey] = useState("oku-no-hosomichi");
     const [passage, setPassage] = useState<Passage | null>(null);
     const [error, setError] = useState<string | null>(null);
@@ -30,6 +36,7 @@ function App() {
     const [dirty, setDirty] = useState(false);
     const [saveStatus, setSaveStatus] = useState<SaveStatus>("idle");
     const [saveError, setSaveError] = useState<string | null>(null);
+    const [createOpen, setCreateOpen] = useState(false);
 
     const glossesByToken = useMemo(
         () =>
@@ -206,6 +213,20 @@ function App() {
         }
     }, [passage, selectedKey, saveStatus]);
 
+    const onPassageCreated = useCallback((result: CreatePassageResult) => {
+        setPassageOptions((prev) => {
+            if (prev.some((opt) => opt.key === result.key)) {
+                return prev.map((opt) =>
+                    opt.key === result.key
+                        ? { ...opt, name: result.title }
+                        : opt
+                );
+            }
+            return [...prev, { key: result.key, name: result.title }];
+        });
+        setSelectedKey(result.key);
+    }, []);
+
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
 
     const saveLabel =
@@ -239,6 +260,13 @@ function App() {
                         ))}
                     </select>
                 </label>
+                <button
+                    type="button"
+                    className="gloss-compose-submit"
+                    onClick={() => setCreateOpen(true)}
+                >
+                    New passage
+                </button>
                 <label className="inline-flex items-center gap-2 cursor-pointer">
                     <input
                         type="checkbox"
@@ -292,6 +320,11 @@ function App() {
                     onUpdateToken={onUpdateToken}
                 />
             </div>
+            <CreatePassageDialog
+                open={createOpen}
+                onClose={() => setCreateOpen(false)}
+                onCreated={onPassageCreated}
+            />
         </div>
     );
 }
