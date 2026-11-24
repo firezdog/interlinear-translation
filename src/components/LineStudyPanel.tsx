@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Gloss, Token } from "@/passage/types";
 
 function LineStudyPanel({
@@ -12,6 +12,16 @@ function LineStudyPanel({
     focusedGloss: Gloss | null;
     onSelectToken: (offset: number) => void;
 }) {
+    const selectedRef = useRef<HTMLButtonElement | null>(null);
+
+    useEffect(() => {
+        if (selectedToken < 0) return;
+        selectedRef.current?.scrollIntoView({
+            block: "nearest",
+            inline: "nearest",
+        });
+    }, [selectedToken, tokens]);
+
     const caption = focusedGloss
         ? "Gloss span (aligned study)"
         : tokens.length > 0
@@ -36,6 +46,11 @@ function LineStudyPanel({
                         {tokens.map((token) => (
                             <button
                                 key={token.offset}
+                                ref={
+                                    selectedToken === token.offset
+                                        ? selectedRef
+                                        : undefined
+                                }
                                 type="button"
                                 className={`study-unit${inFocusedGloss(token.offset) ? " tok-in-span" : ""}`}
                                 aria-pressed={selectedToken === token.offset}
