@@ -14,7 +14,7 @@
   --font-ui: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
   --color-tok-hover: #f5f5f4;
   --color-tok-selected: #fde68a;
-  --color-tok-span: #ffedd5;
+  --color-tok-span: #e0f2fe;
   --color-gloss-underline: #d6d3d1;
   --color-panel-border: #e7e5e4;
   --color-panel-muted: #a8a29e;
@@ -345,8 +345,8 @@ button.tok.tok-in-span[aria-pressed="true"] {
 }
 
 .gloss-card.is-span-focus {
-  border-color: #fb923c;
-  background: #fff7ed;
+  border-color: #7dd3fc;
+  background: #f0f9ff;
 }
 
 .gloss-card .span {

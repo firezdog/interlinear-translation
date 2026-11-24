@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Gloss, Passage } from "@/passage/types";
 import { glossSpanText } from "@/passage/projectPassage";
 import type { TokenRange } from "@/passage/selection";
@@ -21,10 +21,19 @@ function GlossPanel({
     onAddGloss: (content: string) => void;
 }) {
     const [draft, setDraft] = useState("");
+    const focusedCardRef = useRef<HTMLButtonElement | null>(null);
 
     useEffect(() => {
         if (!selectionRange) setDraft("");
     }, [selectionRange]);
+
+    useEffect(() => {
+        if (!focusedGloss) return;
+        focusedCardRef.current?.scrollIntoView({
+            block: "nearest",
+            inline: "nearest",
+        });
+    }, [focusedGloss]);
 
     const ordered = useMemo(
         () =>
@@ -45,6 +54,11 @@ function GlossPanel({
               })
             : "";
 
+    const submitDraft = () => {
+        onAddGloss(draft);
+        setDraft("");
+    };
+
     return (
         <section className="study-panel study-panel-gloss" aria-label="Glosses">
             <h2>Glosses</h2>
@@ -54,12 +68,21 @@ function GlossPanel({
                         <p className="gloss-hint">
                             Span: {draftSpan}
                             {" · "}
-                            Shift-click to extend the range
+                            Shift-click to extend · ⌘/Ctrl+Enter to add
                         </p>
                         <textarea
                             className="gloss-compose-input"
                             value={draft}
                             onChange={(e) => setDraft(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (
+                                    e.key === "Enter" &&
+                                    (e.metaKey || e.ctrlKey)
+                                ) {
+                                    e.preventDefault();
+                                    submitDraft();
+                                }
+                            }}
                             placeholder="Commentary for this span"
                             rows={3}
                             aria-label="New gloss commentary"
@@ -67,10 +90,7 @@ function GlossPanel({
                         <button
                             type="button"
                             className="gloss-compose-submit"
-                            onClick={() => {
-                                onAddGloss(draft);
-                                setDraft("");
-                            }}
+                            onClick={submitDraft}
                         >
                             Add gloss
                         </button>
@@ -99,6 +119,7 @@ function GlossPanel({
                                 return (
                                     <button
                                         key={g.id}
+                                        ref={isFocus ? focusedCardRef : undefined}
                                         type="button"
                                         className={`gloss-card${isFocus ? " is-span-focus" : ""}`}
                                         aria-pressed={isFocus}

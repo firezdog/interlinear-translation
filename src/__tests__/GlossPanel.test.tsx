@@ -67,8 +67,22 @@ describe("GlossPanel", () => {
         expect(onSelectGloss).toHaveBeenCalledWith(glosses[1]);
     });
 
-    it("marks the focused gloss card", () => {
-        render(
+    it("marks the focused gloss card and scrolls it into view", () => {
+        const scrollIntoView = jest.fn();
+        Element.prototype.scrollIntoView = scrollIntoView;
+
+        const { rerender } = render(
+            <GlossPanel
+                passage={passage}
+                glosses={glosses}
+                selectedToken={2}
+                selectionRange={{ start: 2, end: 2 }}
+                focusedGloss={null}
+                onSelectGloss={() => {}}
+                onAddGloss={() => {}}
+            />
+        );
+        rerender(
             <GlossPanel
                 passage={passage}
                 glosses={glosses}
@@ -82,6 +96,7 @@ describe("GlossPanel", () => {
         expect(screen.getByText("mid gloss").closest("button")).toHaveClass(
             "is-span-focus"
         );
+        expect(scrollIntoView).toHaveBeenCalled();
     });
 
     it("shows compose form for a selection range and submits gloss text", () => {
@@ -104,5 +119,25 @@ describe("GlossPanel", () => {
         });
         fireEvent.click(screen.getByRole("button", { name: "Add gloss" }));
         expect(onAddGloss).toHaveBeenCalledWith("  a new note  ");
+    });
+
+    it("submits the draft with Cmd/Ctrl+Enter", () => {
+        const onAddGloss = jest.fn();
+        render(
+            <GlossPanel
+                passage={passage}
+                glosses={[]}
+                selectedToken={0}
+                selectionRange={{ start: 0, end: 1 }}
+                focusedGloss={null}
+                onSelectGloss={() => {}}
+                onAddGloss={onAddGloss}
+            />
+        );
+
+        const input = screen.getByLabelText("New gloss commentary");
+        fireEvent.change(input, { target: { value: "via keyboard" } });
+        fireEvent.keyDown(input, { key: "Enter", metaKey: true });
+        expect(onAddGloss).toHaveBeenCalledWith("via keyboard");
     });
 });
