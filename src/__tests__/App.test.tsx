@@ -100,11 +100,15 @@ const ovidPassage: Passage = {
 
 describe("App component", () => {
     const read = jest.fn();
+    const write = jest.fn();
 
     beforeEach(() => {
         read.mockReset();
+        write.mockReset();
+        write.mockResolvedValue(undefined);
         jest.spyOn(FileClient, "getClient").mockReturnValue({
             read,
+            write,
         } as unknown as FileClient);
     });
 
@@ -266,7 +270,11 @@ describe("App component", () => {
         fireEvent.click(focused.querySelector("button.field-edit-btn")!);
         const editor = screen.getByLabelText("Edit gloss commentary");
         fireEvent.change(editor, { target: { value: "revised mid gloss" } });
-        fireEvent.click(screen.getByRole("button", { name: "Save" }));
+        fireEvent.click(
+            Array.from(focused.querySelectorAll("button")).find(
+                (b) => b.textContent === "Save"
+            )!
+        );
 
         // Save exits edit mode but keeps focus
         expect(
@@ -294,7 +302,11 @@ describe("App component", () => {
         fireEvent.change(screen.getByLabelText("Edit transliteration"), {
             target: { value: "tsuki-hi" },
         });
-        fireEvent.click(screen.getByRole("button", { name: "Save" }));
+        fireEvent.click(
+            Array.from(wordPanel.querySelectorAll("button")).find(
+                (b) => b.textContent === "Save"
+            )!
+        );
         expect(wordPanel).toHaveTextContent("tsuki-hi");
 
         fireEvent.click(
@@ -308,5 +320,48 @@ describe("App component", () => {
             metaKey: true,
         });
         expect(wordPanel).toHaveTextContent("days and months");
+    });
+
+    it("disables Save until dirty, then writes the passage", async () => {
+        read.mockResolvedValue(okuPassage);
+        render(<App />);
+
+        await screen.findByRole("button", { name: "月日" });
+        const toolbarSave = screen.getByRole("button", { name: "Save" });
+        expect(toolbarSave).toBeDisabled();
+
+        fireEvent.click(screen.getByRole("button", { name: "百代" }));
+        fireEvent.click(screen.getByText("mid gloss"));
+        const focused = screen.getByText("mid gloss").closest(".gloss-card")!;
+        fireEvent.click(focused.querySelector("button.field-edit-btn")!);
+        fireEvent.change(screen.getByLabelText("Edit gloss commentary"), {
+            target: { value: "persisted mid gloss" },
+        });
+        fireEvent.click(
+            Array.from(focused.querySelectorAll("button")).find(
+                (b) => b.textContent === "Save"
+            )!
+        );
+
+        expect(toolbarSave).not.toBeDisabled();
+        expect(screen.getByRole("status")).toHaveTextContent("Unsaved changes");
+
+        fireEvent.click(toolbarSave);
+        await waitFor(() => {
+            expect(write).toHaveBeenCalledWith(
+                "oku-no-hosomichi",
+                1,
+                expect.objectContaining({
+                    glosses: expect.arrayContaining([
+                        expect.objectContaining({
+                            id: "mid",
+                            content: "persisted mid gloss",
+                        }),
+                    ]),
+                })
+            );
+        });
+        expect(screen.getByRole("status")).toHaveTextContent("Saved");
+        expect(toolbarSave).toBeDisabled();
     });
 });

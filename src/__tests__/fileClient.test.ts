@@ -61,3 +61,57 @@ describe("FileClient.read", () => {
     await expect(FileClient.getClient().read("bad", 1)).rejects.toThrow(/tokens/);
   });
 });
+
+describe("FileClient.write", () => {
+  const fetchMock = jest.fn();
+
+  beforeEach(() => {
+    fetchMock.mockReset();
+    global.fetch = fetchMock as unknown as typeof fetch;
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
+  });
+
+  it("PUTs validated passage JSON to the write API", async () => {
+    fetchMock.mockResolvedValue({
+      ok: true,
+      status: 204,
+      text: async () => "",
+    });
+
+    await FileClient.getClient().write("oku-no-hosomichi", 1, validPassage);
+
+    expect(fetchMock).toHaveBeenCalledWith(
+      "/api/passage?key=oku-no-hosomichi&page=1",
+      {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(validPassage),
+      }
+    );
+  });
+
+  it("throws when the write response is not ok", async () => {
+    fetchMock.mockResolvedValue({
+      ok: false,
+      status: 500,
+      text: async () => "disk full",
+    });
+
+    await expect(
+      FileClient.getClient().write("oku-no-hosomichi", 1, validPassage)
+    ).rejects.toThrow("disk full");
+  });
+
+  it("throws before fetch when passage fails validation", async () => {
+    await expect(
+      FileClient.getClient().write("oku-no-hosomichi", 1, {
+        offset: 0,
+        length: 1,
+      } as never)
+    ).rejects.toThrow(/tokens/);
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+});

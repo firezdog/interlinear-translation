@@ -25,6 +25,26 @@ class FileClient implements InterlinearClient {
         const data = await response.json();
         return assertPassage(data);
     }
+
+    async write(passageKey: string, page: number, passage: Passage): Promise<void> {
+        const validated = assertPassage(passage);
+        const params = new URLSearchParams({
+            key: passageKey,
+            page: String(page),
+        });
+        const response = await fetch(`/api/passage?${params}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(validated),
+        });
+
+        if (!response.ok) {
+            const detail = await response.text().catch(() => "");
+            throw new Error(
+                detail.trim() || `failed to save passage (${response.status})`
+            );
+        }
+    }
 }
 
 export { FileClient };

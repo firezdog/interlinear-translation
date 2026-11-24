@@ -16,6 +16,8 @@ const passageOptions = [
     { key: "notes-underground", name: "Notes From Underground" },
 ];
 
+type SaveStatus = "idle" | "saving" | "saved" | "error";
+
 function App() {
     const [selectedKey, setSelectedKey] = useState("oku-no-hosomichi");
     const [passage, setPassage] = useState<Passage | null>(null);
@@ -25,6 +27,9 @@ function App() {
     const [selectionRange, setSelectionRange] = useState<TokenRange | null>(null);
     const [focusedGloss, setFocusedGloss] = useState<Gloss | null>(null);
     const [showTransliteration, setShowTransliteration] = useState(false);
+    const [dirty, setDirty] = useState(false);
+    const [saveStatus, setSaveStatus] = useState<SaveStatus>("idle");
+    const [saveError, setSaveError] = useState<string | null>(null);
 
     const glossesByToken = useMemo(
         () =>
@@ -74,6 +79,9 @@ function App() {
                 setSelectionAnchor(-1);
                 setSelectionRange(null);
                 setFocusedGloss(null);
+                setDirty(false);
+                setSaveStatus("idle");
+                setSaveError(null);
                 setError(null);
             } catch (err) {
                 if (cancelled) return;
@@ -144,6 +152,8 @@ function App() {
                 glosses: [...passage.glosses, gloss],
             });
             setFocusedGloss(gloss);
+            setDirty(true);
+            setSaveStatus("idle");
         },
         [passage, selectionRange]
     );
@@ -160,6 +170,8 @@ function App() {
             setFocusedGloss((prev) =>
                 prev?.id === id ? { ...prev, content: text } : prev
             );
+            setDirty(true);
+            setSaveStatus("idle");
         },
         [passage]
     );
@@ -174,11 +186,38 @@ function App() {
                 t.offset === offset ? { ...t, ...patch } : t
             );
             setPassage({ ...passage, tokens });
+            setDirty(true);
+            setSaveStatus("idle");
         },
         [passage]
     );
 
+    const onSavePassage = useCallback(async () => {
+        if (!passage || saveStatus === "saving") return;
+        setSaveStatus("saving");
+        setSaveError(null);
+        try {
+            await FileClient.getClient().write(selectedKey, 1, passage);
+            setDirty(false);
+            setSaveStatus("saved");
+        } catch (err) {
+            setSaveStatus("error");
+            setSaveError(err instanceof Error ? err.message : String(err));
+        }
+    }, [passage, selectedKey, saveStatus]);
+
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
+
+    const saveLabel =
+        saveStatus === "saving"
+            ? "Saving…"
+            : saveStatus === "saved"
+              ? "Saved"
+              : saveStatus === "error"
+                ? saveError ?? "Save failed"
+                : dirty
+                  ? "Unsaved changes"
+                  : "";
 
     return (
         <div className="px-5 py-5" style={{ background: "var(--color-page)" }}>
@@ -208,6 +247,23 @@ function App() {
                     />
                     Transliteration
                 </label>
+                <button
+                    type="button"
+                    className="gloss-compose-submit"
+                    disabled={!passage || !dirty || saveStatus === "saving"}
+                    onClick={onSavePassage}
+                >
+                    Save
+                </button>
+                {saveLabel ? (
+                    <span
+                        className="gloss-hint"
+                        style={{ margin: 0 }}
+                        role="status"
+                    >
+                        {saveLabel}
+                    </span>
+                ) : null}
             </div>
             <div className="study-layout my-4">
                 {passage ? (
