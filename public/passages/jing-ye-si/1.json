@@ -1,0 +1,146 @@
+{
+  "offset": 0,
+  "length": 12,
+  "segments": [
+    {
+      "text": "床前 明月 光，",
+      "start": 0,
+      "end": 2
+    },
+    {
+      "text": "疑是 地上 霜。",
+      "start": 3,
+      "end": 5
+    },
+    {
+      "text": "舉頭 望 明月，",
+      "start": 6,
+      "end": 8
+    },
+    {
+      "text": "低頭 思 故鄉。",
+      "start": 9,
+      "end": 11
+    }
+  ],
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "床前",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "chuángqián",
+      "translation": "before the bed"
+    },
+    {
+      "offset": 1,
+      "content": "明月",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "míngyuè",
+      "translation": "bright moon"
+    },
+    {
+      "offset": 2,
+      "content": "光",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "guāng",
+      "translation": "light"
+    },
+    {
+      "offset": 3,
+      "content": "疑是",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yísì",
+      "translation": "suspect it is"
+    },
+    {
+      "offset": 4,
+      "content": "地上",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "dìshàng",
+      "translation": "on the ground"
+    },
+    {
+      "offset": 5,
+      "content": "霜",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "shuāng",
+      "translation": "frost"
+    },
+    {
+      "offset": 6,
+      "content": "舉頭",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jǔtóu",
+      "translation": "raise the head"
+    },
+    {
+      "offset": 7,
+      "content": "望",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wàng",
+      "translation": "gaze at"
+    },
+    {
+      "offset": 8,
+      "content": "明月",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "míngyuè",
+      "translation": "bright moon"
+    },
+    {
+      "offset": 9,
+      "content": "低頭",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "dītóu",
+      "translation": "lower the head"
+    },
+    {
+      "offset": 10,
+      "content": "思",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "sī",
+      "translation": "think of"
+    },
+    {
+      "offset": 11,
+      "content": "故鄉",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "gùxiāng",
+      "translation": "hometown"
+    }
+  ],
+  "glosses": [
+    {
+      "start": 0,
+      "end": 11,
+      "content": "靜夜思 (Li Bai): a brief lyric of moonlight mistaken for frost, then homesickness."
+    },
+    {
+      "start": 1,
+      "end": 1,
+      "content": "明月 — bright moon; returns in line 3 as the object of 望."
+    },
+    {
+      "start": 8,
+      "end": 8,
+      "content": "明月 — same moon, now looked up to before the turn to 故鄉."
+    },
+    {
+      "start": 11,
+      "end": 11,
+      "content": "故鄉 — hometown / native place; closes the poem’s emotional arc."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-import { Passage } from "@/types/passage"
-import { InterlinearClient } from "@/types/client"
-import { assertPassage } from "@/validatePassage"
+import { Passage } from "@/passage/types"
+import { InterlinearClient } from "@/clients/types"
+import { assertPassage } from "@/passage/validatePassage"
 
 
 class FileClient implements InterlinearClient {

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://interlinear.local/schemas/passage.json",
+  "title": "Passage",
+  "type": "object",
+  "required": ["offset", "length", "segments", "tokens", "glosses"],
+  "additionalProperties": false,
+  "properties": {
+    "offset": {
+      "type": "integer",
+      "description": "Token index where this passage begins in the full text (index of the first token)"
+    },
+    "length": {
+      "type": "integer",
+      "description": "Length of the passage in tokens"
+    },
+    "segments": {
+      "type": "array",
+      "description": "Ordered paragraph blocks of display text",
+      "items": { "$ref": "#/$defs/Segment" }
+    },
+    "tokens": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Token" }
+    },
+    "glosses": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Gloss" }
+    }
+  },
+  "$defs": {
+    "Segment": {
+      "type": "object",
+      "required": ["text", "start", "end"],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "Optional display label only (e.g. line number); not a literary type"
+        },
+        "text": {
+          "type": "string",
+          "description": "Display base text including spaces and punctuation"
+        },
+        "start": {
+          "type": "integer",
+          "description": "Inclusive start token index (work-level)"
+        },
+        "end": {
+          "type": "integer",
+          "description": "Inclusive end token index (work-level); must be >= start"
+        }
+      }
+    },
+    "Token": {
+      "type": "object",
+      "required": [
+        "offset",
+        "content",
+        "charStart",
+        "charEnd",
+        "transliteration",
+        "translation"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "offset": {
+          "type": "integer",
+          "description": "Token index from the beginning of the full text (not a UTF-16 code unit)"
+        },
+        "content": {
+          "type": "string",
+          "description": "Lexical form; must equal segment.text.slice(charStart, charEnd)"
+        },
+        "charStart": {
+          "type": "integer",
+          "description": "Inclusive start into the containing segment text (JS UTF-16)"
+        },
+        "charEnd": {
+          "type": "integer",
+          "description": "Exclusive end into the containing segment text (JS UTF-16)"
+        },
+        "transliteration": {
+          "type": "string",
+          "description": "Latin-alphabet phonetic rendering (pinyin, romaji, etc.); may be empty"
+        },
+        "translation": {
+          "type": "string",
+          "description": "Literal or idiomatic translation"
+        }
+      }
+    },
+    "Gloss": {
+      "type": "object",
+      "required": ["start", "end", "content"],
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "integer",
+          "description": "Inclusive start token index"
+        },
+        "end": {
+          "type": "integer",
+          "description": "Inclusive end token index; must be >= start"
+        },
+        "content": {
+          "type": "string",
+          "description": "Text of the gloss (grammar, commentary, etc.)"
+        }
+      }
+    }
+  }
+}

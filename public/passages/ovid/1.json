@@ -1,52 +1,75 @@
 {
   "offset": 0,
   "length": 8,
+  "segments": [
+    {
+      "text": "In nova fert animus mutatas dicere formas corpora",
+      "start": 0,
+      "end": 7
+    }
+  ],
   "tokens": [
     {
       "offset": 0,
       "content": "In",
+      "charStart": 0,
+      "charEnd": 2,
       "transliteration": "",
       "translation": "into"
     },
     {
       "offset": 1,
       "content": "nova",
+      "charStart": 3,
+      "charEnd": 7,
       "transliteration": "",
       "translation": "new"
     },
     {
       "offset": 2,
       "content": "fert",
+      "charStart": 8,
+      "charEnd": 12,
       "transliteration": "",
       "translation": "carries"
     },
     {
       "offset": 3,
       "content": "animus",
+      "charStart": 13,
+      "charEnd": 19,
       "transliteration": "",
       "translation": "mind"
     },
     {
       "offset": 4,
       "content": "mutatas",
+      "charStart": 20,
+      "charEnd": 27,
       "transliteration": "",
       "translation": "changed"
     },
     {
       "offset": 5,
       "content": "dicere",
+      "charStart": 28,
+      "charEnd": 34,
       "transliteration": "",
       "translation": "to speak"
     },
     {
       "offset": 6,
       "content": "formas",
+      "charStart": 35,
+      "charEnd": 41,
       "transliteration": "",
       "translation": "forms"
     },
     {
       "offset": 7,
       "content": "corpora",
+      "charStart": 42,
+      "charEnd": 49,
       "transliteration": "",
       "translation": "bodies"
     }

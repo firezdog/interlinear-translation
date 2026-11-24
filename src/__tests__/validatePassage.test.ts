@@ -1,15 +1,28 @@
-import { assertPassage } from "@/validatePassage";
+import { assertPassage } from "@/passage/validatePassage";
 
 const validPassage = {
     offset: 0,
     length: 2,
+    segments: [{ text: "a b", start: 0, end: 1 }],
     tokens: [
-        { offset: 0, content: "a", transliteration: "a", translation: "a" },
-        { offset: 1, content: "b", transliteration: "b", translation: "b" },
+        {
+            offset: 0,
+            content: "a",
+            charStart: 0,
+            charEnd: 1,
+            transliteration: "a",
+            translation: "a",
+        },
+        {
+            offset: 1,
+            content: "b",
+            charStart: 2,
+            charEnd: 3,
+            transliteration: "b",
+            translation: "b",
+        },
     ],
-    glosses: [
-        { start: 0, end: 1, content: "ab" },
-    ],
+    glosses: [{ start: 0, end: 1, content: "ab" }],
 };
 
 describe("assertPassage", () => {
@@ -21,6 +34,12 @@ describe("assertPassage", () => {
         const rest = { ...validPassage } as Partial<typeof validPassage>;
         delete rest.tokens;
         expect(() => assertPassage(rest)).toThrow(/tokens/);
+    });
+
+    it("rejects missing segments", () => {
+        const rest = { ...validPassage } as Partial<typeof validPassage>;
+        delete rest.segments;
+        expect(() => assertPassage(rest)).toThrow(/segments/);
     });
 
     it("rejects bad gloss types", () => {
@@ -41,6 +60,25 @@ describe("assertPassage", () => {
         ).toThrow(/end must be >= start/);
     });
 
+    it("rejects content that does not match segment slice", () => {
+        expect(() =>
+            assertPassage({
+                ...validPassage,
+                tokens: [
+                    {
+                        offset: 0,
+                        content: "x",
+                        charStart: 0,
+                        charEnd: 1,
+                        transliteration: "a",
+                        translation: "a",
+                    },
+                    validPassage.tokens[1],
+                ],
+            })
+        ).toThrow(/content must equal/);
+    });
+
     it("rejects a non-object root", () => {
         expect(() => assertPassage(null)).toThrow(/object/);
         expect(() => assertPassage("nope")).toThrow(/object|string/);
@@ -51,14 +89,25 @@ describe("assertPassage", () => {
         delete noOffset.offset;
         expect(() => assertPassage(noOffset)).toThrow(/offset/);
 
-        expect(() => assertPassage({ ...validPassage, length: 1.5 })).toThrow(/length/);
+        expect(() => assertPassage({ ...validPassage, length: 1.5 })).toThrow(
+            /length/
+        );
     });
 
     it("rejects invalid token fields", () => {
         expect(() =>
             assertPassage({
                 ...validPassage,
-                tokens: [{ offset: 0, content: 1, transliteration: "a", translation: "a" }],
+                tokens: [
+                    {
+                        offset: 0,
+                        content: 1,
+                        charStart: 0,
+                        charEnd: 1,
+                        transliteration: "a",
+                        translation: "a",
+                    },
+                ],
             })
         ).toThrow(/content/);
     });

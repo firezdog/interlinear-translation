@@ -1,28 +1,43 @@
 {
   "offset": 0,
   "length": 4,
+  "segments": [
+    {
+      "text": "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ",
+      "start": 0,
+      "end": 3
+    }
+  ],
   "tokens": [
     {
       "offset": 0,
       "content": "بِسْمِ",
+      "charStart": 0,
+      "charEnd": 6,
       "transliteration": "bismi",
       "translation": "in name"
     },
     {
       "offset": 1,
       "content": "اللَّهِ",
+      "charStart": 7,
+      "charEnd": 14,
       "transliteration": "allāhi",
       "translation": "Allah"
     },
     {
       "offset": 2,
       "content": "الرَّحْمَـٰنِ",
+      "charStart": 15,
+      "charEnd": 28,
       "transliteration": "ar-raḥmāni",
       "translation": "most merciful"
     },
     {
       "offset": 3,
       "content": "الرَّحِيمِ",
+      "charStart": 29,
+      "charEnd": 39,
       "transliteration": "ar-raḥīmi",
       "translation": "most compassionate"
     }

@@ -1,4 +1,4 @@
-import { Gloss, Token } from "@/types/passage";
+import { Gloss, Token } from "@/passage/types";
 
 /** Sweep tokens left-to-right, activating/deactivating glosses via start/end pointers. */
 function buildGlossesByToken(tokens: Token[], glosses: Gloss[]): Map<number, Gloss[]> {

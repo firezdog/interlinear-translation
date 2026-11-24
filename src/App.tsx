@@ -1,17 +1,19 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import React from "react";
-import { Gloss, Passage } from "@/types/passage";
+import { Gloss, Passage, Token } from "@/passage/types";
 import { FileClient } from "@/clients/file";
-import { TokenGrid } from "@/TokenGrid";
-import { buildGlossesByToken } from "@/buildGlossesByToken";
-
+import { buildGlossesByToken } from "@/passage/buildGlossesByToken";
+import { studyTokensFor } from "@/passage/projectPassage";
+import { ReadingColumn } from "@/components/ReadingColumn";
+import { StudyRail } from "@/components/StudyRail";
+import { sameGloss } from "@/passage/sameGloss";
 
 const passageOptions = [
-    { key: 'oku-no-hosomichi', name: 'Oku No Hosomichi'},
-    { key: 'ovid', name: 'Ovid\'s Metamorphoses'},
-    { key: 'quran', name: 'The Quran'},
-    { key: 'lun-yu', name: 'Analects of Confucius'},
-    { key: 'notes-underground', name: 'Notes From Underground'}
+    { key: "oku-no-hosomichi", name: "Oku No Hosomichi" },
+    { key: "ovid", name: "Ovid's Metamorphoses" },
+    { key: "quran", name: "The Quran" },
+    { key: "jing-ye-si", name: "靜夜思 (Jing Ye Si)" },
+    { key: "notes-underground", name: "Notes From Underground" },
 ];
 
 function App() {
@@ -19,91 +21,129 @@ function App() {
     const [passage, setPassage] = useState<Passage | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [selectedToken, setSelectedToken] = useState<number>(-1);
-    const [colsPerRow, setColsPerRow] = useState(2);
+    const [focusedGloss, setFocusedGloss] = useState<Gloss | null>(null);
+    const [showTransliteration, setShowTransliteration] = useState(false);
 
     const glossesByToken = useMemo(
-        () => (passage ? buildGlossesByToken(passage.tokens, passage.glosses) : new Map<number, Gloss[]>()),
+        () =>
+            passage
+                ? buildGlossesByToken(passage.tokens, passage.glosses)
+                : new Map<number, Gloss[]>(),
         [passage]
     );
     const selectedGlosses: Gloss[] =
         selectedToken === -1 ? [] : (glossesByToken.get(selectedToken) ?? []);
 
-    useEffect(() => {
-        function updateCols() {
-            const width = window.innerWidth;
-            if (width >= 1024) setColsPerRow(10);
-            else if (width >= 768) setColsPerRow(6);
-            else if (width >= 640) setColsPerRow(4);
-            else setColsPerRow(2);
-        }
-        updateCols();
-        window.addEventListener("resize", updateCols);
-        return () => window.removeEventListener("resize", updateCols);
-    }, []);
+    const wordToken =
+        passage && selectedToken >= 0
+            ? (passage.tokens.find((t) => t.offset === selectedToken) ?? null)
+            : null;
+
+    const studyTokens = useMemo(
+        () =>
+            passage
+                ? studyTokensFor(passage, selectedToken, focusedGloss)
+                : ([] as Token[]),
+        [passage, selectedToken, focusedGloss]
+    );
 
     useEffect(() => {
+        let cancelled = false;
         (async function () {
             try {
                 const client = FileClient.getClient();
                 const data = await client.read(selectedKey, 1);
+                if (cancelled) return;
                 setPassage(data);
                 setSelectedToken(-1);
+                setFocusedGloss(null);
+                setError(null);
             } catch (err) {
+                if (cancelled) return;
                 setError(err instanceof Error ? err.message : String(err));
             }
         })();
+        return () => {
+            cancelled = true;
+        };
     }, [selectedKey]);
+
+    const onSelectToken = useCallback((offset: number) => {
+        setSelectedToken((prev) => {
+            if (prev === offset) {
+                setFocusedGloss(null);
+                return -1;
+            }
+            setFocusedGloss((g) => {
+                if (g && (offset < g.start || offset > g.end)) return null;
+                return g;
+            });
+            return offset;
+        });
+    }, []);
+
+    const onSelectGloss = useCallback((gloss: Gloss) => {
+        setFocusedGloss((prev) => {
+            if (sameGloss(prev, gloss)) return null;
+            setSelectedToken((sel) =>
+                sel < gloss.start || sel > gloss.end ? gloss.start : sel
+            );
+            return gloss;
+        });
+    }, []);
 
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
 
-    const tokens = passage?.tokens ?? [];
-    const tokenRows = Math.ceil(tokens.length / colsPerRow);
-
     return (
-        <div className="px-5 py-5">
-            <h1 className="py-3 text-3xl font-bold tracking-tight">Interlinear Translation</h1>
-            <label>
-                <span className="pr-3">Select Passage:</span>
-                <select
-                    className="border rounded px-1 py-1 bg-white text-sm"
-                    value={selectedKey}
-                    onChange={(e) => setSelectedKey(e.target.value)}
-                >
-                    {passageOptions.map((passage, i) => (
-                        <option key={i} value={passage.key}>{passage.name}</option>
-                    ))}
-                </select>
-            </label>
-            <div
-                className="grid gap-2 w-full max-w-5xl mx-auto my-4"
-                style={{
-                    gridTemplateColumns: `repeat(${colsPerRow}, minmax(0, 1fr))`,
-                    gridTemplateRows: `repeat(${tokenRows * 3}, auto)`,
-                }}
-                dir="auto"
-            >
-            {
-
-                tokens.map((token, i) => {
-                    const col = i % colsPerRow;
-                    const row = Math.floor(i / colsPerRow);
-                    return (
-                        <TokenGrid
-                            key={token.offset}
-                            token={token}
-                            col={col}
-                            row={row}
-                            isSelected={selectedToken === token.offset}
-                            onClick={() => setSelectedToken(selectedToken === token.offset ? -1 : token.offset)}
-                        />
-                    );
-                })
-            }
+        <div className="px-5 py-5" style={{ background: "var(--color-page)" }}>
+            <h1 className="py-3 text-3xl font-bold tracking-tight">
+                Interlinear Translation
+            </h1>
+            <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+                <label>
+                    <span className="pr-3">Select Passage:</span>
+                    <select
+                        className="border rounded px-1 py-1 bg-white text-sm"
+                        value={selectedKey}
+                        onChange={(e) => setSelectedKey(e.target.value)}
+                    >
+                        {passageOptions.map((opt) => (
+                            <option key={opt.key} value={opt.key}>
+                                {opt.name}
+                            </option>
+                        ))}
+                    </select>
+                </label>
+                <label className="inline-flex items-center gap-2 cursor-pointer">
+                    <input
+                        type="checkbox"
+                        checked={showTransliteration}
+                        onChange={(e) => setShowTransliteration(e.target.checked)}
+                    />
+                    Transliteration
+                </label>
             </div>
-            <div>
-                {selectedGlosses.map((gloss, i) => (
-                    <div key={i}>{gloss.content}</div>
-                ))}
+            <div className="study-layout my-4">
+                {passage ? (
+                    <ReadingColumn
+                        passage={passage}
+                        glossesByToken={glossesByToken}
+                        selectedToken={selectedToken}
+                        focusedGloss={focusedGloss}
+                        showTransliteration={showTransliteration}
+                        onSelectToken={onSelectToken}
+                    />
+                ) : null}
+                <StudyRail
+                    studyTokens={studyTokens}
+                    wordToken={wordToken}
+                    passage={passage}
+                    selectedGlosses={selectedGlosses}
+                    selectedToken={selectedToken}
+                    focusedGloss={focusedGloss}
+                    onSelectToken={onSelectToken}
+                    onSelectGloss={onSelectGloss}
+                />
             </div>
         </div>
     );

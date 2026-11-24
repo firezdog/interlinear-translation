@@ -1,76 +1,107 @@
 {
   "offset": 0,
   "length": 12,
+  "segments": [
+    {
+      "text": "Я человек больной ... Я злой человек. Непривлекательный я человек.",
+      "start": 0,
+      "end": 11
+    }
+  ],
   "tokens": [
     {
       "offset": 0,
       "content": "Я",
+      "charStart": 0,
+      "charEnd": 1,
       "transliteration": "Ya",
       "translation": "I"
     },
     {
       "offset": 1,
       "content": "человек",
+      "charStart": 2,
+      "charEnd": 9,
       "transliteration": "chelovek",
       "translation": "person"
     },
     {
       "offset": 2,
       "content": "больной",
+      "charStart": 10,
+      "charEnd": 17,
       "transliteration": "bol'noy",
       "translation": "sick"
     },
     {
       "offset": 3,
       "content": "...",
+      "charStart": 18,
+      "charEnd": 21,
       "transliteration": "",
       "translation": ""
     },
     {
       "offset": 4,
       "content": "Я",
+      "charStart": 22,
+      "charEnd": 23,
       "transliteration": "Ya",
       "translation": "I"
     },
     {
       "offset": 5,
       "content": "злой",
+      "charStart": 24,
+      "charEnd": 28,
       "transliteration": "zloy",
       "translation": "mean"
     },
     {
       "offset": 6,
       "content": "человек",
+      "charStart": 29,
+      "charEnd": 36,
       "transliteration": "chelovek",
       "translation": "person"
     },
     {
       "offset": 7,
       "content": ".",
+      "charStart": 36,
+      "charEnd": 37,
       "transliteration": "",
       "translation": ""
     },
     {
       "offset": 8,
       "content": "Непривлекательный",
+      "charStart": 38,
+      "charEnd": 55,
       "transliteration": "Neprivlekatel'nyy",
       "translation": "Unattractive"
     },
     {
       "offset": 9,
       "content": "я",
+      "charStart": 56,
+      "charEnd": 57,
       "transliteration": "ya",
       "translation": "I"
     },
     {
       "offset": 10,
       "content": "человек",
+      "charStart": 58,
+      "charEnd": 65,
       "transliteration": "chelovek",
       "translation": "person"
     },
     {
       "offset": 11,
       "content": ".",
+      "charStart": 65,
+      "charEnd": 66,
       "transliteration": "",
       "translation": ""
     }

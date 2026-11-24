@@ -1,46 +1,67 @@
 {
   "offset": 0,
   "length": 7,
+  "segments": [
+    {
+      "text": "月日は百代の過客にして",
+      "start": 0,
+      "end": 6
+    }
+  ],
   "tokens": [
     {
       "offset": 0,
       "content": "月日",
+      "charStart": 0,
+      "charEnd": 2,
       "transliteration": "tsukihi",
       "translation": "moon / sun"
     },
     {
       "offset": 1,
       "content": "は",
+      "charStart": 2,
+      "charEnd": 3,
       "transliteration": "wa",
       "translation": "[topic]"
     },
     {
       "offset": 2,
       "content": "百代",
+      "charStart": 3,
+      "charEnd": 5,
       "transliteration": "hyakudai",
       "translation": "hundred generations"
     },
     {
       "offset": 3,
       "content": "の",
+      "charStart": 5,
+      "charEnd": 6,
       "transliteration": "no",
       "translation": "of"
     },
     {
       "offset": 4,
       "content": "過客",
+      "charStart": 6,
+      "charEnd": 8,
       "transliteration": "kakaku",
       "translation": "traveler"
     },
     {
       "offset": 5,
       "content": "に",
+      "charStart": 8,
+      "charEnd": 9,
       "transliteration": "ni",
       "translation": "in"
     },
     {
       "offset": 6,
       "content": "して",
+      "charStart": 9,
+      "charEnd": 11,
       "transliteration": "shite",
       "translation": "is"
     }

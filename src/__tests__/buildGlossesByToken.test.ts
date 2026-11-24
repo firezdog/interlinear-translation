@@ -1,8 +1,15 @@
-import { buildGlossesByToken } from "@/buildGlossesByToken";
-import { Gloss, Token } from "@/types/passage";
+import { buildGlossesByToken } from "@/passage/buildGlossesByToken";
+import { Gloss, Token } from "@/passage/types";
 
 function token(offset: number): Token {
-    return { offset, content: String(offset), transliteration: "", translation: "" };
+    return {
+        offset,
+        content: String(offset),
+        charStart: 0,
+        charEnd: 1,
+        transliteration: "",
+        translation: "",
+    };
 }
 
 function gloss(start: number, end: number, content: string): Gloss {

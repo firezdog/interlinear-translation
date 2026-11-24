@@ -14,5 +14,6 @@ module.exports = {
     "^@/(.*)$": "<rootDir>/src/$1"
   },
   roots: ["<rootDir>/src"],
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"]
+  testMatch: ["**/__tests__/**/*.test.[jt]s?(x)"],
+  setupFilesAfterEnv: ["<rootDir>/src/__tests__/setupTests.ts"]
 };

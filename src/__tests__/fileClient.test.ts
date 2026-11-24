@@ -3,12 +3,18 @@ import { FileClient } from "@/clients/file";
 const validPassage = {
   offset: 0,
   length: 1,
+  segments: [{ text: "a", start: 0, end: 0 }],
   tokens: [
-    { offset: 0, content: "a", transliteration: "a", translation: "a" },
+    {
+      offset: 0,
+      content: "a",
+      charStart: 0,
+      charEnd: 1,
+      transliteration: "a",
+      translation: "a",
+    },
   ],
-  glosses: [
-    { start: 0, end: 0, content: "gloss" },
-  ],
+  glosses: [{ start: 0, end: 0, content: "gloss" }],
 };
 
 describe("FileClient.read", () => {
