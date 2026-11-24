@@ -92,9 +92,14 @@
     },
     "Gloss": {
       "type": "object",
-      "required": ["start", "end", "content"],
+      "required": ["id", "start", "end", "content"],
       "additionalProperties": false,
       "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable identity within the work (authoring / selection key)"
+        },
         "start": {
           "type": "integer",
           "description": "Inclusive start token index"

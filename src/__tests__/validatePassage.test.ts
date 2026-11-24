@@ -22,7 +22,7 @@ const validPassage = {
             translation: "b",
         },
     ],
-    glosses: [{ start: 0, end: 1, content: "ab" }],
+    glosses: [{ id: "ab", start: 0, end: 1, content: "ab" }],
 };
 
 describe("assertPassage", () => {
@@ -46,7 +46,7 @@ describe("assertPassage", () => {
         expect(() =>
             assertPassage({
                 ...validPassage,
-                glosses: [{ start: "0", end: 1, content: "ab" }],
+                glosses: [{ id: "ab", start: "0", end: 1, content: "ab" }],
             })
         ).toThrow(/start/);
     });
@@ -55,9 +55,30 @@ describe("assertPassage", () => {
         expect(() =>
             assertPassage({
                 ...validPassage,
-                glosses: [{ start: 2, end: 1, content: "bad" }],
+                glosses: [{ id: "bad", start: 2, end: 1, content: "bad" }],
             })
         ).toThrow(/end must be >= start/);
+    });
+
+    it("rejects duplicate gloss ids", () => {
+        expect(() =>
+            assertPassage({
+                ...validPassage,
+                glosses: [
+                    { id: "dup", start: 0, end: 0, content: "a" },
+                    { id: "dup", start: 1, end: 1, content: "b" },
+                ],
+            })
+        ).toThrow(/duplicate gloss id/);
+    });
+
+    it("rejects glosses missing id", () => {
+        expect(() =>
+            assertPassage({
+                ...validPassage,
+                glosses: [{ start: 0, end: 1, content: "ab" }],
+            })
+        ).toThrow(/id/);
     });
 
     it("rejects content that does not match segment slice", () => {

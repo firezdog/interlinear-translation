@@ -108,16 +108,19 @@
   ],
   "glosses": [
     {
+      "id": "nu-bolnoy",
       "start": 2,
       "end": 2,
       "content": "больной – short-form adjective; masculine; 'sick'"
     },
     {
+      "id": "nu-zloy",
       "start": 5,
       "end": 5,
       "content": "злой – 'mean', also used as 'angry' or 'evil'; here likely 'mean-spirited'"
     },
     {
+      "id": "nu-neprivlekatelnyy",
       "start": 8,
       "end": 8,
       "content": "непривлекательный – 'unattractive'; formed from prefix 'не-' + 'привлекательный'"

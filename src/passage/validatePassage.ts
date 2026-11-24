@@ -14,11 +14,16 @@ function assertPassage(data: unknown): Passage {
         throw new Error(ajv.errorsText(validate.errors, { separator: "; " }));
     }
 
+    const glossIds = new Set<string>();
     for (let i = 0; i < data.glosses.length; i++) {
         const gloss = data.glosses[i];
         if (gloss.end < gloss.start) {
             throw new Error(`glosses/${i}/end must be >= start`);
         }
+        if (glossIds.has(gloss.id)) {
+            throw new Error(`duplicate gloss id ${gloss.id}`);
+        }
+        glossIds.add(gloss.id);
     }
 
     for (let i = 0; i < data.segments.length; i++) {

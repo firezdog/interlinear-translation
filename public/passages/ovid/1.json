@@ -76,16 +76,19 @@
   ],
   "glosses": [
     {
+      "id": "ovid-theme",
       "start": 0,
       "end": 7,
       "content": "The poet opens with a declaration of theme: transformations — bodies (corpora) changed into new forms (nova formas)."
     },
     {
+      "id": "ovid-fert-animus",
       "start": 2,
       "end": 3,
       "content": "Fert animus — 'my spirit carries me': a poetic way of saying 'I am inspired'."
     },
     {
+      "id": "ovid-mutatas",
       "start": 4,
       "end": 6,
       "content": "Mutatas dicere formas — 'to speak of changed forms': the core of the Metamorphoses’ theme."

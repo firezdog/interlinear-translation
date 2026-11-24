@@ -68,11 +68,13 @@
   ],
   "glosses": [
     {
+      "id": "oku-opening",
       "start": 0,
       "end": 6,
       "content": "月日は百代の過客にして — 'The moon and sun are travelers through a hundred generations.' A metaphor about the transient nature of time."
     },
     {
+      "id": "oku-hyakudai",
       "start": 2,
       "end": 4,
       "content": "百代の過客 — 'Passing guests of a hundred generations', suggesting ephemerality of life."

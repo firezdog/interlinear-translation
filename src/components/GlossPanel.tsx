@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import { Gloss, Passage } from "@/passage/types";
-import { sameGloss } from "@/passage/sameGloss";
 import { glossSpanText } from "@/passage/projectPassage";
 
 function GlossPanel({
@@ -45,10 +44,10 @@ function GlossPanel({
                         </p>
                         <div className="gloss-list">
                             {ordered.map((g) => {
-                                const isFocus = sameGloss(focusedGloss, g);
+                                const isFocus = focusedGloss?.id === g.id;
                                 return (
                                     <button
-                                        key={`${g.start}-${g.end}-${g.content}`}
+                                        key={g.id}
                                         type="button"
                                         className={`gloss-card${isFocus ? " is-span-focus" : ""}`}
                                         aria-pressed={isFocus}

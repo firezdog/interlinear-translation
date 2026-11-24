@@ -26,6 +26,8 @@ export interface Token {
 
 /** Commentary covering an inclusive range of token indices. */
 export interface Gloss {
+    /** Stable identity within the work (authoring / selection key). */
+    id: string;
     /** Inclusive start token index. */
     start: number;
     /** Inclusive end token index; must be >= start. */

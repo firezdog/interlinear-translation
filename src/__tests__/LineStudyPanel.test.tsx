@@ -57,7 +57,7 @@ describe("LineStudyPanel", () => {
             <LineStudyPanel
                 tokens={tokens}
                 selectedToken={0}
-                focusedGloss={{ start: 0, end: 1, content: "note" }}
+                focusedGloss={{ id: "note", start: 0, end: 1, content: "note" }}
                 onSelectToken={() => {}}
             />
         );

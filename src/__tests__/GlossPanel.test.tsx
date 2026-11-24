@@ -37,8 +37,8 @@ const passage: Passage = {
 };
 
 const glosses: Gloss[] = [
-    { start: 0, end: 2, content: "full-line gloss" },
-    { start: 2, end: 2, content: "mid gloss" },
+    { id: "full", start: 0, end: 2, content: "full-line gloss" },
+    { id: "mid", start: 2, end: 2, content: "mid gloss" },
 ];
 
 describe("GlossPanel", () => {

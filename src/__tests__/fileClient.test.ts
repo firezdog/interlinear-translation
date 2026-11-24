@@ -14,7 +14,7 @@ const validPassage = {
       translation: "a",
     },
   ],
-  glosses: [{ start: 0, end: 0, content: "gloss" }],
+  glosses: [{ id: "g1", start: 0, end: 0, content: "gloss" }],
 };
 
 describe("FileClient.read", () => {

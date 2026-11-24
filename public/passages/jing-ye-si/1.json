@@ -123,21 +123,25 @@
   ],
   "glosses": [
     {
+      "id": "jys-poem",
       "start": 0,
       "end": 11,
       "content": "靜夜思 (Li Bai): a brief lyric of moonlight mistaken for frost, then homesickness."
     },
     {
+      "id": "jys-mingyue-1",
       "start": 1,
       "end": 1,
       "content": "明月 — bright moon; returns in line 3 as the object of 望."
     },
     {
+      "id": "jys-mingyue-3",
       "start": 8,
       "end": 8,
       "content": "明月 — same moon, now looked up to before the turn to 故鄉."
     },
     {
+      "id": "jys-guxiang",
       "start": 11,
       "end": 11,
       "content": "故鄉 — hometown / native place; closes the poem’s emotional arc."

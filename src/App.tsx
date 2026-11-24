@@ -6,8 +6,6 @@ import { buildGlossesByToken } from "@/passage/buildGlossesByToken";
 import { studyTokensFor } from "@/passage/projectPassage";
 import { ReadingColumn } from "@/components/ReadingColumn";
 import { StudyRail } from "@/components/StudyRail";
-import { sameGloss } from "@/passage/sameGloss";
-
 const passageOptions = [
     { key: "oku-no-hosomichi", name: "Oku No Hosomichi" },
     { key: "ovid", name: "Ovid's Metamorphoses" },
@@ -84,7 +82,7 @@ function App() {
 
     const onSelectGloss = useCallback((gloss: Gloss) => {
         setFocusedGloss((prev) => {
-            if (sameGloss(prev, gloss)) return null;
+            if (prev?.id === gloss.id) return null;
             setSelectedToken((sel) =>
                 sel < gloss.start || sel > gloss.end ? gloss.start : sel
             );

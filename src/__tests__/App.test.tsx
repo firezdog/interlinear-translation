@@ -35,8 +35,8 @@ const okuPassage: Passage = {
         },
     ],
     glosses: [
-        { start: 0, end: 2, content: "full-line gloss" },
-        { start: 2, end: 2, content: "mid gloss" },
+        { id: "full", start: 0, end: 2, content: "full-line gloss" },
+        { id: "mid", start: 2, end: 2, content: "mid gloss" },
     ],
 };
 
@@ -95,7 +95,7 @@ const ovidPassage: Passage = {
             translation: "new",
         },
     ],
-    glosses: [{ start: 0, end: 1, content: "ovid opening" }],
+    glosses: [{ id: "ovid-open", start: 0, end: 1, content: "ovid opening" }],
 };
 
 describe("App component", () => {

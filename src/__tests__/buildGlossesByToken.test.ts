@@ -13,7 +13,7 @@ function token(offset: number): Token {
 }
 
 function gloss(start: number, end: number, content: string): Gloss {
-    return { start, end, content };
+    return { id: content, start, end, content };
 }
 
 describe("buildGlossesByToken", () => {

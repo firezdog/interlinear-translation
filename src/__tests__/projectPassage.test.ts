@@ -62,7 +62,7 @@ const poem: Passage = {
             translation: "frost",
         },
     ],
-    glosses: [{ start: 1, end: 1, content: "moon" }],
+    glosses: [{ id: "moon", start: 1, end: 1, content: "moon" }],
 };
 
 describe("projectPassage", () => {
@@ -97,7 +97,9 @@ describe("studyTokensFor", () => {
 
 describe("glossSpanText", () => {
     it("slices segment text including interstitial spaces", () => {
-        expect(glossSpanText(poem, { start: 0, end: 2, content: "x" })).toBe(
+        expect(
+            glossSpanText(poem, { id: "x", start: 0, end: 2, content: "x" })
+        ).toBe(
             "床前 明月 光"
         );
     });
