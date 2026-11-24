@@ -199,10 +199,12 @@ button.tok.tok-in-span[aria-pressed="true"] {
 }
 
 .study-panel-word .panel-body {
-  /* Tall enough for 3 rows with full "Transliteration" label; fixed to avoid CLS. */
+  /* Tall enough for 3 rows with full "Transliteration" label; fixed to avoid CLS.
+     Scroll when edit UI expands beyond the slot. */
   height: 6.5rem;
   flex: 0 0 6.5rem;
-  overflow: hidden;
+  overflow: auto;
+  overscroll-behavior: contain;
 }
 
 .panel-empty {
@@ -319,6 +321,33 @@ button.tok.tok-in-span[aria-pressed="true"] {
   overflow-wrap: anywhere;
   font-family: var(--font-reading);
   font-optical-sizing: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.word-rows .val-edit {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-edit-btn {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.72rem;
+  color: var(--color-panel-muted);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.field-edit-btn:hover {
+  color: #44403c;
 }
 
 .gloss-list {

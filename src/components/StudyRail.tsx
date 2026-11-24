@@ -17,6 +17,7 @@ function StudyRail({
     onSelectGloss,
     onAddGloss,
     onUpdateGloss,
+    onUpdateToken,
 }: {
     studyTokens: Token[];
     wordToken: Token | null;
@@ -29,6 +30,10 @@ function StudyRail({
     onSelectGloss: (gloss: Gloss) => void;
     onAddGloss: (content: string) => void;
     onUpdateGloss: (id: string, content: string) => void;
+    onUpdateToken: (
+        offset: number,
+        patch: { transliteration?: string; translation?: string }
+    ) => void;
 }) {
     return (
         <aside className="study-rail" aria-label="Study rail">
@@ -39,7 +44,7 @@ function StudyRail({
                 focusedGloss={focusedGloss}
                 onSelectToken={onSelectToken}
             />
-            <WordPanel token={wordToken} />
+            <WordPanel token={wordToken} onUpdateToken={onUpdateToken} />
             {passage ? (
                 <GlossPanel
                     passage={passage}

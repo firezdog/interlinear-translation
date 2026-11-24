@@ -23,6 +23,7 @@ function GlossPanel({
     onUpdateGloss: (id: string, content: string) => void;
 }) {
     const [draft, setDraft] = useState("");
+    const [editing, setEditing] = useState(false);
     const [editDraft, setEditDraft] = useState("");
     const focusedCardRef = useRef<HTMLDivElement | null>(null);
 
@@ -31,11 +32,21 @@ function GlossPanel({
     }, [selectionRange]);
 
     useEffect(() => {
+        setEditing(false);
         setEditDraft(focusedGloss?.content ?? "");
-    }, [focusedGloss?.id, focusedGloss?.content]);
+    }, [focusedGloss?.id]);
 
     useEffect(() => {
-        if (!focusedGloss) return;
+        if (!editing) {
+            setEditDraft(focusedGloss?.content ?? "");
+        }
+    }, [focusedGloss?.content, editing]);
+
+    useEffect(() => {
+        if (!focusedGloss) {
+            setEditing(false);
+            return;
+        }
         focusedCardRef.current?.scrollIntoView({
             block: "nearest",
             inline: "nearest",
@@ -66,12 +77,19 @@ function GlossPanel({
         setDraft("");
     };
 
+    const startEdit = (gloss: Gloss) => {
+        setEditDraft(gloss.content);
+        setEditing(true);
+    };
+
     const saveEdit = (gloss: Gloss) => {
         onUpdateGloss(gloss.id, editDraft);
+        setEditing(false);
     };
 
     const cancelEdit = (gloss: Gloss) => {
         setEditDraft(gloss.content);
+        setEditing(false);
     };
 
     return (
@@ -146,39 +164,56 @@ function GlossPanel({
                                             >
                                                 {glossSpanText(passage, g)}
                                             </button>
-                                            <textarea
-                                                className="gloss-compose-input gloss-card-edit"
-                                                value={editDraft}
-                                                onChange={(e) =>
-                                                    setEditDraft(e.target.value)
-                                                }
-                                                onKeyDown={(e) => {
-                                                    if (
-                                                        e.key === "Enter" &&
-                                                        (e.metaKey || e.ctrlKey)
-                                                    ) {
-                                                        e.preventDefault();
-                                                        saveEdit(g);
-                                                    } else if (e.key === "Escape") {
-                                                        e.preventDefault();
-                                                        cancelEdit(g);
-                                                    }
-                                                }}
-                                                rows={3}
-                                                aria-label="Edit gloss commentary"
-                                            />
-                                            <div className="gloss-card-actions">
-                                                <button
-                                                    type="button"
-                                                    className="gloss-compose-submit"
-                                                    onClick={() => saveEdit(g)}
-                                                >
-                                                    Save
-                                                </button>
-                                                <span className="gloss-hint">
-                                                    ⌘/Ctrl+Enter to save
-                                                </span>
-                                            </div>
+                                            {editing ? (
+                                                <>
+                                                    <textarea
+                                                        className="gloss-compose-input gloss-card-edit"
+                                                        value={editDraft}
+                                                        onChange={(e) =>
+                                                            setEditDraft(e.target.value)
+                                                        }
+                                                        onKeyDown={(e) => {
+                                                            if (
+                                                                e.key === "Enter" &&
+                                                                (e.metaKey || e.ctrlKey)
+                                                            ) {
+                                                                e.preventDefault();
+                                                                saveEdit(g);
+                                                            } else if (e.key === "Escape") {
+                                                                e.preventDefault();
+                                                                cancelEdit(g);
+                                                            }
+                                                        }}
+                                                        rows={3}
+                                                        aria-label="Edit gloss commentary"
+                                                    />
+                                                    <div className="gloss-card-actions">
+                                                        <button
+                                                            type="button"
+                                                            className="gloss-compose-submit"
+                                                            onClick={() => saveEdit(g)}
+                                                        >
+                                                            Save
+                                                        </button>
+                                                        <span className="gloss-hint">
+                                                            ⌘/Ctrl+Enter to save
+                                                        </span>
+                                                    </div>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <div className="body">{g.content}</div>
+                                                    <div className="gloss-card-actions">
+                                                        <button
+                                                            type="button"
+                                                            className="field-edit-btn"
+                                                            onClick={() => startEdit(g)}
+                                                        >
+                                                            Edit
+                                                        </button>
+                                                    </div>
+                                                </>
+                                            )}
                                         </div>
                                     );
                                 }

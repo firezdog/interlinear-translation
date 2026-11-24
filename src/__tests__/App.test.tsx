@@ -160,9 +160,14 @@ describe("App component", () => {
         fireEvent.click(await screen.findByText("百代"));
         fireEvent.click(screen.getByText("mid gloss"));
 
-        const editor = screen.getByLabelText("Edit gloss commentary");
-        expect(editor.closest(".gloss-card")).toHaveClass("is-span-focus");
-        expect(editor).toHaveValue("mid gloss");
+        const focused = screen.getByText("mid gloss").closest(".gloss-card");
+        expect(focused).toHaveClass("is-span-focus");
+        expect(
+            focused!.querySelector("button.field-edit-btn")
+        ).toBeInTheDocument();
+        expect(
+            screen.queryByLabelText("Edit gloss commentary")
+        ).not.toBeInTheDocument();
         expect(screen.getByText("Gloss span (aligned study)")).toBeInTheDocument();
     });
 
@@ -240,9 +245,11 @@ describe("App component", () => {
         });
         fireEvent.click(screen.getByRole("button", { name: "Add gloss" }));
 
-        const editor = screen.getByLabelText("Edit gloss commentary");
-        expect(editor.closest(".gloss-card")).toHaveClass("is-span-focus");
-        expect(editor).toHaveValue("opening line");
+        const focused = screen.getByText("opening line").closest(".gloss-card");
+        expect(focused).toHaveClass("is-span-focus");
+        expect(
+            focused!.querySelector("button.field-edit-btn")
+        ).toBeInTheDocument();
         expect(screen.getByText("Gloss span (aligned study)")).toBeInTheDocument();
         expect(first).toHaveClass("tok-in-span");
         expect(last).toHaveClass("tok-in-span");
@@ -255,14 +262,51 @@ describe("App component", () => {
         fireEvent.click(await screen.findByRole("button", { name: "百代" }));
         fireEvent.click(screen.getByText("mid gloss"));
 
+        const focused = screen.getByText("mid gloss").closest(".gloss-card")!;
+        fireEvent.click(focused.querySelector("button.field-edit-btn")!);
         const editor = screen.getByLabelText("Edit gloss commentary");
         fireEvent.change(editor, { target: { value: "revised mid gloss" } });
         fireEvent.click(screen.getByRole("button", { name: "Save" }));
 
-        // Save unfocuses; card should show saved body text (no edit dialog)
+        // Save exits edit mode but keeps focus
         expect(
             screen.queryByLabelText("Edit gloss commentary")
         ).not.toBeInTheDocument();
         expect(screen.getByText("revised mid gloss")).toBeInTheDocument();
+        expect(
+            screen.getByText("revised mid gloss").closest(".gloss-card")
+        ).toHaveClass("is-span-focus");
+    });
+
+    it("edits word transliteration and literal in memory", async () => {
+        read.mockResolvedValue(okuPassage);
+        render(<App />);
+
+        fireEvent.click(await screen.findByRole("button", { name: "月日" }));
+
+        const wordPanel = screen.getByLabelText("Word");
+        const editBtns = Array.from(
+            wordPanel.querySelectorAll("button.field-edit-btn")
+        );
+        expect(editBtns).toHaveLength(2);
+
+        fireEvent.click(editBtns[0]);
+        fireEvent.change(screen.getByLabelText("Edit transliteration"), {
+            target: { value: "tsuki-hi" },
+        });
+        fireEvent.click(screen.getByRole("button", { name: "Save" }));
+        expect(wordPanel).toHaveTextContent("tsuki-hi");
+
+        fireEvent.click(
+            wordPanel.querySelectorAll("button.field-edit-btn")[1]
+        );
+        fireEvent.change(screen.getByLabelText("Edit literal"), {
+            target: { value: "days and months" },
+        });
+        fireEvent.keyDown(screen.getByLabelText("Edit literal"), {
+            key: "Enter",
+            metaKey: true,
+        });
+        expect(wordPanel).toHaveTextContent("days and months");
     });
 });

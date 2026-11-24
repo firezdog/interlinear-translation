@@ -68,7 +68,7 @@ describe("GlossPanel", () => {
         expect(onSelectGloss).toHaveBeenCalledWith(glosses[1]);
     });
 
-    it("marks the focused gloss card and scrolls it into view", () => {
+    it("marks the focused gloss card as read view with Edit, and scrolls into view", () => {
         const scrollIntoView = jest.fn();
         Element.prototype.scrollIntoView = scrollIntoView;
 
@@ -96,9 +96,12 @@ describe("GlossPanel", () => {
                 onUpdateGloss={() => {}}
             />
         );
+        const focused = screen.getByText("mid gloss").closest(".gloss-card");
+        expect(focused).toHaveClass("is-span-focus");
+        expect(screen.getByRole("button", { name: "Edit" })).toBeInTheDocument();
         expect(
-            screen.getByLabelText("Edit gloss commentary").closest(".gloss-card")
-        ).toHaveClass("is-span-focus");
+            screen.queryByLabelText("Edit gloss commentary")
+        ).not.toBeInTheDocument();
         expect(scrollIntoView).toHaveBeenCalled();
     });
 
@@ -146,7 +149,7 @@ describe("GlossPanel", () => {
         expect(onAddGloss).toHaveBeenCalledWith("via keyboard");
     });
 
-    it("edits a focused gloss with Save and Cmd+Enter", () => {
+    it("enters edit mode then saves with Save and Cmd+Enter", () => {
         const onUpdateGloss = jest.fn();
         render(
             <GlossPanel
@@ -161,18 +164,22 @@ describe("GlossPanel", () => {
             />
         );
 
+        fireEvent.click(screen.getByRole("button", { name: "Edit" }));
         const input = screen.getByLabelText("Edit gloss commentary");
         expect(input).toHaveValue("mid gloss");
         fireEvent.change(input, { target: { value: "updated mid" } });
         fireEvent.click(screen.getByRole("button", { name: "Save" }));
         expect(onUpdateGloss).toHaveBeenCalledWith("mid", "updated mid");
 
-        fireEvent.change(input, { target: { value: "via shortcut" } });
-        fireEvent.keyDown(input, { key: "Enter", metaKey: true });
+        fireEvent.click(screen.getByRole("button", { name: "Edit" }));
+        const again = screen.getByLabelText("Edit gloss commentary");
+        fireEvent.change(again, { target: { value: "via shortcut" } });
+        fireEvent.keyDown(again, { key: "Enter", metaKey: true });
         expect(onUpdateGloss).toHaveBeenCalledWith("mid", "via shortcut");
     });
 
-    it("restores original text on Escape", () => {
+    it("exits edit mode on Escape without saving", () => {
+        const onUpdateGloss = jest.fn();
         render(
             <GlossPanel
                 passage={passage}
@@ -182,14 +189,19 @@ describe("GlossPanel", () => {
                 focusedGloss={glosses[1]}
                 onSelectGloss={() => {}}
                 onAddGloss={() => {}}
-                onUpdateGloss={() => {}}
+                onUpdateGloss={onUpdateGloss}
             />
         );
 
+        fireEvent.click(screen.getByRole("button", { name: "Edit" }));
         const input = screen.getByLabelText("Edit gloss commentary");
         fireEvent.change(input, { target: { value: "scratch" } });
-        expect(input).toHaveValue("scratch");
         fireEvent.keyDown(input, { key: "Escape" });
-        expect(input).toHaveValue("mid gloss");
+        expect(onUpdateGloss).not.toHaveBeenCalled();
+        expect(
+            screen.queryByLabelText("Edit gloss commentary")
+        ).not.toBeInTheDocument();
+        expect(screen.getByText("mid gloss")).toBeInTheDocument();
+        expect(screen.getByRole("button", { name: "Edit" })).toBeInTheDocument();
     });
 });

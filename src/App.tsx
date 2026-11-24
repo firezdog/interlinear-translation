@@ -157,7 +157,23 @@ function App() {
                 g.id === id ? { ...g, content: text } : g
             );
             setPassage({ ...passage, glosses });
-            setFocusedGloss(null);
+            setFocusedGloss((prev) =>
+                prev?.id === id ? { ...prev, content: text } : prev
+            );
+        },
+        [passage]
+    );
+
+    const onUpdateToken = useCallback(
+        (
+            offset: number,
+            patch: { transliteration?: string; translation?: string }
+        ) => {
+            if (!passage) return;
+            const tokens = passage.tokens.map((t) =>
+                t.offset === offset ? { ...t, ...patch } : t
+            );
+            setPassage({ ...passage, tokens });
         },
         [passage]
     );
@@ -217,6 +233,7 @@ function App() {
                     onSelectGloss={onSelectGloss}
                     onAddGloss={onAddGloss}
                     onUpdateGloss={onUpdateGloss}
+                    onUpdateToken={onUpdateToken}
                 />
             </div>
         </div>
