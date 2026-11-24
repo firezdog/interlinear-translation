@@ -148,6 +148,20 @@ function App() {
         [passage, selectionRange]
     );
 
+    const onUpdateGloss = useCallback(
+        (id: string, content: string) => {
+            if (!passage) return;
+            const text = content.trim();
+            if (!text) return;
+            const glosses = passage.glosses.map((g) =>
+                g.id === id ? { ...g, content: text } : g
+            );
+            setPassage({ ...passage, glosses });
+            setFocusedGloss(null);
+        },
+        [passage]
+    );
+
     if (error) return <pre style={{ color: "red" }}>{error}</pre>;
 
     return (
@@ -202,6 +216,7 @@ function App() {
                     onSelectToken={onSelectToken}
                     onSelectGloss={onSelectGloss}
                     onAddGloss={onAddGloss}
+                    onUpdateGloss={onUpdateGloss}
                 />
             </div>
         </div>

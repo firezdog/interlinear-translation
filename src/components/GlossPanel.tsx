@@ -11,6 +11,7 @@ function GlossPanel({
     focusedGloss,
     onSelectGloss,
     onAddGloss,
+    onUpdateGloss,
 }: {
     passage: Passage;
     glosses: Gloss[];
@@ -19,13 +20,19 @@ function GlossPanel({
     focusedGloss: Gloss | null;
     onSelectGloss: (gloss: Gloss) => void;
     onAddGloss: (content: string) => void;
+    onUpdateGloss: (id: string, content: string) => void;
 }) {
     const [draft, setDraft] = useState("");
-    const focusedCardRef = useRef<HTMLButtonElement | null>(null);
+    const [editDraft, setEditDraft] = useState("");
+    const focusedCardRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (!selectionRange) setDraft("");
     }, [selectionRange]);
+
+    useEffect(() => {
+        setEditDraft(focusedGloss?.content ?? "");
+    }, [focusedGloss?.id, focusedGloss?.content]);
 
     useEffect(() => {
         if (!focusedGloss) return;
@@ -57,6 +64,14 @@ function GlossPanel({
     const submitDraft = () => {
         onAddGloss(draft);
         setDraft("");
+    };
+
+    const saveEdit = (gloss: Gloss) => {
+        onUpdateGloss(gloss.id, editDraft);
+    };
+
+    const cancelEdit = (gloss: Gloss) => {
+        setEditDraft(gloss.content);
     };
 
     return (
@@ -116,16 +131,68 @@ function GlossPanel({
                         <div className="gloss-list">
                             {ordered.map((g) => {
                                 const isFocus = focusedGloss?.id === g.id;
+                                if (isFocus) {
+                                    return (
+                                        <div
+                                            key={g.id}
+                                            ref={focusedCardRef}
+                                            className="gloss-card is-span-focus"
+                                            aria-pressed="true"
+                                        >
+                                            <button
+                                                type="button"
+                                                className="span gloss-card-span-toggle"
+                                                onClick={() => onSelectGloss(g)}
+                                            >
+                                                {glossSpanText(passage, g)}
+                                            </button>
+                                            <textarea
+                                                className="gloss-compose-input gloss-card-edit"
+                                                value={editDraft}
+                                                onChange={(e) =>
+                                                    setEditDraft(e.target.value)
+                                                }
+                                                onKeyDown={(e) => {
+                                                    if (
+                                                        e.key === "Enter" &&
+                                                        (e.metaKey || e.ctrlKey)
+                                                    ) {
+                                                        e.preventDefault();
+                                                        saveEdit(g);
+                                                    } else if (e.key === "Escape") {
+                                                        e.preventDefault();
+                                                        cancelEdit(g);
+                                                    }
+                                                }}
+                                                rows={3}
+                                                aria-label="Edit gloss commentary"
+                                            />
+                                            <div className="gloss-card-actions">
+                                                <button
+                                                    type="button"
+                                                    className="gloss-compose-submit"
+                                                    onClick={() => saveEdit(g)}
+                                                >
+                                                    Save
+                                                </button>
+                                                <span className="gloss-hint">
+                                                    ⌘/Ctrl+Enter to save
+                                                </span>
+                                            </div>
+                                        </div>
+                                    );
+                                }
                                 return (
                                     <button
                                         key={g.id}
-                                        ref={isFocus ? focusedCardRef : undefined}
                                         type="button"
-                                        className={`gloss-card${isFocus ? " is-span-focus" : ""}`}
-                                        aria-pressed={isFocus}
+                                        className="gloss-card"
+                                        aria-pressed={false}
                                         onClick={() => onSelectGloss(g)}
                                     >
-                                        <span className="span">{glossSpanText(passage, g)}</span>
+                                        <span className="span">
+                                            {glossSpanText(passage, g)}
+                                        </span>
                                         <div className="body">{g.content}</div>
                                     </button>
                                 );

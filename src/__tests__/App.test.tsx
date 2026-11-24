@@ -160,8 +160,9 @@ describe("App component", () => {
         fireEvent.click(await screen.findByText("百代"));
         fireEvent.click(screen.getByText("mid gloss"));
 
-        const card = screen.getByText("mid gloss").closest("button");
-        expect(card).toHaveClass("is-span-focus");
+        const editor = screen.getByLabelText("Edit gloss commentary");
+        expect(editor.closest(".gloss-card")).toHaveClass("is-span-focus");
+        expect(editor).toHaveValue("mid gloss");
         expect(screen.getByText("Gloss span (aligned study)")).toBeInTheDocument();
     });
 
@@ -239,10 +240,29 @@ describe("App component", () => {
         });
         fireEvent.click(screen.getByRole("button", { name: "Add gloss" }));
 
-        const card = screen.getByText("opening line").closest("button");
-        expect(card).toHaveClass("is-span-focus");
+        const editor = screen.getByLabelText("Edit gloss commentary");
+        expect(editor.closest(".gloss-card")).toHaveClass("is-span-focus");
+        expect(editor).toHaveValue("opening line");
         expect(screen.getByText("Gloss span (aligned study)")).toBeInTheDocument();
         expect(first).toHaveClass("tok-in-span");
         expect(last).toHaveClass("tok-in-span");
+    });
+
+    it("edits an existing gloss in memory", async () => {
+        read.mockResolvedValue(okuPassage);
+        render(<App />);
+
+        fireEvent.click(await screen.findByRole("button", { name: "百代" }));
+        fireEvent.click(screen.getByText("mid gloss"));
+
+        const editor = screen.getByLabelText("Edit gloss commentary");
+        fireEvent.change(editor, { target: { value: "revised mid gloss" } });
+        fireEvent.click(screen.getByRole("button", { name: "Save" }));
+
+        // Save unfocuses; card should show saved body text (no edit dialog)
+        expect(
+            screen.queryByLabelText("Edit gloss commentary")
+        ).not.toBeInTheDocument();
+        expect(screen.getByText("revised mid gloss")).toBeInTheDocument();
     });
 });

@@ -53,6 +53,7 @@ describe("GlossPanel", () => {
                 focusedGloss={null}
                 onSelectGloss={onSelectGloss}
                 onAddGloss={() => {}}
+                onUpdateGloss={() => {}}
             />
         );
 
@@ -80,6 +81,7 @@ describe("GlossPanel", () => {
                 focusedGloss={null}
                 onSelectGloss={() => {}}
                 onAddGloss={() => {}}
+                onUpdateGloss={() => {}}
             />
         );
         rerender(
@@ -91,11 +93,12 @@ describe("GlossPanel", () => {
                 focusedGloss={glosses[1]}
                 onSelectGloss={() => {}}
                 onAddGloss={() => {}}
+                onUpdateGloss={() => {}}
             />
         );
-        expect(screen.getByText("mid gloss").closest("button")).toHaveClass(
-            "is-span-focus"
-        );
+        expect(
+            screen.getByLabelText("Edit gloss commentary").closest(".gloss-card")
+        ).toHaveClass("is-span-focus");
         expect(scrollIntoView).toHaveBeenCalled();
     });
 
@@ -110,6 +113,7 @@ describe("GlossPanel", () => {
                 focusedGloss={null}
                 onSelectGloss={() => {}}
                 onAddGloss={onAddGloss}
+                onUpdateGloss={() => {}}
             />
         );
 
@@ -132,6 +136,7 @@ describe("GlossPanel", () => {
                 focusedGloss={null}
                 onSelectGloss={() => {}}
                 onAddGloss={onAddGloss}
+                onUpdateGloss={() => {}}
             />
         );
 
@@ -139,5 +144,52 @@ describe("GlossPanel", () => {
         fireEvent.change(input, { target: { value: "via keyboard" } });
         fireEvent.keyDown(input, { key: "Enter", metaKey: true });
         expect(onAddGloss).toHaveBeenCalledWith("via keyboard");
+    });
+
+    it("edits a focused gloss with Save and Cmd+Enter", () => {
+        const onUpdateGloss = jest.fn();
+        render(
+            <GlossPanel
+                passage={passage}
+                glosses={glosses}
+                selectedToken={2}
+                selectionRange={{ start: 2, end: 2 }}
+                focusedGloss={glosses[1]}
+                onSelectGloss={() => {}}
+                onAddGloss={() => {}}
+                onUpdateGloss={onUpdateGloss}
+            />
+        );
+
+        const input = screen.getByLabelText("Edit gloss commentary");
+        expect(input).toHaveValue("mid gloss");
+        fireEvent.change(input, { target: { value: "updated mid" } });
+        fireEvent.click(screen.getByRole("button", { name: "Save" }));
+        expect(onUpdateGloss).toHaveBeenCalledWith("mid", "updated mid");
+
+        fireEvent.change(input, { target: { value: "via shortcut" } });
+        fireEvent.keyDown(input, { key: "Enter", metaKey: true });
+        expect(onUpdateGloss).toHaveBeenCalledWith("mid", "via shortcut");
+    });
+
+    it("restores original text on Escape", () => {
+        render(
+            <GlossPanel
+                passage={passage}
+                glosses={glosses}
+                selectedToken={2}
+                selectionRange={{ start: 2, end: 2 }}
+                focusedGloss={glosses[1]}
+                onSelectGloss={() => {}}
+                onAddGloss={() => {}}
+                onUpdateGloss={() => {}}
+            />
+        );
+
+        const input = screen.getByLabelText("Edit gloss commentary");
+        fireEvent.change(input, { target: { value: "scratch" } });
+        expect(input).toHaveValue("scratch");
+        fireEvent.keyDown(input, { key: "Escape" });
+        expect(input).toHaveValue("mid gloss");
     });
 });
