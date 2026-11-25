@@ -67,10 +67,10 @@ function App() {
 
     const studyTokens = useMemo(
         () =>
-            passage
-                ? studyTokensFor(passage, selectedToken, studyFocus)
+            index
+                ? studyTokensFor(index, selectedToken, studyFocus)
                 : ([] as Token[]),
-        [passage, selectedToken, studyFocus]
+        [index, selectedToken, studyFocus]
     );
 
     useEffect(() => {
@@ -293,10 +293,9 @@ function App() {
                 ) : null}
             </div>
             <div className="study-layout my-4">
-                {passage ? (
+                {index ? (
                     <ReadingColumn
-                        passage={passage}
-                        glossesByToken={glossesByToken}
+                        index={index}
                         selectedToken={selectedToken}
                         selectionRange={selectionRange}
                         focusedGloss={focusedGloss}

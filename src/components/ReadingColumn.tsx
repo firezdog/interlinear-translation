@@ -1,26 +1,26 @@
 import React, { useMemo } from "react";
-import { Gloss, Passage } from "@/passage/types";
+import { Gloss } from "@/passage/types";
+import type { PassageIndex } from "@/passage/indexPassage";
 import { projectPassage } from "@/passage/projectPassage";
 import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
 
 function ReadingColumn({
-    passage,
-    glossesByToken,
+    index,
     selectedToken,
     selectionRange,
     focusedGloss,
     showTransliteration,
     onSelectToken,
 }: {
-    passage: Passage;
-    glossesByToken: Map<number, Gloss[]>;
+    index: PassageIndex;
     selectedToken: number;
     selectionRange: TokenRange | null;
     focusedGloss: Gloss | null;
     showTransliteration: boolean;
     onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
 }) {
-    const { paragraphs } = useMemo(() => projectPassage(passage), [passage]);
+    const { paragraphs } = useMemo(() => projectPassage(index), [index]);
+    const glossesByToken = index.glossesByToken;
 
     const inSpan = (offset: number) => {
         if (focusedGloss) {

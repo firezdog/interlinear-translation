@@ -1,3 +1,4 @@
+import { indexPassage } from "@/passage/indexPassage";
 import {
     glossSpanText,
     projectPassage,
@@ -67,7 +68,7 @@ const poem: Passage = {
 
 describe("projectPassage", () => {
     it("emits text gaps and token runs for a segment", () => {
-        const { paragraphs } = projectPassage(poem);
+        const { paragraphs } = projectPassage(indexPassage(poem));
         expect(paragraphs).toHaveLength(2);
         const runs = paragraphs[0].runs;
         expect(runs[0]).toEqual({ type: "token", token: poem.tokens[0] });
@@ -80,18 +81,20 @@ describe("projectPassage", () => {
 });
 
 describe("studyTokensFor", () => {
+    const index = indexPassage(poem);
+
     it("returns the paragraph tokens for a selection", () => {
-        const tokens = studyTokensFor(poem, 1, null);
+        const tokens = studyTokensFor(index, 1, null);
         expect(tokens.map((t) => t.offset)).toEqual([0, 1, 2]);
     });
 
     it("returns gloss span tokens when a gloss is focused", () => {
-        const tokens = studyTokensFor(poem, 1, poem.glosses[0]);
+        const tokens = studyTokensFor(index, 1, poem.glosses[0]);
         expect(tokens.map((t) => t.offset)).toEqual([1]);
     });
 
     it("returns empty when nothing is selected", () => {
-        expect(studyTokensFor(poem, -1, null)).toEqual([]);
+        expect(studyTokensFor(index, -1, null)).toEqual([]);
     });
 });
 
