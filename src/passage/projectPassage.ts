@@ -1,3 +1,4 @@
+import { indexPassage } from "@/passage/indexPassage";
 import { Gloss, Passage, Segment, Token } from "@/passage/types";
 
 export type TextRun = { type: "text"; value: string };
@@ -93,31 +94,7 @@ function studyTokensFor(
 
 /** Slice of segment text covering a gloss’s tokens (includes interstitial spaces). */
 function glossSpanText(passage: Passage, gloss: Gloss): string {
-    const first = passage.tokens.find((t) => t.offset === gloss.start);
-    const last = passage.tokens.find((t) => t.offset === gloss.end);
-    if (!first || !last) {
-        return tokensInRange(passage.tokens, gloss.start, gloss.end)
-            .map((t) => t.content)
-            .join("");
-    }
-    const seg = segmentContaining(passage.segments, gloss.start);
-    const segEnd = segmentContaining(passage.segments, gloss.end);
-    if (seg && seg === segEnd) {
-        return seg.text.slice(first.charStart, last.charEnd);
-    }
-    // Cross-segment: concatenate per-segment slices
-    const parts: string[] = [];
-    for (const s of passage.segments) {
-        if (s.end < gloss.start || s.start > gloss.end) continue;
-        const lo = passage.tokens.find(
-            (t) => t.offset === Math.max(s.start, gloss.start)
-        );
-        const hi = passage.tokens.find(
-            (t) => t.offset === Math.min(s.end, gloss.end)
-        );
-        if (lo && hi) parts.push(s.text.slice(lo.charStart, hi.charEnd));
-    }
-    return parts.join(" ");
+    return indexPassage(passage).glossSpanText(gloss);
 }
 
 export {
