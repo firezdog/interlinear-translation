@@ -1,59 +1,2158 @@
 {
   "offset": 0,
-  "length": 4,
+  "length": 240,
   "segments": [
     {
-      "text": "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ",
+      "label": "2",
+      "text": "ذٰلِكَ الكِتٰبُ لا رَيبَ ۛ فيهِ ۛ هُدًى لِلمُتَّقينَ",
       "start": 0,
-      "end": 3
+      "end": 8
+    },
+    {
+      "label": "3",
+      "text": "الَّذينَ يُؤمِنونَ بِالغَيبِ وَيُقيمونَ الصَّلوٰةَ وَمِمّا رَزَقنٰهُم يُنفِقونَ",
+      "start": 9,
+      "end": 16
+    },
+    {
+      "label": "4",
+      "text": "وَالَّذينَ يُؤمِنونَ بِما أُنزِلَ إِلَيكَ وَما أُنزِلَ مِن قَبلِكَ وَبِالءاخِرَةِ هُم يوقِنونَ",
+      "start": 17,
+      "end": 28
+    },
+    {
+      "label": "5",
+      "text": "أُولٰئِكَ عَلىٰ هُدًى مِن رَبِّهِم ۖ وَأُولٰئِكَ هُمُ المُفلِحونَ",
+      "start": 29,
+      "end": 37
+    },
+    {
+      "label": "6",
+      "text": "إِنَّ الَّذينَ كَفَروا سَواءٌ عَلَيهِم ءَأَنذَرتَهُم أَم لَم تُنذِرهُم لا يُؤمِنونَ",
+      "start": 38,
+      "end": 48
+    },
+    {
+      "label": "7",
+      "text": "خَتَمَ اللَّهُ عَلىٰ قُلوبِهِم وَعَلىٰ سَمعِهِم ۖ وَعَلىٰ أَبصٰرِهِم غِشٰوَةٌ ۖ وَلَهُم عَذابٌ عَظيمٌ",
+      "start": 49,
+      "end": 62
+    },
+    {
+      "label": "8",
+      "text": "وَمِنَ النّاسِ مَن يَقولُ ءامَنّا بِاللَّهِ وَبِاليَومِ الءاخِرِ وَما هُم بِمُؤمِنينَ",
+      "start": 63,
+      "end": 73
+    },
+    {
+      "label": "9",
+      "text": "يُخٰدِعونَ اللَّهَ وَالَّذينَ ءامَنوا وَما يَخدَعونَ إِلّا أَنفُسَهُم وَما يَشعُرونَ",
+      "start": 74,
+      "end": 83
+    },
+    {
+      "label": "10",
+      "text": "فى قُلوبِهِم مَرَضٌ فَزادَهُمُ اللَّهُ مَرَضًا ۖ وَلَهُم عَذابٌ أَليمٌ بِما كانوا يَكذِبونَ",
+      "start": 84,
+      "end": 96
+    },
+    {
+      "label": "11",
+      "text": "وَإِذا قيلَ لَهُم لا تُفسِدوا فِى الأَرضِ قالوا إِنَّما نَحنُ مُصلِحونَ",
+      "start": 97,
+      "end": 107
+    },
+    {
+      "label": "12",
+      "text": "أَلا إِنَّهُم هُمُ المُفسِدونَ وَلٰكِن لا يَشعُرونَ",
+      "start": 108,
+      "end": 114
+    },
+    {
+      "label": "13",
+      "text": "وَإِذا قيلَ لَهُم ءامِنوا كَما ءامَنَ النّاسُ قالوا أَنُؤمِنُ كَما ءامَنَ السُّفَهاءُ ۗ أَلا إِنَّهُم هُمُ السُّفَهاءُ وَلٰكِن لا يَعلَمونَ",
+      "start": 115,
+      "end": 134
+    },
+    {
+      "label": "14",
+      "text": "وَإِذا لَقُوا الَّذينَ ءامَنوا قالوا ءامَنّا وَإِذا خَلَوا إِلىٰ شَيٰطينِهِم قالوا إِنّا مَعَكُم إِنَّما نَحنُ مُستَهزِءونَ",
+      "start": 135,
+      "end": 150
+    },
+    {
+      "label": "15",
+      "text": "اللَّهُ يَستَهزِئُ بِهِم وَيَمُدُّهُم فى طُغيٰنِهِم يَعمَهونَ",
+      "start": 151,
+      "end": 157
+    },
+    {
+      "label": "16",
+      "text": "أُولٰئِكَ الَّذينَ اشتَرَوُا الضَّلٰلَةَ بِالهُدىٰ فَما رَبِحَت تِجٰرَتُهُم وَما كانوا مُهتَدينَ",
+      "start": 158,
+      "end": 168
+    },
+    {
+      "label": "17",
+      "text": "مَثَلُهُم كَمَثَلِ الَّذِى استَوقَدَ نارًا فَلَمّا أَضاءَت ما حَولَهُ ذَهَبَ اللَّهُ بِنورِهِم وَتَرَكَهُم فى ظُلُمٰتٍ لا يُبصِرونَ",
+      "start": 169,
+      "end": 185
+    },
+    {
+      "label": "18",
+      "text": "صُمٌّ بُكمٌ عُمىٌ فَهُم لا يَرجِعونَ",
+      "start": 186,
+      "end": 191
+    },
+    {
+      "label": "19",
+      "text": "أَو كَصَيِّبٍ مِنَ السَّماءِ فيهِ ظُلُمٰتٌ وَرَعدٌ وَبَرقٌ يَجعَلونَ أَصٰبِعَهُم فى ءاذانِهِم مِنَ الصَّوٰعِقِ حَذَرَ المَوتِ ۚ وَاللَّهُ مُحيطٌ بِالكٰفِرينَ",
+      "start": 192,
+      "end": 211
+    },
+    {
+      "label": "20",
+      "text": "يَكادُ البَرقُ يَخطَفُ أَبصٰرَهُم ۖ كُلَّما أَضاءَ لَهُم مَشَوا فيهِ وَإِذا أَظلَمَ عَلَيهِم قاموا ۚ وَلَو شاءَ اللَّهُ لَذَهَبَ بِسَمعِهِم وَأَبصٰرِهِم ۚ إِنَّ اللَّهَ عَلىٰ كُلِّ شَيءٍ قَديرٌ",
+      "start": 212,
+      "end": 239
     }
   ],
   "tokens": [
     {
       "offset": 0,
-      "content": "بِسْمِ",
+      "content": "ذٰلِكَ",
       "charStart": 0,
       "charEnd": 6,
-      "transliteration": "bismi",
-      "translation": "in name"
+      "transliteration": "dhālika",
+      "translation": "that"
     },
     {
       "offset": 1,
-      "content": "اللَّهِ",
+      "content": "الكِتٰبُ",
       "charStart": 7,
-      "charEnd": 14,
-      "transliteration": "allāhi",
-      "translation": "Allah"
+      "charEnd": 15,
+      "transliteration": "ālkitābu",
+      "translation": "the Book"
     },
     {
       "offset": 2,
-      "content": "الرَّحْمَـٰنِ",
-      "charStart": 15,
-      "charEnd": 28,
-      "transliteration": "ar-raḥmāni",
-      "translation": "most merciful"
+      "content": "لا",
+      "charStart": 16,
+      "charEnd": 18,
+      "transliteration": "lā",
+      "translation": "no"
     },
     {
       "offset": 3,
-      "content": "الرَّحِيمِ",
+      "content": "رَيبَ",
+      "charStart": 19,
+      "charEnd": 24,
+      "transliteration": "rayba",
+      "translation": "doubt"
+    },
+    {
+      "offset": 4,
+      "content": "ۛ",
+      "charStart": 25,
+      "charEnd": 26,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 5,
+      "content": "فيهِ",
+      "charStart": 27,
+      "charEnd": 31,
+      "transliteration": "fyhi",
+      "translation": "in it"
+    },
+    {
+      "offset": 6,
+      "content": "ۛ",
+      "charStart": 32,
+      "charEnd": 33,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 7,
+      "content": "هُدًى",
+      "charStart": 34,
+      "charEnd": 39,
+      "transliteration": "hudanā",
+      "translation": "guidance"
+    },
+    {
+      "offset": 8,
+      "content": "لِلمُتَّقينَ",
+      "charStart": 40,
+      "charEnd": 52,
+      "transliteration": "lilmutaqyna",
+      "translation": "for the God-conscious"
+    },
+    {
+      "offset": 9,
+      "content": "الَّذينَ",
+      "charStart": 0,
+      "charEnd": 8,
+      "transliteration": "āladhyna",
+      "translation": "those who"
+    },
+    {
+      "offset": 10,
+      "content": "يُؤمِنونَ",
+      "charStart": 9,
+      "charEnd": 18,
+      "transliteration": "yuʾminwna",
+      "translation": "believe"
+    },
+    {
+      "offset": 11,
+      "content": "بِالغَيبِ",
+      "charStart": 19,
+      "charEnd": 28,
+      "transliteration": "biālghaybi",
+      "translation": "in the unseen"
+    },
+    {
+      "offset": 12,
+      "content": "وَيُقيمونَ",
       "charStart": 29,
       "charEnd": 39,
-      "transliteration": "ar-raḥīmi",
-      "translation": "most compassionate"
+      "transliteration": "wayuqymwna",
+      "translation": "and establish"
+    },
+    {
+      "offset": 13,
+      "content": "الصَّلوٰةَ",
+      "charStart": 40,
+      "charEnd": 50,
+      "transliteration": "ālṣalwāaha",
+      "translation": "the prayer"
+    },
+    {
+      "offset": 14,
+      "content": "وَمِمّا",
+      "charStart": 51,
+      "charEnd": 58,
+      "transliteration": "wamimā",
+      "translation": "and from what"
+    },
+    {
+      "offset": 15,
+      "content": "رَزَقنٰهُم",
+      "charStart": 59,
+      "charEnd": 69,
+      "transliteration": "razaqnāhum",
+      "translation": "We provided them"
+    },
+    {
+      "offset": 16,
+      "content": "يُنفِقونَ",
+      "charStart": 70,
+      "charEnd": 79,
+      "transliteration": "yunfiqwna",
+      "translation": "they spend"
+    },
+    {
+      "offset": 17,
+      "content": "وَالَّذينَ",
+      "charStart": 0,
+      "charEnd": 10,
+      "transliteration": "waāladhyna",
+      "translation": "and those who"
+    },
+    {
+      "offset": 18,
+      "content": "يُؤمِنونَ",
+      "charStart": 11,
+      "charEnd": 20,
+      "transliteration": "yuʾminwna",
+      "translation": "believe"
+    },
+    {
+      "offset": 19,
+      "content": "بِما",
+      "charStart": 21,
+      "charEnd": 25,
+      "transliteration": "bimā",
+      "translation": "in what"
+    },
+    {
+      "offset": 20,
+      "content": "أُنزِلَ",
+      "charStart": 26,
+      "charEnd": 33,
+      "transliteration": "ʾaunzila",
+      "translation": "was sent down"
+    },
+    {
+      "offset": 21,
+      "content": "إِلَيكَ",
+      "charStart": 34,
+      "charEnd": 41,
+      "transliteration": "ʾiilayka",
+      "translation": "to you"
+    },
+    {
+      "offset": 22,
+      "content": "وَما",
+      "charStart": 42,
+      "charEnd": 46,
+      "transliteration": "wamā",
+      "translation": "and what"
+    },
+    {
+      "offset": 23,
+      "content": "أُنزِلَ",
+      "charStart": 47,
+      "charEnd": 54,
+      "transliteration": "ʾaunzila",
+      "translation": "was sent down"
+    },
+    {
+      "offset": 24,
+      "content": "مِن",
+      "charStart": 55,
+      "charEnd": 58,
+      "transliteration": "min",
+      "translation": "one who"
+    },
+    {
+      "offset": 25,
+      "content": "قَبلِكَ",
+      "charStart": 59,
+      "charEnd": 66,
+      "transliteration": "qablika",
+      "translation": "before you"
+    },
+    {
+      "offset": 26,
+      "content": "وَبِالءاخِرَةِ",
+      "charStart": 67,
+      "charEnd": 81,
+      "transliteration": "wabiālʾākhiraahi",
+      "translation": "and in the Hereafter"
+    },
+    {
+      "offset": 27,
+      "content": "هُم",
+      "charStart": 82,
+      "charEnd": 85,
+      "transliteration": "hum",
+      "translation": "they"
+    },
+    {
+      "offset": 28,
+      "content": "يوقِنونَ",
+      "charStart": 86,
+      "charEnd": 94,
+      "transliteration": "ywqinwna",
+      "translation": "are certain"
+    },
+    {
+      "offset": 29,
+      "content": "أُولٰئِكَ",
+      "charStart": 0,
+      "charEnd": 9,
+      "transliteration": "ʾauwlāʾika",
+      "translation": "those"
+    },
+    {
+      "offset": 30,
+      "content": "عَلىٰ",
+      "charStart": 10,
+      "charEnd": 15,
+      "transliteration": "ʿalāā",
+      "translation": "upon"
+    },
+    {
+      "offset": 31,
+      "content": "هُدًى",
+      "charStart": 16,
+      "charEnd": 21,
+      "transliteration": "hudanā",
+      "translation": "guidance"
+    },
+    {
+      "offset": 32,
+      "content": "مِن",
+      "charStart": 22,
+      "charEnd": 25,
+      "transliteration": "min",
+      "translation": "one who"
+    },
+    {
+      "offset": 33,
+      "content": "رَبِّهِم",
+      "charStart": 26,
+      "charEnd": 34,
+      "transliteration": "rabihim",
+      "translation": "their Lord"
+    },
+    {
+      "offset": 34,
+      "content": "ۖ",
+      "charStart": 35,
+      "charEnd": 36,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 35,
+      "content": "وَأُولٰئِكَ",
+      "charStart": 37,
+      "charEnd": 48,
+      "transliteration": "waʾauwlāʾika",
+      "translation": "and those"
+    },
+    {
+      "offset": 36,
+      "content": "هُمُ",
+      "charStart": 49,
+      "charEnd": 53,
+      "transliteration": "humu",
+      "translation": "they"
+    },
+    {
+      "offset": 37,
+      "content": "المُفلِحونَ",
+      "charStart": 54,
+      "charEnd": 65,
+      "transliteration": "ālmufliḥwna",
+      "translation": "the successful"
+    },
+    {
+      "offset": 38,
+      "content": "إِنَّ",
+      "charStart": 0,
+      "charEnd": 5,
+      "transliteration": "ʾiina",
+      "translation": "indeed"
+    },
+    {
+      "offset": 39,
+      "content": "الَّذينَ",
+      "charStart": 6,
+      "charEnd": 14,
+      "transliteration": "āladhyna",
+      "translation": "those who"
+    },
+    {
+      "offset": 40,
+      "content": "كَفَروا",
+      "charStart": 15,
+      "charEnd": 22,
+      "transliteration": "kafarwā",
+      "translation": "disbelieved"
+    },
+    {
+      "offset": 41,
+      "content": "سَواءٌ",
+      "charStart": 23,
+      "charEnd": 29,
+      "transliteration": "sawāʾun",
+      "translation": "the same"
+    },
+    {
+      "offset": 42,
+      "content": "عَلَيهِم",
+      "charStart": 30,
+      "charEnd": 38,
+      "transliteration": "ʿalayhim",
+      "translation": "upon them"
+    },
+    {
+      "offset": 43,
+      "content": "ءَأَنذَرتَهُم",
+      "charStart": 39,
+      "charEnd": 52,
+      "transliteration": "ʾaʾaandhartahum",
+      "translation": "whether you warn them"
+    },
+    {
+      "offset": 44,
+      "content": "أَم",
+      "charStart": 53,
+      "charEnd": 56,
+      "transliteration": "ʾaam",
+      "translation": "or"
+    },
+    {
+      "offset": 45,
+      "content": "لَم",
+      "charStart": 57,
+      "charEnd": 60,
+      "transliteration": "lam",
+      "translation": "not"
+    },
+    {
+      "offset": 46,
+      "content": "تُنذِرهُم",
+      "charStart": 61,
+      "charEnd": 70,
+      "transliteration": "tundhirhum",
+      "translation": "you warn them"
+    },
+    {
+      "offset": 47,
+      "content": "لا",
+      "charStart": 71,
+      "charEnd": 73,
+      "transliteration": "lā",
+      "translation": "no"
+    },
+    {
+      "offset": 48,
+      "content": "يُؤمِنونَ",
+      "charStart": 74,
+      "charEnd": 83,
+      "transliteration": "yuʾminwna",
+      "translation": "believe"
+    },
+    {
+      "offset": 49,
+      "content": "خَتَمَ",
+      "charStart": 0,
+      "charEnd": 6,
+      "transliteration": "khatama",
+      "translation": "sealed"
+    },
+    {
+      "offset": 50,
+      "content": "اللَّهُ",
+      "charStart": 7,
+      "charEnd": 14,
+      "transliteration": "āllahu",
+      "translation": "God"
+    },
+    {
+      "offset": 51,
+      "content": "عَلىٰ",
+      "charStart": 15,
+      "charEnd": 20,
+      "transliteration": "ʿalāā",
+      "translation": "upon"
+    },
+    {
+      "offset": 52,
+      "content": "قُلوبِهِم",
+      "charStart": 21,
+      "charEnd": 30,
+      "transliteration": "qulwbihim",
+      "translation": "their hearts"
+    },
+    {
+      "offset": 53,
+      "content": "وَعَلىٰ",
+      "charStart": 31,
+      "charEnd": 38,
+      "transliteration": "waʿalāā",
+      "translation": "and upon"
+    },
+    {
+      "offset": 54,
+      "content": "سَمعِهِم",
+      "charStart": 39,
+      "charEnd": 47,
+      "transliteration": "samʿihim",
+      "translation": "their hearing"
+    },
+    {
+      "offset": 55,
+      "content": "ۖ",
+      "charStart": 48,
+      "charEnd": 49,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 56,
+      "content": "وَعَلىٰ",
+      "charStart": 50,
+      "charEnd": 57,
+      "transliteration": "waʿalāā",
+      "translation": "and upon"
+    },
+    {
+      "offset": 57,
+      "content": "أَبصٰرِهِم",
+      "charStart": 58,
+      "charEnd": 68,
+      "transliteration": "ʾaabṣārihim",
+      "translation": "their sight"
+    },
+    {
+      "offset": 58,
+      "content": "غِشٰوَةٌ",
+      "charStart": 69,
+      "charEnd": 77,
+      "transliteration": "ghishāwaahun",
+      "translation": "a covering"
+    },
+    {
+      "offset": 59,
+      "content": "ۖ",
+      "charStart": 78,
+      "charEnd": 79,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 60,
+      "content": "وَلَهُم",
+      "charStart": 80,
+      "charEnd": 87,
+      "transliteration": "walahum",
+      "translation": "and for them"
+    },
+    {
+      "offset": 61,
+      "content": "عَذابٌ",
+      "charStart": 88,
+      "charEnd": 94,
+      "transliteration": "ʿadhābun",
+      "translation": "punishment"
+    },
+    {
+      "offset": 62,
+      "content": "عَظيمٌ",
+      "charStart": 95,
+      "charEnd": 101,
+      "transliteration": "ʿaẓymun",
+      "translation": "great"
+    },
+    {
+      "offset": 63,
+      "content": "وَمِنَ",
+      "charStart": 0,
+      "charEnd": 6,
+      "transliteration": "wamina",
+      "translation": "and among"
+    },
+    {
+      "offset": 64,
+      "content": "النّاسِ",
+      "charStart": 7,
+      "charEnd": 14,
+      "transliteration": "ālnāsi",
+      "translation": "the people"
+    },
+    {
+      "offset": 65,
+      "content": "مَن",
+      "charStart": 15,
+      "charEnd": 18,
+      "transliteration": "man",
+      "translation": "one who"
+    },
+    {
+      "offset": 66,
+      "content": "يَقولُ",
+      "charStart": 19,
+      "charEnd": 25,
+      "transliteration": "yaqwlu",
+      "translation": "says"
+    },
+    {
+      "offset": 67,
+      "content": "ءامَنّا",
+      "charStart": 26,
+      "charEnd": 33,
+      "transliteration": "ʾāmanā",
+      "translation": "we believe"
+    },
+    {
+      "offset": 68,
+      "content": "بِاللَّهِ",
+      "charStart": 34,
+      "charEnd": 43,
+      "transliteration": "biāllahi",
+      "translation": "in God"
+    },
+    {
+      "offset": 69,
+      "content": "وَبِاليَومِ",
+      "charStart": 44,
+      "charEnd": 55,
+      "transliteration": "wabiālyawmi",
+      "translation": "and in the Day"
+    },
+    {
+      "offset": 70,
+      "content": "الءاخِرِ",
+      "charStart": 56,
+      "charEnd": 64,
+      "transliteration": "ālʾākhiri",
+      "translation": "the Last"
+    },
+    {
+      "offset": 71,
+      "content": "وَما",
+      "charStart": 65,
+      "charEnd": 69,
+      "transliteration": "wamā",
+      "translation": "and what"
+    },
+    {
+      "offset": 72,
+      "content": "هُم",
+      "charStart": 70,
+      "charEnd": 73,
+      "transliteration": "hum",
+      "translation": "they"
+    },
+    {
+      "offset": 73,
+      "content": "بِمُؤمِنينَ",
+      "charStart": 74,
+      "charEnd": 85,
+      "transliteration": "bimuʾminyna",
+      "translation": "believers"
+    },
+    {
+      "offset": 74,
+      "content": "يُخٰدِعونَ",
+      "charStart": 0,
+      "charEnd": 10,
+      "transliteration": "yukhādiʿwna",
+      "translation": "they deceive"
+    },
+    {
+      "offset": 75,
+      "content": "اللَّهَ",
+      "charStart": 11,
+      "charEnd": 18,
+      "transliteration": "āllaha",
+      "translation": "God"
+    },
+    {
+      "offset": 76,
+      "content": "وَالَّذينَ",
+      "charStart": 19,
+      "charEnd": 29,
+      "transliteration": "waāladhyna",
+      "translation": "and those who"
+    },
+    {
+      "offset": 77,
+      "content": "ءامَنوا",
+      "charStart": 30,
+      "charEnd": 37,
+      "transliteration": "ʾāmanwā",
+      "translation": "believe"
+    },
+    {
+      "offset": 78,
+      "content": "وَما",
+      "charStart": 38,
+      "charEnd": 42,
+      "transliteration": "wamā",
+      "translation": "and what"
+    },
+    {
+      "offset": 79,
+      "content": "يَخدَعونَ",
+      "charStart": 43,
+      "charEnd": 52,
+      "transliteration": "yakhdaʿwna",
+      "translation": "they deceive"
+    },
+    {
+      "offset": 80,
+      "content": "إِلّا",
+      "charStart": 53,
+      "charEnd": 58,
+      "transliteration": "ʾiilā",
+      "translation": "behold"
+    },
+    {
+      "offset": 81,
+      "content": "أَنفُسَهُم",
+      "charStart": 59,
+      "charEnd": 69,
+      "transliteration": "ʾaanfusahum",
+      "translation": "themselves"
+    },
+    {
+      "offset": 82,
+      "content": "وَما",
+      "charStart": 70,
+      "charEnd": 74,
+      "transliteration": "wamā",
+      "translation": "and what"
+    },
+    {
+      "offset": 83,
+      "content": "يَشعُرونَ",
+      "charStart": 75,
+      "charEnd": 84,
+      "transliteration": "yashʿurwna",
+      "translation": "perceive"
+    },
+    {
+      "offset": 84,
+      "content": "فى",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "fā",
+      "translation": "in"
+    },
+    {
+      "offset": 85,
+      "content": "قُلوبِهِم",
+      "charStart": 3,
+      "charEnd": 12,
+      "transliteration": "qulwbihim",
+      "translation": "their hearts"
+    },
+    {
+      "offset": 86,
+      "content": "مَرَضٌ",
+      "charStart": 13,
+      "charEnd": 19,
+      "transliteration": "maraḍun",
+      "translation": "a disease"
+    },
+    {
+      "offset": 87,
+      "content": "فَزادَهُمُ",
+      "charStart": 20,
+      "charEnd": 30,
+      "transliteration": "fazādahumu",
+      "translation": "so He increased them"
+    },
+    {
+      "offset": 88,
+      "content": "اللَّهُ",
+      "charStart": 31,
+      "charEnd": 38,
+      "transliteration": "āllahu",
+      "translation": "God"
+    },
+    {
+      "offset": 89,
+      "content": "مَرَضًا",
+      "charStart": 39,
+      "charEnd": 46,
+      "transliteration": "maraḍanā",
+      "translation": "disease"
+    },
+    {
+      "offset": 90,
+      "content": "ۖ",
+      "charStart": 47,
+      "charEnd": 48,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 91,
+      "content": "وَلَهُم",
+      "charStart": 49,
+      "charEnd": 56,
+      "transliteration": "walahum",
+      "translation": "and for them"
+    },
+    {
+      "offset": 92,
+      "content": "عَذابٌ",
+      "charStart": 57,
+      "charEnd": 63,
+      "transliteration": "ʿadhābun",
+      "translation": "punishment"
+    },
+    {
+      "offset": 93,
+      "content": "أَليمٌ",
+      "charStart": 64,
+      "charEnd": 70,
+      "transliteration": "ʾaalymun",
+      "translation": "painful"
+    },
+    {
+      "offset": 94,
+      "content": "بِما",
+      "charStart": 71,
+      "charEnd": 75,
+      "transliteration": "bimā",
+      "translation": "in what"
+    },
+    {
+      "offset": 95,
+      "content": "كانوا",
+      "charStart": 76,
+      "charEnd": 81,
+      "transliteration": "kānwā",
+      "translation": "they were"
+    },
+    {
+      "offset": 96,
+      "content": "يَكذِبونَ",
+      "charStart": 82,
+      "charEnd": 91,
+      "transliteration": "yakdhibwna",
+      "translation": "lying"
+    },
+    {
+      "offset": 97,
+      "content": "وَإِذا",
+      "charStart": 0,
+      "charEnd": 6,
+      "transliteration": "waʾiidhā",
+      "translation": "and when"
+    },
+    {
+      "offset": 98,
+      "content": "قيلَ",
+      "charStart": 7,
+      "charEnd": 11,
+      "transliteration": "qyla",
+      "translation": "it was said"
+    },
+    {
+      "offset": 99,
+      "content": "لَهُم",
+      "charStart": 12,
+      "charEnd": 17,
+      "transliteration": "lahum",
+      "translation": "to them"
+    },
+    {
+      "offset": 100,
+      "content": "لا",
+      "charStart": 18,
+      "charEnd": 20,
+      "transliteration": "lā",
+      "translation": "no"
+    },
+    {
+      "offset": 101,
+      "content": "تُفسِدوا",
+      "charStart": 21,
+      "charEnd": 29,
+      "transliteration": "tufsidwā",
+      "translation": "you cause corruption"
+    },
+    {
+      "offset": 102,
+      "content": "فِى",
+      "charStart": 30,
+      "charEnd": 33,
+      "transliteration": "fiā",
+      "translation": "in"
+    },
+    {
+      "offset": 103,
+      "content": "الأَرضِ",
+      "charStart": 34,
+      "charEnd": 41,
+      "transliteration": "ālʾaarḍi",
+      "translation": "the earth"
+    },
+    {
+      "offset": 104,
+      "content": "قالوا",
+      "charStart": 42,
+      "charEnd": 47,
+      "transliteration": "qālwā",
+      "translation": "they said"
+    },
+    {
+      "offset": 105,
+      "content": "إِنَّما",
+      "charStart": 48,
+      "charEnd": 55,
+      "transliteration": "ʾiinamā",
+      "translation": "only"
+    },
+    {
+      "offset": 106,
+      "content": "نَحنُ",
+      "charStart": 56,
+      "charEnd": 61,
+      "transliteration": "naḥnu",
+      "translation": "we"
+    },
+    {
+      "offset": 107,
+      "content": "مُصلِحونَ",
+      "charStart": 62,
+      "charEnd": 71,
+      "transliteration": "muṣliḥwna",
+      "translation": "reformers"
+    },
+    {
+      "offset": 108,
+      "content": "أَلا",
+      "charStart": 0,
+      "charEnd": 4,
+      "transliteration": "ʾaalā",
+      "translation": "behold"
+    },
+    {
+      "offset": 109,
+      "content": "إِنَّهُم",
+      "charStart": 5,
+      "charEnd": 13,
+      "transliteration": "ʾiinahum",
+      "translation": "indeed they"
+    },
+    {
+      "offset": 110,
+      "content": "هُمُ",
+      "charStart": 14,
+      "charEnd": 18,
+      "transliteration": "humu",
+      "translation": "they"
+    },
+    {
+      "offset": 111,
+      "content": "المُفسِدونَ",
+      "charStart": 19,
+      "charEnd": 30,
+      "transliteration": "ālmufsidwna",
+      "translation": "the corrupters"
+    },
+    {
+      "offset": 112,
+      "content": "وَلٰكِن",
+      "charStart": 31,
+      "charEnd": 38,
+      "transliteration": "walākin",
+      "translation": "but"
+    },
+    {
+      "offset": 113,
+      "content": "لا",
+      "charStart": 39,
+      "charEnd": 41,
+      "transliteration": "lā",
+      "translation": "no"
+    },
+    {
+      "offset": 114,
+      "content": "يَشعُرونَ",
+      "charStart": 42,
+      "charEnd": 51,
+      "transliteration": "yashʿurwna",
+      "translation": "perceive"
+    },
+    {
+      "offset": 115,
+      "content": "وَإِذا",
+      "charStart": 0,
+      "charEnd": 6,
+      "transliteration": "waʾiidhā",
+      "translation": "and when"
+    },
+    {
+      "offset": 116,
+      "content": "قيلَ",
+      "charStart": 7,
+      "charEnd": 11,
+      "transliteration": "qyla",
+      "translation": "it was said"
+    },
+    {
+      "offset": 117,
+      "content": "لَهُم",
+      "charStart": 12,
+      "charEnd": 17,
+      "transliteration": "lahum",
+      "translation": "to them"
+    },
+    {
+      "offset": 118,
+      "content": "ءامِنوا",
+      "charStart": 18,
+      "charEnd": 25,
+      "transliteration": "ʾāminwā",
+      "translation": "believe"
+    },
+    {
+      "offset": 119,
+      "content": "كَما",
+      "charStart": 26,
+      "charEnd": 30,
+      "transliteration": "kamā",
+      "translation": "just as"
+    },
+    {
+      "offset": 120,
+      "content": "ءامَنَ",
+      "charStart": 31,
+      "charEnd": 37,
+      "transliteration": "ʾāmana",
+      "translation": "believed"
+    },
+    {
+      "offset": 121,
+      "content": "النّاسُ",
+      "charStart": 38,
+      "charEnd": 45,
+      "transliteration": "ālnāsu",
+      "translation": "the people"
+    },
+    {
+      "offset": 122,
+      "content": "قالوا",
+      "charStart": 46,
+      "charEnd": 51,
+      "transliteration": "qālwā",
+      "translation": "they said"
+    },
+    {
+      "offset": 123,
+      "content": "أَنُؤمِنُ",
+      "charStart": 52,
+      "charEnd": 61,
+      "transliteration": "ʾaanuʾminu",
+      "translation": "shall we believe"
+    },
+    {
+      "offset": 124,
+      "content": "كَما",
+      "charStart": 62,
+      "charEnd": 66,
+      "transliteration": "kamā",
+      "translation": "just as"
+    },
+    {
+      "offset": 125,
+      "content": "ءامَنَ",
+      "charStart": 67,
+      "charEnd": 73,
+      "transliteration": "ʾāmana",
+      "translation": "believed"
+    },
+    {
+      "offset": 126,
+      "content": "السُّفَهاءُ",
+      "charStart": 74,
+      "charEnd": 85,
+      "transliteration": "ālsufahāʾu",
+      "translation": "the foolish"
+    },
+    {
+      "offset": 127,
+      "content": "ۗ",
+      "charStart": 86,
+      "charEnd": 87,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 128,
+      "content": "أَلا",
+      "charStart": 88,
+      "charEnd": 92,
+      "transliteration": "ʾaalā",
+      "translation": "behold"
+    },
+    {
+      "offset": 129,
+      "content": "إِنَّهُم",
+      "charStart": 93,
+      "charEnd": 101,
+      "transliteration": "ʾiinahum",
+      "translation": "indeed they"
+    },
+    {
+      "offset": 130,
+      "content": "هُمُ",
+      "charStart": 102,
+      "charEnd": 106,
+      "transliteration": "humu",
+      "translation": "they"
+    },
+    {
+      "offset": 131,
+      "content": "السُّفَهاءُ",
+      "charStart": 107,
+      "charEnd": 118,
+      "transliteration": "ālsufahāʾu",
+      "translation": "the foolish"
+    },
+    {
+      "offset": 132,
+      "content": "وَلٰكِن",
+      "charStart": 119,
+      "charEnd": 126,
+      "transliteration": "walākin",
+      "translation": "but"
+    },
+    {
+      "offset": 133,
+      "content": "لا",
+      "charStart": 127,
+      "charEnd": 129,
+      "transliteration": "lā",
+      "translation": "no"
+    },
+    {
+      "offset": 134,
+      "content": "يَعلَمونَ",
+      "charStart": 130,
+      "charEnd": 139,
+      "transliteration": "yaʿlamwna",
+      "translation": "know"
+    },
+    {
+      "offset": 135,
+      "content": "وَإِذا",
+      "charStart": 0,
+      "charEnd": 6,
+      "transliteration": "waʾiidhā",
+      "translation": "and when"
+    },
+    {
+      "offset": 136,
+      "content": "لَقُوا",
+      "charStart": 7,
+      "charEnd": 13,
+      "transliteration": "laquwā",
+      "translation": "met"
+    },
+    {
+      "offset": 137,
+      "content": "الَّذينَ",
+      "charStart": 14,
+      "charEnd": 22,
+      "transliteration": "āladhyna",
+      "translation": "those who"
+    },
+    {
+      "offset": 138,
+      "content": "ءامَنوا",
+      "charStart": 23,
+      "charEnd": 30,
+      "transliteration": "ʾāmanwā",
+      "translation": "believe"
+    },
+    {
+      "offset": 139,
+      "content": "قالوا",
+      "charStart": 31,
+      "charEnd": 36,
+      "transliteration": "qālwā",
+      "translation": "they said"
+    },
+    {
+      "offset": 140,
+      "content": "ءامَنّا",
+      "charStart": 37,
+      "charEnd": 44,
+      "transliteration": "ʾāmanā",
+      "translation": "we believe"
+    },
+    {
+      "offset": 141,
+      "content": "وَإِذا",
+      "charStart": 45,
+      "charEnd": 51,
+      "transliteration": "waʾiidhā",
+      "translation": "and when"
+    },
+    {
+      "offset": 142,
+      "content": "خَلَوا",
+      "charStart": 52,
+      "charEnd": 58,
+      "transliteration": "khalawā",
+      "translation": "went aside"
+    },
+    {
+      "offset": 143,
+      "content": "إِلىٰ",
+      "charStart": 59,
+      "charEnd": 64,
+      "transliteration": "ʾiilāā",
+      "translation": "to"
+    },
+    {
+      "offset": 144,
+      "content": "شَيٰطينِهِم",
+      "charStart": 65,
+      "charEnd": 76,
+      "transliteration": "shayāṭynihim",
+      "translation": "their devils"
+    },
+    {
+      "offset": 145,
+      "content": "قالوا",
+      "charStart": 77,
+      "charEnd": 82,
+      "transliteration": "qālwā",
+      "translation": "they said"
+    },
+    {
+      "offset": 146,
+      "content": "إِنّا",
+      "charStart": 83,
+      "charEnd": 88,
+      "transliteration": "ʾiinā",
+      "translation": "indeed we"
+    },
+    {
+      "offset": 147,
+      "content": "مَعَكُم",
+      "charStart": 89,
+      "charEnd": 96,
+      "transliteration": "maʿakum",
+      "translation": "with you"
+    },
+    {
+      "offset": 148,
+      "content": "إِنَّما",
+      "charStart": 97,
+      "charEnd": 104,
+      "transliteration": "ʾiinamā",
+      "translation": "only"
+    },
+    {
+      "offset": 149,
+      "content": "نَحنُ",
+      "charStart": 105,
+      "charEnd": 110,
+      "transliteration": "naḥnu",
+      "translation": "we"
+    },
+    {
+      "offset": 150,
+      "content": "مُستَهزِءونَ",
+      "charStart": 111,
+      "charEnd": 123,
+      "transliteration": "mustahziʾwna",
+      "translation": "mockers"
+    },
+    {
+      "offset": 151,
+      "content": "اللَّهُ",
+      "charStart": 0,
+      "charEnd": 7,
+      "transliteration": "āllahu",
+      "translation": "God"
+    },
+    {
+      "offset": 152,
+      "content": "يَستَهزِئُ",
+      "charStart": 8,
+      "charEnd": 18,
+      "transliteration": "yastahziʾu",
+      "translation": "mocks"
+    },
+    {
+      "offset": 153,
+      "content": "بِهِم",
+      "charStart": 19,
+      "charEnd": 24,
+      "transliteration": "bihim",
+      "translation": "at them"
+    },
+    {
+      "offset": 154,
+      "content": "وَيَمُدُّهُم",
+      "charStart": 25,
+      "charEnd": 37,
+      "transliteration": "wayamuduhum",
+      "translation": "and extends them"
+    },
+    {
+      "offset": 155,
+      "content": "فى",
+      "charStart": 38,
+      "charEnd": 40,
+      "transliteration": "fā",
+      "translation": "in"
+    },
+    {
+      "offset": 156,
+      "content": "طُغيٰنِهِم",
+      "charStart": 41,
+      "charEnd": 51,
+      "transliteration": "ṭughyānihim",
+      "translation": "their transgression"
+    },
+    {
+      "offset": 157,
+      "content": "يَعمَهونَ",
+      "charStart": 52,
+      "charEnd": 61,
+      "transliteration": "yaʿmahwna",
+      "translation": "they wander blindly"
+    },
+    {
+      "offset": 158,
+      "content": "أُولٰئِكَ",
+      "charStart": 0,
+      "charEnd": 9,
+      "transliteration": "ʾauwlāʾika",
+      "translation": "those"
+    },
+    {
+      "offset": 159,
+      "content": "الَّذينَ",
+      "charStart": 10,
+      "charEnd": 18,
+      "transliteration": "āladhyna",
+      "translation": "those who"
+    },
+    {
+      "offset": 160,
+      "content": "اشتَرَوُا",
+      "charStart": 19,
+      "charEnd": 28,
+      "transliteration": "āshtarawuā",
+      "translation": "they bought"
+    },
+    {
+      "offset": 161,
+      "content": "الضَّلٰلَةَ",
+      "charStart": 29,
+      "charEnd": 40,
+      "transliteration": "ālḍalālaaha",
+      "translation": "misguidance"
+    },
+    {
+      "offset": 162,
+      "content": "بِالهُدىٰ",
+      "charStart": 41,
+      "charEnd": 50,
+      "transliteration": "biālhudāā",
+      "translation": "for guidance"
+    },
+    {
+      "offset": 163,
+      "content": "فَما",
+      "charStart": 51,
+      "charEnd": 55,
+      "transliteration": "famā",
+      "translation": "so not"
+    },
+    {
+      "offset": 164,
+      "content": "رَبِحَت",
+      "charStart": 56,
+      "charEnd": 63,
+      "transliteration": "rabiḥat",
+      "translation": "profited"
+    },
+    {
+      "offset": 165,
+      "content": "تِجٰرَتُهُم",
+      "charStart": 64,
+      "charEnd": 75,
+      "transliteration": "tijāratuhum",
+      "translation": "their trade"
+    },
+    {
+      "offset": 166,
+      "content": "وَما",
+      "charStart": 76,
+      "charEnd": 80,
+      "transliteration": "wamā",
+      "translation": "and what"
+    },
+    {
+      "offset": 167,
+      "content": "كانوا",
+      "charStart": 81,
+      "charEnd": 86,
+      "transliteration": "kānwā",
+      "translation": "they were"
+    },
+    {
+      "offset": 168,
+      "content": "مُهتَدينَ",
+      "charStart": 87,
+      "charEnd": 96,
+      "transliteration": "muhtadyna",
+      "translation": "guided"
+    },
+    {
+      "offset": 169,
+      "content": "مَثَلُهُم",
+      "charStart": 0,
+      "charEnd": 9,
+      "transliteration": "mathaluhum",
+      "translation": "their likeness"
+    },
+    {
+      "offset": 170,
+      "content": "كَمَثَلِ",
+      "charStart": 10,
+      "charEnd": 18,
+      "transliteration": "kamathali",
+      "translation": "like the likeness"
+    },
+    {
+      "offset": 171,
+      "content": "الَّذِى",
+      "charStart": 19,
+      "charEnd": 26,
+      "transliteration": "āladhiā",
+      "translation": "of the one who"
+    },
+    {
+      "offset": 172,
+      "content": "استَوقَدَ",
+      "charStart": 27,
+      "charEnd": 36,
+      "transliteration": "āstawqada",
+      "translation": "kindled"
+    },
+    {
+      "offset": 173,
+      "content": "نارًا",
+      "charStart": 37,
+      "charEnd": 42,
+      "transliteration": "nāranā",
+      "translation": "a fire"
+    },
+    {
+      "offset": 174,
+      "content": "فَلَمّا",
+      "charStart": 43,
+      "charEnd": 50,
+      "transliteration": "falamā",
+      "translation": "then when"
+    },
+    {
+      "offset": 175,
+      "content": "أَضاءَت",
+      "charStart": 51,
+      "charEnd": 58,
+      "transliteration": "ʾaaḍāʾat",
+      "translation": "it illuminated"
+    },
+    {
+      "offset": 176,
+      "content": "ما",
+      "charStart": 59,
+      "charEnd": 61,
+      "transliteration": "mā",
+      "translation": "what"
+    },
+    {
+      "offset": 177,
+      "content": "حَولَهُ",
+      "charStart": 62,
+      "charEnd": 69,
+      "transliteration": "ḥawlahu",
+      "translation": "around him"
+    },
+    {
+      "offset": 178,
+      "content": "ذَهَبَ",
+      "charStart": 70,
+      "charEnd": 76,
+      "transliteration": "dhahaba",
+      "translation": "took away"
+    },
+    {
+      "offset": 179,
+      "content": "اللَّهُ",
+      "charStart": 77,
+      "charEnd": 84,
+      "transliteration": "āllahu",
+      "translation": "God"
+    },
+    {
+      "offset": 180,
+      "content": "بِنورِهِم",
+      "charStart": 85,
+      "charEnd": 94,
+      "transliteration": "binwrihim",
+      "translation": "their light"
+    },
+    {
+      "offset": 181,
+      "content": "وَتَرَكَهُم",
+      "charStart": 95,
+      "charEnd": 106,
+      "transliteration": "watarakahum",
+      "translation": "and left them"
+    },
+    {
+      "offset": 182,
+      "content": "فى",
+      "charStart": 107,
+      "charEnd": 109,
+      "transliteration": "fā",
+      "translation": "in"
+    },
+    {
+      "offset": 183,
+      "content": "ظُلُمٰتٍ",
+      "charStart": 110,
+      "charEnd": 118,
+      "transliteration": "ẓulumātin",
+      "translation": "darknesses"
+    },
+    {
+      "offset": 184,
+      "content": "لا",
+      "charStart": 119,
+      "charEnd": 121,
+      "transliteration": "lā",
+      "translation": "no"
+    },
+    {
+      "offset": 185,
+      "content": "يُبصِرونَ",
+      "charStart": 122,
+      "charEnd": 131,
+      "transliteration": "yubṣirwna",
+      "translation": "see"
+    },
+    {
+      "offset": 186,
+      "content": "صُمٌّ",
+      "charStart": 0,
+      "charEnd": 5,
+      "transliteration": "ṣumun",
+      "translation": "deaf"
+    },
+    {
+      "offset": 187,
+      "content": "بُكمٌ",
+      "charStart": 6,
+      "charEnd": 11,
+      "transliteration": "bukmun",
+      "translation": "dumb"
+    },
+    {
+      "offset": 188,
+      "content": "عُمىٌ",
+      "charStart": 12,
+      "charEnd": 17,
+      "transliteration": "ʿumāun",
+      "translation": "blind"
+    },
+    {
+      "offset": 189,
+      "content": "فَهُم",
+      "charStart": 18,
+      "charEnd": 23,
+      "transliteration": "fahum",
+      "translation": "so they"
+    },
+    {
+      "offset": 190,
+      "content": "لا",
+      "charStart": 24,
+      "charEnd": 26,
+      "transliteration": "lā",
+      "translation": "no"
+    },
+    {
+      "offset": 191,
+      "content": "يَرجِعونَ",
+      "charStart": 27,
+      "charEnd": 36,
+      "transliteration": "yarjiʿwna",
+      "translation": "return"
+    },
+    {
+      "offset": 192,
+      "content": "أَو",
+      "charStart": 0,
+      "charEnd": 3,
+      "transliteration": "ʾaaw",
+      "translation": "or"
+    },
+    {
+      "offset": 193,
+      "content": "كَصَيِّبٍ",
+      "charStart": 4,
+      "charEnd": 13,
+      "transliteration": "kaṣayibin",
+      "translation": "like a rainstorm"
+    },
+    {
+      "offset": 194,
+      "content": "مِنَ",
+      "charStart": 14,
+      "charEnd": 18,
+      "transliteration": "mina",
+      "translation": "one who"
+    },
+    {
+      "offset": 195,
+      "content": "السَّماءِ",
+      "charStart": 19,
+      "charEnd": 28,
+      "transliteration": "ālsamāʾi",
+      "translation": "the sky"
+    },
+    {
+      "offset": 196,
+      "content": "فيهِ",
+      "charStart": 29,
+      "charEnd": 33,
+      "transliteration": "fyhi",
+      "translation": "in it"
+    },
+    {
+      "offset": 197,
+      "content": "ظُلُمٰتٌ",
+      "charStart": 34,
+      "charEnd": 42,
+      "transliteration": "ẓulumātun",
+      "translation": "darknesses"
+    },
+    {
+      "offset": 198,
+      "content": "وَرَعدٌ",
+      "charStart": 43,
+      "charEnd": 50,
+      "transliteration": "waraʿdun",
+      "translation": "and thunder"
+    },
+    {
+      "offset": 199,
+      "content": "وَبَرقٌ",
+      "charStart": 51,
+      "charEnd": 58,
+      "transliteration": "wabarqun",
+      "translation": "and lightning"
+    },
+    {
+      "offset": 200,
+      "content": "يَجعَلونَ",
+      "charStart": 59,
+      "charEnd": 68,
+      "transliteration": "yajʿalwna",
+      "translation": "they put"
+    },
+    {
+      "offset": 201,
+      "content": "أَصٰبِعَهُم",
+      "charStart": 69,
+      "charEnd": 80,
+      "transliteration": "ʾaaṣābiʿahum",
+      "translation": "their fingers"
+    },
+    {
+      "offset": 202,
+      "content": "فى",
+      "charStart": 81,
+      "charEnd": 83,
+      "transliteration": "fā",
+      "translation": "in"
+    },
+    {
+      "offset": 203,
+      "content": "ءاذانِهِم",
+      "charStart": 84,
+      "charEnd": 93,
+      "transliteration": "ʾādhānihim",
+      "translation": "their ears"
+    },
+    {
+      "offset": 204,
+      "content": "مِنَ",
+      "charStart": 94,
+      "charEnd": 98,
+      "transliteration": "mina",
+      "translation": "one who"
+    },
+    {
+      "offset": 205,
+      "content": "الصَّوٰعِقِ",
+      "charStart": 99,
+      "charEnd": 110,
+      "transliteration": "ālṣawāʿiqi",
+      "translation": "the thunderclaps"
+    },
+    {
+      "offset": 206,
+      "content": "حَذَرَ",
+      "charStart": 111,
+      "charEnd": 117,
+      "transliteration": "ḥadhara",
+      "translation": "fearing"
+    },
+    {
+      "offset": 207,
+      "content": "المَوتِ",
+      "charStart": 118,
+      "charEnd": 125,
+      "transliteration": "ālmawti",
+      "translation": "death"
+    },
+    {
+      "offset": 208,
+      "content": "ۚ",
+      "charStart": 126,
+      "charEnd": 127,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 209,
+      "content": "وَاللَّهُ",
+      "charStart": 128,
+      "charEnd": 137,
+      "transliteration": "waāllahu",
+      "translation": "and God"
+    },
+    {
+      "offset": 210,
+      "content": "مُحيطٌ",
+      "charStart": 138,
+      "charEnd": 144,
+      "transliteration": "muḥyṭun",
+      "translation": "encompassing"
+    },
+    {
+      "offset": 211,
+      "content": "بِالكٰفِرينَ",
+      "charStart": 145,
+      "charEnd": 157,
+      "transliteration": "biālkāfiryna",
+      "translation": "the disbelievers"
+    },
+    {
+      "offset": 212,
+      "content": "يَكادُ",
+      "charStart": 0,
+      "charEnd": 6,
+      "transliteration": "yakādu",
+      "translation": "almost"
+    },
+    {
+      "offset": 213,
+      "content": "البَرقُ",
+      "charStart": 7,
+      "charEnd": 14,
+      "transliteration": "ālbarqu",
+      "translation": "the lightning"
+    },
+    {
+      "offset": 214,
+      "content": "يَخطَفُ",
+      "charStart": 15,
+      "charEnd": 22,
+      "transliteration": "yakhṭafu",
+      "translation": "snatches"
+    },
+    {
+      "offset": 215,
+      "content": "أَبصٰرَهُم",
+      "charStart": 23,
+      "charEnd": 33,
+      "transliteration": "ʾaabṣārahum",
+      "translation": "their sight"
+    },
+    {
+      "offset": 216,
+      "content": "ۖ",
+      "charStart": 34,
+      "charEnd": 35,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 217,
+      "content": "كُلَّما",
+      "charStart": 36,
+      "charEnd": 43,
+      "transliteration": "kulamā",
+      "translation": "whenever"
+    },
+    {
+      "offset": 218,
+      "content": "أَضاءَ",
+      "charStart": 44,
+      "charEnd": 50,
+      "transliteration": "ʾaaḍāʾa",
+      "translation": "it shone"
+    },
+    {
+      "offset": 219,
+      "content": "لَهُم",
+      "charStart": 51,
+      "charEnd": 56,
+      "transliteration": "lahum",
+      "translation": "to them"
+    },
+    {
+      "offset": 220,
+      "content": "مَشَوا",
+      "charStart": 57,
+      "charEnd": 63,
+      "transliteration": "mashawā",
+      "translation": "they walked"
+    },
+    {
+      "offset": 221,
+      "content": "فيهِ",
+      "charStart": 64,
+      "charEnd": 68,
+      "transliteration": "fyhi",
+      "translation": "in it"
+    },
+    {
+      "offset": 222,
+      "content": "وَإِذا",
+      "charStart": 69,
+      "charEnd": 75,
+      "transliteration": "waʾiidhā",
+      "translation": "and when"
+    },
+    {
+      "offset": 223,
+      "content": "أَظلَمَ",
+      "charStart": 76,
+      "charEnd": 83,
+      "transliteration": "ʾaaẓlama",
+      "translation": "it darkened"
+    },
+    {
+      "offset": 224,
+      "content": "عَلَيهِم",
+      "charStart": 84,
+      "charEnd": 92,
+      "transliteration": "ʿalayhim",
+      "translation": "upon them"
+    },
+    {
+      "offset": 225,
+      "content": "قاموا",
+      "charStart": 93,
+      "charEnd": 98,
+      "transliteration": "qāmwā",
+      "translation": "they stood"
+    },
+    {
+      "offset": 226,
+      "content": "ۚ",
+      "charStart": 99,
+      "charEnd": 100,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 227,
+      "content": "وَلَو",
+      "charStart": 101,
+      "charEnd": 106,
+      "transliteration": "walaw",
+      "translation": "and if"
+    },
+    {
+      "offset": 228,
+      "content": "شاءَ",
+      "charStart": 107,
+      "charEnd": 111,
+      "transliteration": "shāʾa",
+      "translation": "He willed"
+    },
+    {
+      "offset": 229,
+      "content": "اللَّهُ",
+      "charStart": 112,
+      "charEnd": 119,
+      "transliteration": "āllahu",
+      "translation": "God"
+    },
+    {
+      "offset": 230,
+      "content": "لَذَهَبَ",
+      "charStart": 120,
+      "charEnd": 128,
+      "transliteration": "ladhahaba",
+      "translation": "surely He would take away"
+    },
+    {
+      "offset": 231,
+      "content": "بِسَمعِهِم",
+      "charStart": 129,
+      "charEnd": 139,
+      "transliteration": "bisamʿihim",
+      "translation": "their hearing"
+    },
+    {
+      "offset": 232,
+      "content": "وَأَبصٰرِهِم",
+      "charStart": 140,
+      "charEnd": 152,
+      "transliteration": "waʾaabṣārihim",
+      "translation": "and their sight"
+    },
+    {
+      "offset": 233,
+      "content": "ۚ",
+      "charStart": 153,
+      "charEnd": 154,
+      "transliteration": "",
+      "translation": ""
+    },
+    {
+      "offset": 234,
+      "content": "إِنَّ",
+      "charStart": 155,
+      "charEnd": 160,
+      "transliteration": "ʾiina",
+      "translation": "indeed"
+    },
+    {
+      "offset": 235,
+      "content": "اللَّهَ",
+      "charStart": 161,
+      "charEnd": 168,
+      "transliteration": "āllaha",
+      "translation": "God"
+    },
+    {
+      "offset": 236,
+      "content": "عَلىٰ",
+      "charStart": 169,
+      "charEnd": 174,
+      "transliteration": "ʿalāā",
+      "translation": "upon"
+    },
+    {
+      "offset": 237,
+      "content": "كُلِّ",
+      "charStart": 175,
+      "charEnd": 180,
+      "transliteration": "kuli",
+      "translation": "every"
+    },
+    {
+      "offset": 238,
+      "content": "شَيءٍ",
+      "charStart": 181,
+      "charEnd": 186,
+      "transliteration": "shayʾin",
+      "translation": "thing"
+    },
+    {
+      "offset": 239,
+      "content": "قَديرٌ",
+      "charStart": 187,
+      "charEnd": 193,
+      "transliteration": "qadyrun",
+      "translation": "powerful"
     }
   ],
   "glosses": [
     {
-      "id": "quran-basmala",
+      "id": "baqarah-2-2-grammar",
       "start": 0,
-      "end": 3,
-      "content": "The phrase 'In the name of Allah, the Most Merciful, the Most Compassionate' opens the Qur’an and nearly every surah, invoking divine mercy before all speech or action."
+      "end": 8,
+      "content": "ذٰلِكَ is a distal demonstrative: “that.” الكِتٰبُ is nominative (the subject); لا رَيبَ is the “lā of absolute negation” construction, “no doubt.”"
     },
     {
-      "id": "quran-rahman-rahim",
-      "start": 2,
-      "end": 3,
-      "content": "'ar-Raḥmān' and 'ar-Raḥīm' both derive from the root R-Ḥ-M (mercy), emphasizing God's encompassing and ongoing compassion."
+      "id": "baqarah-2-3-grammar",
+      "start": 9,
+      "end": 16,
+      "content": "Relative clause: الَّذينَ introduces “those who.” Present-tense verbs express continuing practice. بِالغَيبِ and بِما use bi- (“in / in what”)."
+    },
+    {
+      "id": "baqarah-2-4-grammar",
+      "start": 17,
+      "end": 28,
+      "content": "Passive أُنزِلَ means “was sent down.” The paired clauses contrast revelation sent to you with that sent before you."
+    },
+    {
+      "id": "baqarah-2-5-grammar",
+      "start": 29,
+      "end": 37,
+      "content": "عَلىٰ هُدًى literally “upon guidance.” المُفلِحونَ is an active participle/plural: those who attain success."
+    },
+    {
+      "id": "baqarah-2-6-grammar",
+      "start": 38,
+      "end": 48,
+      "content": "إِنَّ adds emphasis (“indeed”). The interrogative ءَأَنذَرتَهُم is joined to أَم (“or”), forming “whether you warn them or not.”"
+    },
+    {
+      "id": "baqarah-2-7-grammar",
+      "start": 49,
+      "end": 62,
+      "content": "خَتَمَ (“sealed”) is a perfect verb. عَلىٰ قُلوبِهِم / سَمعِهِم / أَبصارِهِم repeat the prepositional phrase for emphasis."
+    },
+    {
+      "id": "baqarah-2-8-grammar",
+      "start": 63,
+      "end": 73,
+      "content": "مَن يَقولُ is “one who says.” وَما هُم بِمُؤمِنينَ uses bi- to intensify negation: “they are not at all believers.”"
+    },
+    {
+      "id": "baqarah-2-9-grammar",
+      "start": 74,
+      "end": 83,
+      "content": "The Form III verb يُخٰدِعونَ conveys attempted mutual/deceptive action. إِلّا marks the exception: “only themselves.”"
+    },
+    {
+      "id": "baqarah-2-10-grammar",
+      "start": 84,
+      "end": 96,
+      "content": "فى قُلوبِهِم مَرَضٌ is a nominal clause, literally “in their hearts [is] a disease.” فَزادَهُم links the consequence: “so God increased them.”"
+    },
+    {
+      "id": "baqarah-2-11-grammar",
+      "start": 97,
+      "end": 107,
+      "content": "The passive قيلَ is “it was said.” لا تُفسِدوا is a negative command: “do not cause corruption.”"
+    },
+    {
+      "id": "baqarah-2-12-grammar",
+      "start": 108,
+      "end": 114,
+      "content": "أَلا is an attention particle (“surely / behold”). هُمُ appears twice for emphatic identification: “they—the corrupters.”"
+    },
+    {
+      "id": "baqarah-2-13-grammar",
+      "start": 115,
+      "end": 134,
+      "content": "كَما means “just as.” The question أَنُؤمِنُ is rhetorical. السُّفَهاءُ is a broken plural, “the foolish.”"
+    },
+    {
+      "id": "baqarah-2-14-grammar",
+      "start": 135,
+      "end": 150,
+      "content": "لَقُوا means “met”; خَلَوا إِلىٰ means “went aside to.” إِنّا and إِنَّما both provide emphasis/restriction."
+    },
+    {
+      "id": "baqarah-2-15-grammar",
+      "start": 151,
+      "end": 157,
+      "content": "يَستَهزِئُ and يَمُدُّهُم are imperfect verbs, depicting ongoing response. طُغيٰنِهِم is “their transgression.”"
+    },
+    {
+      "id": "baqarah-2-16-grammar",
+      "start": 158,
+      "end": 168,
+      "content": "اِشتَرَوا (“they bought”) is a commercial metaphor. فَما رَبِحَت تِجٰرَتُهُم: “their trade did not profit.”"
+    },
+    {
+      "id": "baqarah-2-17-grammar",
+      "start": 169,
+      "end": 185,
+      "content": "مَثَلُهُم كَمَثَلِ opens a simile: “their likeness is like the likeness.” فَلَمّا introduces the result after “when.”"
+    },
+    {
+      "id": "baqarah-2-18-grammar",
+      "start": 186,
+      "end": 191,
+      "content": "صُمٌّ بُكمٌ عُمىٌ are plural descriptive nouns: “deaf, dumb, blind.” فَهُم links the conclusion."
+    },
+    {
+      "id": "baqarah-2-19-grammar",
+      "start": 192,
+      "end": 211,
+      "content": "كَصَيِّبٍ is “like a rainstorm.” مِنَ الصَّوٰعِقِ (“from the thunderclaps”) expresses the cause of fear."
+    },
+    {
+      "id": "baqarah-2-20-grammar",
+      "start": 212,
+      "end": 239,
+      "content": "يَكادُ (“almost”) governs the following imperfect verb. كُلَّما means “whenever.” لَو (“if”) presents a counterfactual condition."
     }
   ]
 }
