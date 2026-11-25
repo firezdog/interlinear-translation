@@ -10,10 +10,42 @@ export type PassageIndex = {
     passage: Passage;
     /** Explicit token-id → token (from Token.offset). */
     tokenById: Map<TokenId, Token>;
+    /** Which glosses cover each token id (precomputed sweep). */
+    glossesByToken: Map<TokenId, Gloss[]>;
     segmentContaining(tokenId: TokenId): Segment | undefined;
     tokensInRange(start: TokenId, end: TokenId): Token[];
     glossSpanText(gloss: Gloss): string;
 };
+
+/** Sweep tokens left-to-right, activating/deactivating glosses via start/end pointers. */
+function buildGlossesByToken(
+    tokens: Token[],
+    glosses: Gloss[]
+): Map<TokenId, Gloss[]> {
+    const byStart = [...glosses].sort((a, b) => a.start - b.start);
+    const byEnd = [...glosses].sort((a, b) => a.end - b.end);
+    let startPtr = 0;
+    let endPtr = 0;
+    const active = new Set<Gloss>();
+    const glossesByToken = new Map<TokenId, Gloss[]>();
+
+    for (const token of tokens) {
+        while (endPtr < byEnd.length && byEnd[endPtr].end < token.offset) {
+            active.delete(byEnd[endPtr]);
+            endPtr++;
+        }
+        while (
+            startPtr < byStart.length &&
+            byStart[startPtr].start <= token.offset
+        ) {
+            active.add(byStart[startPtr]);
+            startPtr++;
+        }
+        glossesByToken.set(token.offset, [...active]);
+    }
+
+    return glossesByToken;
+}
 
 /**
  * Build lookup maps and range helpers from a passage.
@@ -25,6 +57,7 @@ function indexPassage(passage: Passage): PassageIndex {
         tokenById.set(token.offset, token);
     }
     const sortedById = [...passage.tokens].sort((a, b) => a.offset - b.offset);
+    const glossesByToken = buildGlossesByToken(passage.tokens, passage.glosses);
 
     function segmentContaining(tokenId: TokenId): Segment | undefined {
         return passage.segments.find(
@@ -91,10 +124,11 @@ function indexPassage(passage: Passage): PassageIndex {
     return {
         passage,
         tokenById,
+        glossesByToken,
         segmentContaining,
         tokensInRange,
         glossSpanText,
     };
 }
 
-export { indexPassage };
+export { indexPassage, buildGlossesByToken };

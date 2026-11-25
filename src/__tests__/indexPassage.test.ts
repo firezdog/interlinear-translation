@@ -98,4 +98,26 @@ describe("indexPassage", () => {
             index.glossSpanText({ id: "x", start: 2, end: 3, content: "x" })
         ).toBe("光 疑是");
     });
+
+    it("glossesByToken maps which glosses cover each TokenId", () => {
+        const withOverlap: Passage = {
+            ...poem,
+            glosses: [
+                { id: "moon", start: 1, end: 1, content: "moon" },
+                { id: "line1", start: 0, end: 2, content: "line 1" },
+            ],
+        };
+        const index = indexPassage(withOverlap);
+        expect(index.glossesByToken.get(0)?.map((g) => g.id)).toEqual([
+            "line1",
+        ]);
+        expect(index.glossesByToken.get(1)?.map((g) => g.id)).toEqual([
+            "line1",
+            "moon",
+        ]);
+        expect(index.glossesByToken.get(2)?.map((g) => g.id)).toEqual([
+            "line1",
+        ]);
+        expect(index.glossesByToken.get(3)).toEqual([]);
+    });
 });

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import React from "react";
 import { Gloss, Passage, Token } from "@/passage/types";
 import { FileClient } from "@/clients/file";
-import { buildGlossesByToken } from "@/passage/buildGlossesByToken";
+import { indexPassage } from "@/passage/indexPassage";
 import { studyTokensFor } from "@/passage/projectPassage";
 import { ReadingColumn } from "@/components/ReadingColumn";
 import { StudyRail } from "@/components/StudyRail";
@@ -39,19 +39,17 @@ function App() {
     const [saveError, setSaveError] = useState<string | null>(null);
     const [createOpen, setCreateOpen] = useState(false);
 
-    const glossesByToken = useMemo(
-        () =>
-            passage
-                ? buildGlossesByToken(passage.tokens, passage.glosses)
-                : new Map<number, Gloss[]>(),
+    const index = useMemo(
+        () => (passage ? indexPassage(passage) : null),
         [passage]
     );
+    const glossesByToken = index?.glossesByToken ?? new Map<number, Gloss[]>();
     const selectedGlosses: Gloss[] =
         selectedToken === -1 ? [] : (glossesByToken.get(selectedToken) ?? []);
 
     const wordToken =
-        passage && selectedToken >= 0
-            ? (passage.tokens.find((t) => t.offset === selectedToken) ?? null)
+        index && selectedToken >= 0
+            ? (index.tokenById.get(selectedToken) ?? null)
             : null;
 
     const studyFocus = useMemo(() => {
