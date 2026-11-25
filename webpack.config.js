@@ -1,11 +1,24 @@
 const path = require("path")
 const fs = require("fs")
+const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
 
 const PASSAGE_KEY_RE = /^[a-z0-9-]+$/
 const PAGE_RE = /^\d+$/
 const passagesRoot = path.resolve(__dirname, "public", "passages")
+
+/** Ensure publicPath is absolute and ends with `/` (webpack convention). */
+function normalizePublicPath(raw) {
+    const value = (raw && String(raw).trim()) || "/"
+    if (value === "/") return "/"
+
+    const withLeading = value.startsWith("/") ? value : `/${value}`
+    return withLeading.endsWith("/") ? withLeading : `${withLeading}/`
+}
+
+const isProd = process.env.NODE_ENV === "production"
+const publicPath = normalizePublicPath(process.env.PUBLIC_PATH)
 
 function collectBody(req) {
     return new Promise((resolve, reject) => {
@@ -66,14 +79,15 @@ function passageWriteMiddleware(req, res, next) {
 }
 
 module.exports = {
-    mode: "development",
+    mode: isProd ? "production" : "development",
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
-        publicPath: "/"
+        publicPath,
     },
-    devtool: "inline-source-map",
+    // Inline maps for local dev; omit maps from the Pages deploy artifact.
+    devtool: isProd ? false : "inline-source-map",
     devServer: {
         // Don't live-reload when Save overwrites passage JSON on disk.
         static: {
@@ -117,6 +131,9 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.DefinePlugin({
+            "process.env.PUBLIC_PATH": JSON.stringify(publicPath),
+        }),
         new HtmlWebpackPlugin({
             template: "./public/index.html"
         }),

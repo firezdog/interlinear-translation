@@ -1,6 +1,7 @@
 import { Passage } from "@/passage/types"
 import { InterlinearClient } from "@/clients/types"
 import { assertPassage } from "@/passage/validatePassage"
+import { publicAssetUrl } from "@/clients/basePath"
 
 
 class FileClient implements InterlinearClient {
@@ -15,7 +16,7 @@ class FileClient implements InterlinearClient {
     }
 
     async read(passageKey: string, page: number): Promise<Passage> {
-        const path = `/passages/${passageKey}/${page}.json`;
+        const path = publicAssetUrl(`passages/${passageKey}/${page}.json`);
         const response = await fetch(path);
 
         if (!response.ok) {

@@ -19,14 +19,21 @@ const validPassage = {
 
 describe("FileClient.read", () => {
   const fetchMock = jest.fn();
+  const originalPublicPath = process.env.PUBLIC_PATH;
 
   beforeEach(() => {
     fetchMock.mockReset();
     global.fetch = fetchMock as unknown as typeof fetch;
+    delete process.env.PUBLIC_PATH;
   });
 
   afterEach(() => {
     jest.restoreAllMocks();
+    if (originalPublicPath === undefined) {
+      delete process.env.PUBLIC_PATH;
+    } else {
+      process.env.PUBLIC_PATH = originalPublicPath;
+    }
   });
 
   it("returns a validated passage on success", async () => {
@@ -39,6 +46,20 @@ describe("FileClient.read", () => {
 
     expect(fetchMock).toHaveBeenCalledWith("/passages/oku-no-hosomichi/1.json");
     expect(passage).toEqual(validPassage);
+  });
+
+  it("prefixes the passage URL with PUBLIC_PATH", async () => {
+    process.env.PUBLIC_PATH = "/interlinear-translation/";
+    fetchMock.mockResolvedValue({
+      ok: true,
+      json: async () => validPassage,
+    });
+
+    await FileClient.getClient().read("oku-no-hosomichi", 1);
+
+    expect(fetchMock).toHaveBeenCalledWith(
+      "/interlinear-translation/passages/oku-no-hosomichi/1.json"
+    );
   });
 
   it("throws when the response is not ok", async () => {
