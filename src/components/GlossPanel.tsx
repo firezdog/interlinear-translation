@@ -26,6 +26,7 @@ function GlossPanel({
     const [editing, setEditing] = useState(false);
     const [editDraft, setEditDraft] = useState("");
     const focusedCardRef = useRef<HTMLDivElement | null>(null);
+    const glossListRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (!selectionRange) setDraft("");
@@ -42,17 +43,6 @@ function GlossPanel({
         }
     }, [focusedGloss?.content, editing]);
 
-    useEffect(() => {
-        if (!focusedGloss) {
-            setEditing(false);
-            return;
-        }
-        focusedCardRef.current?.scrollIntoView({
-            block: "nearest",
-            inline: "nearest",
-        });
-    }, [focusedGloss]);
-
     const ordered = useMemo(
         () =>
             [...glosses].sort(
@@ -61,6 +51,37 @@ function GlossPanel({
             ),
         [glosses]
     );
+
+    useEffect(() => {
+        if (!focusedGloss) {
+            setEditing(false);
+        }
+    }, [focusedGloss]);
+
+    useEffect(() => {
+        if (selectedToken < 0 || ordered.length === 0) return;
+        const target =
+            (focusedGloss && focusedCardRef.current) ||
+            glossListRef.current?.querySelector<HTMLElement>(".gloss-card");
+        if (!target) return;
+
+        const panel = target.closest(".panel-body");
+        if (panel instanceof HTMLElement) {
+            const targetRect = target.getBoundingClientRect();
+            const panelRect = panel.getBoundingClientRect();
+            const above = targetRect.top < panelRect.top + 4;
+            const below = targetRect.bottom > panelRect.bottom - 4;
+            if (above || below) {
+                panel.scrollTop += targetRect.top - panelRect.top - 8;
+            }
+            return;
+        }
+
+        target.scrollIntoView({
+            block: "nearest",
+            inline: "nearest",
+        });
+    }, [selectedToken, focusedGloss, ordered]);
 
     const draftSpan =
         selectionRange != null
@@ -96,40 +117,6 @@ function GlossPanel({
         <section className="study-panel study-panel-gloss" aria-label="Glosses">
             <h2>Glosses</h2>
             <div className="panel-body">
-                {selectionRange ? (
-                    <div className="gloss-compose">
-                        <p className="gloss-hint">
-                            Span: {draftSpan}
-                            {" · "}
-                            Shift-click to extend · ⌘/Ctrl+Enter to add
-                        </p>
-                        <textarea
-                            className="gloss-compose-input"
-                            value={draft}
-                            onChange={(e) => setDraft(e.target.value)}
-                            onKeyDown={(e) => {
-                                if (
-                                    e.key === "Enter" &&
-                                    (e.metaKey || e.ctrlKey)
-                                ) {
-                                    e.preventDefault();
-                                    submitDraft();
-                                }
-                            }}
-                            placeholder="Commentary for this span"
-                            rows={3}
-                            aria-label="New gloss commentary"
-                        />
-                        <button
-                            type="button"
-                            className="gloss-compose-submit"
-                            onClick={submitDraft}
-                        >
-                            Add gloss
-                        </button>
-                    </div>
-                ) : null}
-
                 {selectedToken < 0 ? (
                     selectionRange ? null : (
                         <p className="panel-empty">
@@ -146,7 +133,7 @@ function GlossPanel({
                                 ? `${ordered.length} glosses · tightest first · click a card to highlight its full span`
                                 : "Click the card to highlight this gloss’s full span in the text"}
                         </p>
-                        <div className="gloss-list">
+                        <div className="gloss-list" ref={glossListRef}>
                             {ordered.map((g) => {
                                 const isFocus = focusedGloss?.id === g.id;
                                 if (isFocus) {
@@ -235,6 +222,40 @@ function GlossPanel({
                         </div>
                     </>
                 )}
+
+                {selectionRange ? (
+                    <div className="gloss-compose">
+                        <p className="gloss-hint">
+                            Span: {draftSpan}
+                            {" · "}
+                            Shift-click to extend · ⌘/Ctrl+Enter to add
+                        </p>
+                        <textarea
+                            className="gloss-compose-input"
+                            value={draft}
+                            onChange={(e) => setDraft(e.target.value)}
+                            onKeyDown={(e) => {
+                                if (
+                                    e.key === "Enter" &&
+                                    (e.metaKey || e.ctrlKey)
+                                ) {
+                                    e.preventDefault();
+                                    submitDraft();
+                                }
+                            }}
+                            placeholder="Commentary for this span"
+                            rows={3}
+                            aria-label="New gloss commentary"
+                        />
+                        <button
+                            type="button"
+                            className="gloss-compose-submit"
+                            onClick={submitDraft}
+                        >
+                            Add gloss
+                        </button>
+                    </div>
+                ) : null}
             </div>
         </section>
     );

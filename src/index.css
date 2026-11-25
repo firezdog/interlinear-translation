@@ -2,6 +2,7 @@
 
 @theme {
   --spacing-study-rail-top: 0.75rem;
+  --spacing-passage-toolbar: 2.75rem;
   --container-reading: 40rem;
   --container-rail: 22rem;
   --spacing-layout-gap: 1rem;
@@ -29,6 +30,17 @@ body {
   color: #1c1917;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+.passage-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin-inline: -1.25rem;
+  padding-inline: 1.25rem;
+  padding-block: 0.55rem;
+  background: var(--color-page);
+  border-bottom: 1px solid var(--color-panel-border);
 }
 
 .study-layout {
@@ -148,8 +160,8 @@ button.tok.tok-in-span[aria-pressed="true"] {
   flex-direction: column;
   gap: 0.75rem;
   position: sticky;
-  top: var(--spacing-study-rail-top);
-  height: calc(100vh - 7.5rem);
+  top: calc(var(--spacing-passage-toolbar) + var(--spacing-study-rail-top));
+  height: calc(100vh - var(--spacing-passage-toolbar) - 5rem);
   max-height: 46rem;
   min-height: 28rem;
 }
@@ -420,11 +432,16 @@ button.tok.tok-in-span[aria-pressed="true"] {
   color: var(--color-panel-muted);
 }
 
+.gloss-list + .gloss-compose,
+.gloss-hint + .gloss-compose,
+.panel-empty + .gloss-compose {
+  margin-top: 0.75rem;
+}
+
 .gloss-compose {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  margin-bottom: 0.75rem;
 }
 
 .gloss-compose-input {

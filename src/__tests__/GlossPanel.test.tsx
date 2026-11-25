@@ -68,11 +68,44 @@ describe("GlossPanel", () => {
         expect(onSelectGloss).toHaveBeenCalledWith(glosses[1]);
     });
 
-    it("marks the focused gloss card as read view with Edit, and scrolls into view", () => {
-        const scrollIntoView = jest.fn();
-        Element.prototype.scrollIntoView = scrollIntoView;
+    function mockPanelAndCardRects(
+        panelTop: number,
+        panelBottom: number,
+        cardTop: number,
+        cardBottom: number
+    ) {
+        const rect = (top: number, bottom: number) =>
+            ({
+                top,
+                bottom,
+                left: 0,
+                right: 0,
+                width: 0,
+                height: bottom - top,
+                x: 0,
+                y: top,
+                toJSON() {
+                    return {};
+                },
+            }) as DOMRect;
 
-        const { rerender } = render(
+        return jest
+            .spyOn(HTMLElement.prototype, "getBoundingClientRect")
+            .mockImplementation(function (this: HTMLElement) {
+                if (this.classList.contains("panel-body")) {
+                    return rect(panelTop, panelBottom);
+                }
+                if (this.classList.contains("gloss-card")) {
+                    return rect(cardTop, cardBottom);
+                }
+                return rect(0, 0);
+            });
+    }
+
+    it("marks the focused gloss card as read view with Edit, and scrolls into view", () => {
+        const rectSpy = mockPanelAndCardRects(0, 100, 200, 260);
+
+        const { rerender, container } = render(
             <GlossPanel
                 passage={passage}
                 glosses={glosses}
@@ -84,6 +117,10 @@ describe("GlossPanel", () => {
                 onUpdateGloss={() => {}}
             />
         );
+
+        const panel = container.querySelector(".panel-body") as HTMLElement;
+        panel.scrollTop = 0;
+
         rerender(
             <GlossPanel
                 passage={passage}
@@ -102,7 +139,44 @@ describe("GlossPanel", () => {
         expect(
             screen.queryByLabelText("Edit gloss commentary")
         ).not.toBeInTheDocument();
-        expect(scrollIntoView).toHaveBeenCalled();
+        expect(panel.scrollTop).toBe(192);
+        rectSpy.mockRestore();
+    });
+
+    it("scrolls the gloss list into view when a covered token is selected", () => {
+        const rectSpy = mockPanelAndCardRects(0, 100, 180, 240);
+
+        const { rerender, container } = render(
+            <GlossPanel
+                passage={passage}
+                glosses={[]}
+                selectedToken={-1}
+                selectionRange={null}
+                focusedGloss={null}
+                onSelectGloss={() => {}}
+                onAddGloss={() => {}}
+                onUpdateGloss={() => {}}
+            />
+        );
+
+        const panel = container.querySelector(".panel-body") as HTMLElement;
+        panel.scrollTop = 0;
+
+        rerender(
+            <GlossPanel
+                passage={passage}
+                glosses={glosses}
+                selectedToken={2}
+                selectionRange={{ start: 2, end: 2 }}
+                focusedGloss={null}
+                onSelectGloss={() => {}}
+                onAddGloss={() => {}}
+                onUpdateGloss={() => {}}
+            />
+        );
+
+        expect(panel.scrollTop).toBe(172);
+        rectSpy.mockRestore();
     });
 
     it("shows compose form for a selection range and submits gloss text", () => {
