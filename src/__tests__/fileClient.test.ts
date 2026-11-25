@@ -114,16 +114,17 @@ describe("FileClient.write", () => {
     );
   });
 
-  it("throws when the write response is not ok", async () => {
+  it("throws a generic message when the write response is not ok", async () => {
     fetchMock.mockResolvedValue({
       ok: false,
-      status: 500,
-      text: async () => "disk full",
+      status: 405,
+      text: async () =>
+        "<html><head><title>405 Not Allowed</title></head></html>",
     });
 
     await expect(
       FileClient.getClient().write("oku-no-hosomichi", 1, validPassage)
-    ).rejects.toThrow("disk full");
+    ).rejects.toThrow("error while saving passage");
   });
 
   it("throws before fetch when passage fails validation", async () => {

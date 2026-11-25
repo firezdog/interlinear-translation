@@ -40,10 +40,7 @@ class FileClient implements InterlinearClient {
         });
 
         if (!response.ok) {
-            const detail = await response.text().catch(() => "");
-            throw new Error(
-                detail.trim() || `failed to save passage (${response.status})`
-            );
+            throw new Error("error while saving passage");
         }
     }
 }
