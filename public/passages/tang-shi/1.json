@@ -1,0 +1,4346 @@
+{
+  "offset": 0,
+  "length": 423,
+  "segments": [
+    {
+      "text": "孤鴻海上來，",
+      "start": 0,
+      "end": 2,
+      "label": "001 感遇（四首之一） · 張九齡"
+    },
+    {
+      "text": "池潢不敢顧；",
+      "start": 3,
+      "end": 5
+    },
+    {
+      "text": "側見雙翠鳥，",
+      "start": 6,
+      "end": 9
+    },
+    {
+      "text": "巢在三珠樹。",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "text": "矯矯珍木巔，",
+      "start": 13,
+      "end": 15
+    },
+    {
+      "text": "得無金丸懼？",
+      "start": 16,
+      "end": 18
+    },
+    {
+      "text": "美服患人指，",
+      "start": 19,
+      "end": 22
+    },
+    {
+      "text": "高明逼神惡。",
+      "start": 23,
+      "end": 26
+    },
+    {
+      "text": "今我遊冥冥，",
+      "start": 27,
+      "end": 30
+    },
+    {
+      "text": "弋者何所慕？",
+      "start": 31,
+      "end": 33
+    },
+    {
+      "text": "蘭葉春葳蕤，",
+      "start": 34,
+      "end": 36,
+      "label": "002 感遇（四首之二） · 張九齡"
+    },
+    {
+      "text": "桂華秋皎潔；",
+      "start": 37,
+      "end": 39
+    },
+    {
+      "text": "欣欣此生意，",
+      "start": 40,
+      "end": 42
+    },
+    {
+      "text": "自爾為佳節。",
+      "start": 43,
+      "end": 45
+    },
+    {
+      "text": "誰知林棲者，",
+      "start": 46,
+      "end": 48
+    },
+    {
+      "text": "聞風坐相悅。",
+      "start": 49,
+      "end": 51
+    },
+    {
+      "text": "草木有本心，",
+      "start": 52,
+      "end": 54
+    },
+    {
+      "text": "何求美人折？",
+      "start": 55,
+      "end": 58
+    },
+    {
+      "text": "幽人歸獨臥，",
+      "start": 59,
+      "end": 62,
+      "label": "003 感遇（四首之三） · 張九齡"
+    },
+    {
+      "text": "滯慮洗孤清。",
+      "start": 63,
+      "end": 65
+    },
+    {
+      "text": "持此謝高鳥，",
+      "start": 66,
+      "end": 69
+    },
+    {
+      "text": "因之傳遠情。",
+      "start": 70,
+      "end": 72
+    },
+    {
+      "text": "日夕懷空意，",
+      "start": 73,
+      "end": 75
+    },
+    {
+      "text": "人誰感至精？",
+      "start": 76,
+      "end": 79
+    },
+    {
+      "text": "飛沉理自隔，",
+      "start": 80,
+      "end": 83
+    },
+    {
+      "text": "何所慰吾誠？",
+      "start": 84,
+      "end": 87
+    },
+    {
+      "text": "江南有丹橘，",
+      "start": 88,
+      "end": 90,
+      "label": "004 感遇（四首之四） · 張九齡"
+    },
+    {
+      "text": "經冬猶綠林；",
+      "start": 91,
+      "end": 93
+    },
+    {
+      "text": "豈伊地氣暖？",
+      "start": 94,
+      "end": 97
+    },
+    {
+      "text": "自有歲寒心。",
+      "start": 98,
+      "end": 100
+    },
+    {
+      "text": "可以薦嘉客，",
+      "start": 101,
+      "end": 103
+    },
+    {
+      "text": "奈何阻重深！",
+      "start": 104,
+      "end": 106
+    },
+    {
+      "text": "運命惟所遇，",
+      "start": 107,
+      "end": 109
+    },
+    {
+      "text": "循環不可尋。",
+      "start": 110,
+      "end": 112
+    },
+    {
+      "text": "徒言樹桃李，",
+      "start": 113,
+      "end": 116
+    },
+    {
+      "text": "此木豈無陰？",
+      "start": 117,
+      "end": 121
+    },
+    {
+      "text": "暮從碧山下，",
+      "start": 122,
+      "end": 125,
+      "label": "005 下終南山過斛斯山人宿置酒 · 李白"
+    },
+    {
+      "text": "山月隨人歸；",
+      "start": 126,
+      "end": 129
+    },
+    {
+      "text": "卻顧所來徑，",
+      "start": 130,
+      "end": 133
+    },
+    {
+      "text": "蒼蒼橫翠微。",
+      "start": 134,
+      "end": 136
+    },
+    {
+      "text": "相攜及田家，",
+      "start": 137,
+      "end": 139
+    },
+    {
+      "text": "童稚開荊扉；",
+      "start": 140,
+      "end": 142
+    },
+    {
+      "text": "綠竹入幽徑，",
+      "start": 143,
+      "end": 145
+    },
+    {
+      "text": "青蘿拂行衣。",
+      "start": 146,
+      "end": 148
+    },
+    {
+      "text": "歡言得所憩，",
+      "start": 149,
+      "end": 151
+    },
+    {
+      "text": "美酒聊共揮；",
+      "start": 152,
+      "end": 155
+    },
+    {
+      "text": "長歌吟松風，",
+      "start": 156,
+      "end": 158
+    },
+    {
+      "text": "曲盡河星稀。",
+      "start": 159,
+      "end": 162
+    },
+    {
+      "text": "我醉君復樂，",
+      "start": 163,
+      "end": 167
+    },
+    {
+      "text": "陶然共忘機。",
+      "start": 168,
+      "end": 170
+    },
+    {
+      "text": "花間一壺酒，",
+      "start": 171,
+      "end": 173,
+      "label": "006 月下獨酌 · 李白"
+    },
+    {
+      "text": "獨酌無相親，",
+      "start": 174,
+      "end": 176
+    },
+    {
+      "text": "舉杯邀明月，",
+      "start": 177,
+      "end": 179
+    },
+    {
+      "text": "對影成三人。",
+      "start": 180,
+      "end": 183
+    },
+    {
+      "text": "月既不解飲，",
+      "start": 184,
+      "end": 187
+    },
+    {
+      "text": "影徒隨我身，",
+      "start": 188,
+      "end": 192
+    },
+    {
+      "text": "暫伴月將影，",
+      "start": 193,
+      "end": 197
+    },
+    {
+      "text": "行樂須及春。",
+      "start": 198,
+      "end": 201
+    },
+    {
+      "text": "我歌月徘徊，",
+      "start": 202,
+      "end": 205
+    },
+    {
+      "text": "我舞影零亂；",
+      "start": 206,
+      "end": 209
+    },
+    {
+      "text": "醒時同交歡，",
+      "start": 210,
+      "end": 212
+    },
+    {
+      "text": "醉後各分散。",
+      "start": 213,
+      "end": 215
+    },
+    {
+      "text": "永結無情遊，",
+      "start": 216,
+      "end": 219
+    },
+    {
+      "text": "相期邈雲漢。",
+      "start": 220,
+      "end": 222
+    },
+    {
+      "text": "燕草如碧絲，",
+      "start": 223,
+      "end": 225,
+      "label": "007 春思 · 李白"
+    },
+    {
+      "text": "秦桑低綠枝；",
+      "start": 226,
+      "end": 228
+    },
+    {
+      "text": "當君懷歸日，",
+      "start": 229,
+      "end": 232
+    },
+    {
+      "text": "是妾斷腸時。",
+      "start": 233,
+      "end": 236
+    },
+    {
+      "text": "春風不相識，",
+      "start": 237,
+      "end": 239
+    },
+    {
+      "text": "何事入羅幃？",
+      "start": 240,
+      "end": 242
+    },
+    {
+      "text": "岱宗夫如何？",
+      "start": 243,
+      "end": 245,
+      "label": "008 望岳 · 杜甫"
+    },
+    {
+      "text": "齊魯青未了。",
+      "start": 246,
+      "end": 248
+    },
+    {
+      "text": "造化鍾神秀，",
+      "start": 249,
+      "end": 251
+    },
+    {
+      "text": "陰陽割昏曉。",
+      "start": 252,
+      "end": 254
+    },
+    {
+      "text": "盪胸生層雲，",
+      "start": 255,
+      "end": 257
+    },
+    {
+      "text": "決眥入歸鳥。",
+      "start": 258,
+      "end": 260
+    },
+    {
+      "text": "會當凌絕頂，",
+      "start": 261,
+      "end": 263
+    },
+    {
+      "text": "一覽眾山小。",
+      "start": 264,
+      "end": 266
+    },
+    {
+      "text": "人生不相見，",
+      "start": 267,
+      "end": 269,
+      "label": "009 贈衛八處士 · 杜甫"
+    },
+    {
+      "text": "動如參與商。",
+      "start": 270,
+      "end": 274
+    },
+    {
+      "text": "今夕復何夕？",
+      "start": 275,
+      "end": 277
+    },
+    {
+      "text": "共此燈燭光。",
+      "start": 278,
+      "end": 280
+    },
+    {
+      "text": "少壯能幾時？",
+      "start": 281,
+      "end": 283
+    },
+    {
+      "text": "鬢髮各已蒼。",
+      "start": 284,
+      "end": 287
+    },
+    {
+      "text": "訪舊半為鬼，",
+      "start": 288,
+      "end": 291
+    },
+    {
+      "text": "驚呼熱中腸。",
+      "start": 292,
+      "end": 294
+    },
+    {
+      "text": "焉知二十載，",
+      "start": 295,
+      "end": 296
+    },
+    {
+      "text": "重上君子堂。",
+      "start": 297,
+      "end": 299
+    },
+    {
+      "text": "昔別君未婚，",
+      "start": 300,
+      "end": 303
+    },
+    {
+      "text": "兒女忽成行；",
+      "start": 304,
+      "end": 306
+    },
+    {
+      "text": "怡然敬父執，",
+      "start": 307,
+      "end": 309
+    },
+    {
+      "text": "問我來何方？",
+      "start": 310,
+      "end": 313
+    },
+    {
+      "text": "問答乃未已，",
+      "start": 314,
+      "end": 316
+    },
+    {
+      "text": "驅兒羅酒漿。",
+      "start": 317,
+      "end": 320
+    },
+    {
+      "text": "夜雨剪春韭，",
+      "start": 321,
+      "end": 323
+    },
+    {
+      "text": "新炊間黃梁。",
+      "start": 324,
+      "end": 326
+    },
+    {
+      "text": "主稱會面難，",
+      "start": 327,
+      "end": 330
+    },
+    {
+      "text": "一舉累十觴；",
+      "start": 331,
+      "end": 333
+    },
+    {
+      "text": "十觴亦不醉，",
+      "start": 334,
+      "end": 337
+    },
+    {
+      "text": "感子故意長。",
+      "start": 338,
+      "end": 341
+    },
+    {
+      "text": "明日隔山岳，",
+      "start": 342,
+      "end": 344
+    },
+    {
+      "text": "世事兩茫茫。",
+      "start": 345,
+      "end": 347
+    },
+    {
+      "text": "絕代有佳人，",
+      "start": 348,
+      "end": 350,
+      "label": "010 佳人 · 杜甫"
+    },
+    {
+      "text": "幽居在空谷。",
+      "start": 351,
+      "end": 353
+    },
+    {
+      "text": "自云良家子，",
+      "start": 354,
+      "end": 355
+    },
+    {
+      "text": "零落依草木。",
+      "start": 356,
+      "end": 358
+    },
+    {
+      "text": "關中昔喪亂，",
+      "start": 359,
+      "end": 361
+    },
+    {
+      "text": "兄弟遭殺戮；",
+      "start": 362,
+      "end": 364
+    },
+    {
+      "text": "官高何足論，",
+      "start": 365,
+      "end": 367
+    },
+    {
+      "text": "不得收骨肉。",
+      "start": 368,
+      "end": 370
+    },
+    {
+      "text": "世情惡衰歇，",
+      "start": 371,
+      "end": 373
+    },
+    {
+      "text": "萬事隨轉燭。",
+      "start": 374,
+      "end": 376
+    },
+    {
+      "text": "夫婿輕薄兒，",
+      "start": 377,
+      "end": 378
+    },
+    {
+      "text": "新人美如玉。",
+      "start": 379,
+      "end": 381
+    },
+    {
+      "text": "合昏尚知時，",
+      "start": 382,
+      "end": 385
+    },
+    {
+      "text": "鴛鴦不獨宿；",
+      "start": 386,
+      "end": 388
+    },
+    {
+      "text": "但見新人笑，",
+      "start": 389,
+      "end": 392
+    },
+    {
+      "text": "那聞舊人哭？",
+      "start": 393,
+      "end": 396
+    },
+    {
+      "text": "在山泉水清，",
+      "start": 397,
+      "end": 399
+    },
+    {
+      "text": "出山泉水濁。",
+      "start": 400,
+      "end": 402
+    },
+    {
+      "text": "侍婢賣珠迴，",
+      "start": 403,
+      "end": 406
+    },
+    {
+      "text": "牽蘿補茅屋。",
+      "start": 407,
+      "end": 410
+    },
+    {
+      "text": "摘花不插髮，",
+      "start": 411,
+      "end": 413
+    },
+    {
+      "text": "采柏動盈掬。",
+      "start": 414,
+      "end": 416
+    },
+    {
+      "text": "天寒翠袖薄，",
+      "start": 417,
+      "end": 419
+    },
+    {
+      "text": "日暮倚修竹。",
+      "start": 420,
+      "end": 422
+    }
+  ],
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "孤鴻",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "gū hóng",
+      "translation": "solitary wild goose"
+    },
+    {
+      "offset": 1,
+      "content": "海上",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "hǎi shàng",
+      "translation": "over the sea"
+    },
+    {
+      "offset": 2,
+      "content": "來",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "lái",
+      "translation": "come"
+    },
+    {
+      "offset": 3,
+      "content": "池潢",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "chí huáng",
+      "translation": "pond or palace moat"
+    },
+    {
+      "offset": 4,
+      "content": "不敢",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "bù gǎn",
+      "translation": "dare not"
+    },
+    {
+      "offset": 5,
+      "content": "顧",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "gù",
+      "translation": "look back"
+    },
+    {
+      "offset": 6,
+      "content": "側",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "cè",
+      "translation": "sideways"
+    },
+    {
+      "offset": 7,
+      "content": "見",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "jiàn",
+      "translation": "see"
+    },
+    {
+      "offset": 8,
+      "content": "雙",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "shuāng",
+      "translation": "pair of"
+    },
+    {
+      "offset": 9,
+      "content": "翠鳥",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "cuì niǎo",
+      "translation": "kingfishers"
+    },
+    {
+      "offset": 10,
+      "content": "巢",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "cháo",
+      "translation": "nest"
+    },
+    {
+      "offset": 11,
+      "content": "在",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "zài",
+      "translation": "be at"
+    },
+    {
+      "offset": 12,
+      "content": "三珠樹",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "sān zhū shù",
+      "translation": "Three-Pearl Tree, a fabulous tree"
+    },
+    {
+      "offset": 13,
+      "content": "矯矯",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jiǎo jiǎo",
+      "translation": "lofty; outstanding"
+    },
+    {
+      "offset": 14,
+      "content": "珍木",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "zhēn mù",
+      "translation": "precious tree"
+    },
+    {
+      "offset": 15,
+      "content": "巔",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "diān",
+      "translation": "summit"
+    },
+    {
+      "offset": 16,
+      "content": "得無",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "dé wú",
+      "translation": "could it be that...?"
+    },
+    {
+      "offset": 17,
+      "content": "金丸",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "jīn wán",
+      "translation": "golden pellet; hunting shot"
+    },
+    {
+      "offset": 18,
+      "content": "懼",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "jù",
+      "translation": "fear"
+    },
+    {
+      "offset": 19,
+      "content": "美服",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "měi fú",
+      "translation": "fine clothing"
+    },
+    {
+      "offset": 20,
+      "content": "患",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "huàn",
+      "translation": "fear; be troubled by"
+    },
+    {
+      "offset": 21,
+      "content": "人",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "rén",
+      "translation": "people"
+    },
+    {
+      "offset": 22,
+      "content": "指",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "zhǐ",
+      "translation": "point at; criticize"
+    },
+    {
+      "offset": 23,
+      "content": "高明",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "gāo míng",
+      "translation": "lofty eminence"
+    },
+    {
+      "offset": 24,
+      "content": "逼",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bī",
+      "translation": "press upon; provoke"
+    },
+    {
+      "offset": 25,
+      "content": "神",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "shén",
+      "translation": "the spirits; heaven"
+    },
+    {
+      "offset": 26,
+      "content": "惡",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "è",
+      "translation": "harsh; cruel"
+    },
+    {
+      "offset": 27,
+      "content": "今",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "jīn",
+      "translation": "now"
+    },
+    {
+      "offset": 28,
+      "content": "我",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "wǒ",
+      "translation": "I"
+    },
+    {
+      "offset": 29,
+      "content": "遊",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yóu",
+      "translation": "friendship; roaming"
+    },
+    {
+      "offset": 30,
+      "content": "冥冥",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "míng míng",
+      "translation": "the high, obscure heavens"
+    },
+    {
+      "offset": 31,
+      "content": "弋者",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yì zhě",
+      "translation": "fowler; bird-hunter"
+    },
+    {
+      "offset": 32,
+      "content": "何所",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "hé suǒ",
+      "translation": "what; where"
+    },
+    {
+      "offset": 33,
+      "content": "慕",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "mù",
+      "translation": "desire; admire"
+    },
+    {
+      "offset": 34,
+      "content": "蘭葉",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "lán yè",
+      "translation": "orchid leaves"
+    },
+    {
+      "offset": 35,
+      "content": "春",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "chūn",
+      "translation": "spring"
+    },
+    {
+      "offset": 36,
+      "content": "葳蕤",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "wēi ruí",
+      "translation": "luxuriant; flourishing"
+    },
+    {
+      "offset": 37,
+      "content": "桂華",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "guì huá",
+      "translation": "osmanthus blossom"
+    },
+    {
+      "offset": 38,
+      "content": "秋",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "qiū",
+      "translation": "autumn"
+    },
+    {
+      "offset": 39,
+      "content": "皎潔",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jiǎo jié",
+      "translation": "bright and pure"
+    },
+    {
+      "offset": 40,
+      "content": "欣欣",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xīn xīn",
+      "translation": "vibrant; flourishing"
+    },
+    {
+      "offset": 41,
+      "content": "此",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "cǐ",
+      "translation": "this"
+    },
+    {
+      "offset": 42,
+      "content": "生意",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "shēng yì",
+      "translation": "vitality; life-force"
+    },
+    {
+      "offset": 43,
+      "content": "自爾",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zì ěr",
+      "translation": "of themselves; naturally"
+    },
+    {
+      "offset": 44,
+      "content": "為",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "wéi",
+      "translation": "have become"
+    },
+    {
+      "offset": 45,
+      "content": "佳節",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jiā jié",
+      "translation": "beautiful season"
+    },
+    {
+      "offset": 46,
+      "content": "誰",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "shéi",
+      "translation": "who"
+    },
+    {
+      "offset": 47,
+      "content": "知",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "zhī",
+      "translation": "know"
+    },
+    {
+      "offset": 48,
+      "content": "林棲者",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "lín qī zhě",
+      "translation": "one who dwells in the woods"
+    },
+    {
+      "offset": 49,
+      "content": "聞風",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "wén fēng",
+      "translation": "hear its fragrance/news"
+    },
+    {
+      "offset": 50,
+      "content": "坐",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "zuò",
+      "translation": "thereupon; simply"
+    },
+    {
+      "offset": 51,
+      "content": "相悅",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xiāng yuè",
+      "translation": "take mutual delight"
+    },
+    {
+      "offset": 52,
+      "content": "草木",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "cǎo mù",
+      "translation": "plants and trees"
+    },
+    {
+      "offset": 53,
+      "content": "有",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yǒu",
+      "translation": "have"
+    },
+    {
+      "offset": 54,
+      "content": "本心",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "běn xīn",
+      "translation": "innate nature; original disposition"
+    },
+    {
+      "offset": 55,
+      "content": "何",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "hé",
+      "translation": "what; why"
+    },
+    {
+      "offset": 56,
+      "content": "求",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "qiú",
+      "translation": "seek"
+    },
+    {
+      "offset": 57,
+      "content": "美人",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "měi rén",
+      "translation": "beautiful person; discerning patron"
+    },
+    {
+      "offset": 58,
+      "content": "折",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "zhé",
+      "translation": "pluck; break off"
+    },
+    {
+      "offset": 59,
+      "content": "幽人",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yōu rén",
+      "translation": "recluse"
+    },
+    {
+      "offset": 60,
+      "content": "歸",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "guī",
+      "translation": "return"
+    },
+    {
+      "offset": 61,
+      "content": "獨",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "dú",
+      "translation": "alone"
+    },
+    {
+      "offset": 62,
+      "content": "臥",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "wò",
+      "translation": "lie down"
+    },
+    {
+      "offset": 63,
+      "content": "滯慮",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zhì lǜ",
+      "translation": "stagnant cares"
+    },
+    {
+      "offset": 64,
+      "content": "洗",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "xǐ",
+      "translation": "wash away"
+    },
+    {
+      "offset": 65,
+      "content": "孤清",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "gū qīng",
+      "translation": "solitary purity"
+    },
+    {
+      "offset": 66,
+      "content": "持",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "chí",
+      "translation": "hold; take"
+    },
+    {
+      "offset": 67,
+      "content": "此",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "cǐ",
+      "translation": "this"
+    },
+    {
+      "offset": 68,
+      "content": "謝",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "xiè",
+      "translation": "thank; bid farewell"
+    },
+    {
+      "offset": 69,
+      "content": "高鳥",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "gāo niǎo",
+      "translation": "high-flying bird"
+    },
+    {
+      "offset": 70,
+      "content": "因之",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yīn zhī",
+      "translation": "through it; by this means"
+    },
+    {
+      "offset": 71,
+      "content": "傳",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "chuán",
+      "translation": "convey"
+    },
+    {
+      "offset": 72,
+      "content": "遠情",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "yuǎn qíng",
+      "translation": "distant feeling; far-reaching sentiment"
+    },
+    {
+      "offset": 73,
+      "content": "日夕",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "rì xī",
+      "translation": "day and night; evening"
+    },
+    {
+      "offset": 74,
+      "content": "懷",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "huái",
+      "translation": "cherish; harbor"
+    },
+    {
+      "offset": 75,
+      "content": "空意",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "kōng yì",
+      "translation": "unfulfilled thought; empty longing"
+    },
+    {
+      "offset": 76,
+      "content": "人",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "rén",
+      "translation": "people"
+    },
+    {
+      "offset": 77,
+      "content": "誰",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "shéi",
+      "translation": "who"
+    },
+    {
+      "offset": 78,
+      "content": "感",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "gǎn",
+      "translation": "moved by"
+    },
+    {
+      "offset": 79,
+      "content": "至精",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "zhì jīng",
+      "translation": "utmost sincerity; pure essence"
+    },
+    {
+      "offset": 80,
+      "content": "飛沉",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "fēi chén",
+      "translation": "those that fly and those that sink"
+    },
+    {
+      "offset": 81,
+      "content": "理",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "lǐ",
+      "translation": "principle; natural order"
+    },
+    {
+      "offset": 82,
+      "content": "自",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "zì",
+      "translation": "naturally"
+    },
+    {
+      "offset": 83,
+      "content": "隔",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "gé",
+      "translation": "separate"
+    },
+    {
+      "offset": 84,
+      "content": "何所",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "hé suǒ",
+      "translation": "what; where"
+    },
+    {
+      "offset": 85,
+      "content": "慰",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "wèi",
+      "translation": "console"
+    },
+    {
+      "offset": 86,
+      "content": "吾",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wú",
+      "translation": "my"
+    },
+    {
+      "offset": 87,
+      "content": "誠",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "chéng",
+      "translation": "sincerity"
+    },
+    {
+      "offset": 88,
+      "content": "江南",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jiāng nán",
+      "translation": "south of the Yangtze"
+    },
+    {
+      "offset": 89,
+      "content": "有",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yǒu",
+      "translation": "have"
+    },
+    {
+      "offset": 90,
+      "content": "丹橘",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "dān jú",
+      "translation": "red-orange citrus"
+    },
+    {
+      "offset": 91,
+      "content": "經冬",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jīng dōng",
+      "translation": "through the winter"
+    },
+    {
+      "offset": 92,
+      "content": "猶",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yóu",
+      "translation": "still"
+    },
+    {
+      "offset": 93,
+      "content": "綠林",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "lǜ lín",
+      "translation": "green grove"
+    },
+    {
+      "offset": 94,
+      "content": "豈",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "qǐ",
+      "translation": "how could; surely not"
+    },
+    {
+      "offset": 95,
+      "content": "伊",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "yī",
+      "translation": "that; it"
+    },
+    {
+      "offset": 96,
+      "content": "地氣",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "dì qì",
+      "translation": "climate; warmth of the earth"
+    },
+    {
+      "offset": 97,
+      "content": "暖",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "nuǎn",
+      "translation": "warm"
+    },
+    {
+      "offset": 98,
+      "content": "自",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "zì",
+      "translation": "naturally"
+    },
+    {
+      "offset": 99,
+      "content": "有",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "yǒu",
+      "translation": "have"
+    },
+    {
+      "offset": 100,
+      "content": "歲寒心",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "suì hán xīn",
+      "translation": "steadfastness in winter; moral constancy"
+    },
+    {
+      "offset": 101,
+      "content": "可以",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "kě yǐ",
+      "translation": "can; may"
+    },
+    {
+      "offset": 102,
+      "content": "薦",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jiàn",
+      "translation": "present; offer"
+    },
+    {
+      "offset": 103,
+      "content": "嘉客",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jiā kè",
+      "translation": "honored guest"
+    },
+    {
+      "offset": 104,
+      "content": "奈何",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "nài hé",
+      "translation": "how can it be; alas"
+    },
+    {
+      "offset": 105,
+      "content": "阻",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "zǔ",
+      "translation": "be obstructed"
+    },
+    {
+      "offset": 106,
+      "content": "重深",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "chóng shēn",
+      "translation": "layered and deep; many barriers"
+    },
+    {
+      "offset": 107,
+      "content": "運命",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yùn mìng",
+      "translation": "fate; fortune"
+    },
+    {
+      "offset": 108,
+      "content": "惟",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "wéi",
+      "translation": "only; solely"
+    },
+    {
+      "offset": 109,
+      "content": "所遇",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "suǒ yù",
+      "translation": "what one encounters"
+    },
+    {
+      "offset": 110,
+      "content": "循環",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xún huán",
+      "translation": "cycle; recurrence"
+    },
+    {
+      "offset": 111,
+      "content": "不可",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "bù kě",
+      "translation": "cannot"
+    },
+    {
+      "offset": 112,
+      "content": "尋",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "xún",
+      "translation": "trace; fathom"
+    },
+    {
+      "offset": 113,
+      "content": "徒",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "tú",
+      "translation": "merely; in vain"
+    },
+    {
+      "offset": 114,
+      "content": "言",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "yán",
+      "translation": "say"
+    },
+    {
+      "offset": 115,
+      "content": "樹",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "shù",
+      "translation": "plant; cultivate"
+    },
+    {
+      "offset": 116,
+      "content": "桃李",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "táo lǐ",
+      "translation": "peach and plum trees"
+    },
+    {
+      "offset": 117,
+      "content": "此",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "cǐ",
+      "translation": "this"
+    },
+    {
+      "offset": 118,
+      "content": "木",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "mù",
+      "translation": "tree"
+    },
+    {
+      "offset": 119,
+      "content": "豈",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "qǐ",
+      "translation": "how could; surely not"
+    },
+    {
+      "offset": 120,
+      "content": "無",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wú",
+      "translation": "without"
+    },
+    {
+      "offset": 121,
+      "content": "陰",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "yīn",
+      "translation": "shade"
+    },
+    {
+      "offset": 122,
+      "content": "暮",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "mù",
+      "translation": "dusk"
+    },
+    {
+      "offset": 123,
+      "content": "從",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "cóng",
+      "translation": "from; follow"
+    },
+    {
+      "offset": 124,
+      "content": "碧山",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "bì shān",
+      "translation": "green mountain"
+    },
+    {
+      "offset": 125,
+      "content": "下",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "xià",
+      "translation": "descend; below"
+    },
+    {
+      "offset": 126,
+      "content": "山月",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "shān yuè",
+      "translation": "mountain moon"
+    },
+    {
+      "offset": 127,
+      "content": "隨",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "suí",
+      "translation": "follow"
+    },
+    {
+      "offset": 128,
+      "content": "人",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "rén",
+      "translation": "people"
+    },
+    {
+      "offset": 129,
+      "content": "歸",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "guī",
+      "translation": "return"
+    },
+    {
+      "offset": 130,
+      "content": "卻",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "què",
+      "translation": "then; turning back"
+    },
+    {
+      "offset": 131,
+      "content": "顧",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "gù",
+      "translation": "look back"
+    },
+    {
+      "offset": 132,
+      "content": "所來",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "suǒ lái",
+      "translation": "the way one came"
+    },
+    {
+      "offset": 133,
+      "content": "徑",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "jìng",
+      "translation": "path"
+    },
+    {
+      "offset": 134,
+      "content": "蒼蒼",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "cāng cāng",
+      "translation": "blue-green; vast and dim"
+    },
+    {
+      "offset": 135,
+      "content": "橫",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "héng",
+      "translation": "stretch across"
+    },
+    {
+      "offset": 136,
+      "content": "翠微",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "cuì wēi",
+      "translation": "verdant mountain slopes"
+    },
+    {
+      "offset": 137,
+      "content": "相攜",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xiāng xié",
+      "translation": "accompany one another"
+    },
+    {
+      "offset": 138,
+      "content": "及",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jí",
+      "translation": "take advantage of"
+    },
+    {
+      "offset": 139,
+      "content": "田家",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "tián jiā",
+      "translation": "farmhouse"
+    },
+    {
+      "offset": 140,
+      "content": "童稚",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "tóng zhì",
+      "translation": "children"
+    },
+    {
+      "offset": 141,
+      "content": "開",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "kāi",
+      "translation": "open"
+    },
+    {
+      "offset": 142,
+      "content": "荊扉",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jīng fēi",
+      "translation": "thorn-wood gate"
+    },
+    {
+      "offset": 143,
+      "content": "綠竹",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "lǜ zhú",
+      "translation": "green bamboo"
+    },
+    {
+      "offset": 144,
+      "content": "入",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "rù",
+      "translation": "enter"
+    },
+    {
+      "offset": 145,
+      "content": "幽徑",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "yōu jìng",
+      "translation": "secluded path"
+    },
+    {
+      "offset": 146,
+      "content": "青蘿",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "qīng luó",
+      "translation": "green trailing vine"
+    },
+    {
+      "offset": 147,
+      "content": "拂",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "fú",
+      "translation": "brush against"
+    },
+    {
+      "offset": 148,
+      "content": "行衣",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xíng yī",
+      "translation": "traveler's clothing"
+    },
+    {
+      "offset": 149,
+      "content": "歡言",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "huān yán",
+      "translation": "cheerful conversation"
+    },
+    {
+      "offset": 150,
+      "content": "得",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "dé",
+      "translation": "find; obtain"
+    },
+    {
+      "offset": 151,
+      "content": "所憩",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "suǒ qì",
+      "translation": "a place to rest"
+    },
+    {
+      "offset": 152,
+      "content": "美酒",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "měi jiǔ",
+      "translation": "fine wine"
+    },
+    {
+      "offset": 153,
+      "content": "聊",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "liáo",
+      "translation": "for now; just"
+    },
+    {
+      "offset": 154,
+      "content": "共",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "gòng",
+      "translation": "share"
+    },
+    {
+      "offset": 155,
+      "content": "揮",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "huī",
+      "translation": "raise and drink; wave"
+    },
+    {
+      "offset": 156,
+      "content": "長歌",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "cháng gē",
+      "translation": "sing at length"
+    },
+    {
+      "offset": 157,
+      "content": "吟",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yín",
+      "translation": "chant"
+    },
+    {
+      "offset": 158,
+      "content": "松風",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "sōng fēng",
+      "translation": "wind in the pines"
+    },
+    {
+      "offset": 159,
+      "content": "曲",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "qǔ",
+      "translation": "song"
+    },
+    {
+      "offset": 160,
+      "content": "盡",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "jìn",
+      "translation": "end"
+    },
+    {
+      "offset": 161,
+      "content": "河星",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "hé xīng",
+      "translation": "stars of the Milky Way"
+    },
+    {
+      "offset": 162,
+      "content": "稀",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "xī",
+      "translation": "sparse; few"
+    },
+    {
+      "offset": 163,
+      "content": "我",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "wǒ",
+      "translation": "I"
+    },
+    {
+      "offset": 164,
+      "content": "醉",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "zuì",
+      "translation": "drunk"
+    },
+    {
+      "offset": 165,
+      "content": "君",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jūn",
+      "translation": "you; host"
+    },
+    {
+      "offset": 166,
+      "content": "復",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "fù",
+      "translation": "again; what is more"
+    },
+    {
+      "offset": 167,
+      "content": "樂",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "lè",
+      "translation": "be happy"
+    },
+    {
+      "offset": 168,
+      "content": "陶然",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "táo rán",
+      "translation": "joyfully at ease"
+    },
+    {
+      "offset": 169,
+      "content": "共",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "gòng",
+      "translation": "share"
+    },
+    {
+      "offset": 170,
+      "content": "忘機",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "wàng jī",
+      "translation": "forget worldly calculation"
+    },
+    {
+      "offset": 171,
+      "content": "花間",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "huā jiān",
+      "translation": "among the flowers"
+    },
+    {
+      "offset": 172,
+      "content": "一壺",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "yī hú",
+      "translation": "one pot"
+    },
+    {
+      "offset": 173,
+      "content": "酒",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "jiǔ",
+      "translation": "wine"
+    },
+    {
+      "offset": 174,
+      "content": "獨酌",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "dú zhuó",
+      "translation": "drink alone"
+    },
+    {
+      "offset": 175,
+      "content": "無",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "wú",
+      "translation": "without"
+    },
+    {
+      "offset": 176,
+      "content": "相親",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xiāng qīn",
+      "translation": "close companion"
+    },
+    {
+      "offset": 177,
+      "content": "舉杯",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jǔ bēi",
+      "translation": "raise a cup"
+    },
+    {
+      "offset": 178,
+      "content": "邀",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yāo",
+      "translation": "invite"
+    },
+    {
+      "offset": 179,
+      "content": "明月",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "míng yuè",
+      "translation": "bright moon"
+    },
+    {
+      "offset": 180,
+      "content": "對",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "duì",
+      "translation": "facing"
+    },
+    {
+      "offset": 181,
+      "content": "影",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "yǐng",
+      "translation": "shadow"
+    },
+    {
+      "offset": 182,
+      "content": "成",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "chéng",
+      "translation": "make; become"
+    },
+    {
+      "offset": 183,
+      "content": "三人",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "sān rén",
+      "translation": "three people"
+    },
+    {
+      "offset": 184,
+      "content": "月",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "yuè",
+      "translation": "moon"
+    },
+    {
+      "offset": 185,
+      "content": "既",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "jì",
+      "translation": "already; since"
+    },
+    {
+      "offset": 186,
+      "content": "不解",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "bù jiě",
+      "translation": "not know how to"
+    },
+    {
+      "offset": 187,
+      "content": "飲",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "yǐn",
+      "translation": "drink"
+    },
+    {
+      "offset": 188,
+      "content": "影",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "yǐng",
+      "translation": "shadow"
+    },
+    {
+      "offset": 189,
+      "content": "徒",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "tú",
+      "translation": "merely; in vain"
+    },
+    {
+      "offset": 190,
+      "content": "隨",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "suí",
+      "translation": "follow"
+    },
+    {
+      "offset": 191,
+      "content": "我",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wǒ",
+      "translation": "I"
+    },
+    {
+      "offset": 192,
+      "content": "身",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "shēn",
+      "translation": "body"
+    },
+    {
+      "offset": 193,
+      "content": "暫",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "zàn",
+      "translation": "temporarily"
+    },
+    {
+      "offset": 194,
+      "content": "伴",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "bàn",
+      "translation": "accompany"
+    },
+    {
+      "offset": 195,
+      "content": "月",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yuè",
+      "translation": "moon"
+    },
+    {
+      "offset": 196,
+      "content": "將",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "jiāng",
+      "translation": "together with"
+    },
+    {
+      "offset": 197,
+      "content": "影",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "yǐng",
+      "translation": "shadow"
+    },
+    {
+      "offset": 198,
+      "content": "行樂",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xíng lè",
+      "translation": "enjoy oneself"
+    },
+    {
+      "offset": 199,
+      "content": "須",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "xū",
+      "translation": "must"
+    },
+    {
+      "offset": 200,
+      "content": "及",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "jí",
+      "translation": "take advantage of"
+    },
+    {
+      "offset": 201,
+      "content": "春",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "chūn",
+      "translation": "spring"
+    },
+    {
+      "offset": 202,
+      "content": "我",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "wǒ",
+      "translation": "I"
+    },
+    {
+      "offset": 203,
+      "content": "歌",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "gē",
+      "translation": "sing"
+    },
+    {
+      "offset": 204,
+      "content": "月",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yuè",
+      "translation": "moon"
+    },
+    {
+      "offset": 205,
+      "content": "徘徊",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "pái huái",
+      "translation": "wander to and fro"
+    },
+    {
+      "offset": 206,
+      "content": "我",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "wǒ",
+      "translation": "I"
+    },
+    {
+      "offset": 207,
+      "content": "舞",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "wǔ",
+      "translation": "dance"
+    },
+    {
+      "offset": 208,
+      "content": "影",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yǐng",
+      "translation": "shadow"
+    },
+    {
+      "offset": 209,
+      "content": "零亂",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "líng luàn",
+      "translation": "disordered; scattered"
+    },
+    {
+      "offset": 210,
+      "content": "醒時",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xǐng shí",
+      "translation": "while sober"
+    },
+    {
+      "offset": 211,
+      "content": "同",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "tóng",
+      "translation": "together"
+    },
+    {
+      "offset": 212,
+      "content": "交歡",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jiāo huān",
+      "translation": "share delight"
+    },
+    {
+      "offset": 213,
+      "content": "醉後",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zuì hòu",
+      "translation": "after becoming drunk"
+    },
+    {
+      "offset": 214,
+      "content": "各",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "gè",
+      "translation": "both; each"
+    },
+    {
+      "offset": 215,
+      "content": "分散",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "fēn sàn",
+      "translation": "scatter apart"
+    },
+    {
+      "offset": 216,
+      "content": "永",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "yǒng",
+      "translation": "forever"
+    },
+    {
+      "offset": 217,
+      "content": "結",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "jié",
+      "translation": "form; bind"
+    },
+    {
+      "offset": 218,
+      "content": "無情",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "wú qíng",
+      "translation": "without worldly attachment"
+    },
+    {
+      "offset": 219,
+      "content": "遊",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "yóu",
+      "translation": "friendship; roaming"
+    },
+    {
+      "offset": 220,
+      "content": "相期",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xiāng qī",
+      "translation": "mutually promise to meet"
+    },
+    {
+      "offset": 221,
+      "content": "邈",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "miǎo",
+      "translation": "far away"
+    },
+    {
+      "offset": 222,
+      "content": "雲漢",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "yún hàn",
+      "translation": "Milky Way"
+    },
+    {
+      "offset": 223,
+      "content": "燕草",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yān cǎo",
+      "translation": "grass in Yan"
+    },
+    {
+      "offset": 224,
+      "content": "如",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "rú",
+      "translation": "like"
+    },
+    {
+      "offset": 225,
+      "content": "碧絲",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "bì sī",
+      "translation": "green silk"
+    },
+    {
+      "offset": 226,
+      "content": "秦桑",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "qín sāng",
+      "translation": "mulberries in Qin"
+    },
+    {
+      "offset": 227,
+      "content": "低",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "dī",
+      "translation": "hang low"
+    },
+    {
+      "offset": 228,
+      "content": "綠枝",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "lǜ zhī",
+      "translation": "green branches"
+    },
+    {
+      "offset": 229,
+      "content": "當",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "dāng",
+      "translation": "when"
+    },
+    {
+      "offset": 230,
+      "content": "君",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "jūn",
+      "translation": "you; host"
+    },
+    {
+      "offset": 231,
+      "content": "懷歸",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "huái guī",
+      "translation": "long for one's return"
+    },
+    {
+      "offset": 232,
+      "content": "日",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "rì",
+      "translation": "day"
+    },
+    {
+      "offset": 233,
+      "content": "是",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "shì",
+      "translation": "is"
+    },
+    {
+      "offset": 234,
+      "content": "妾",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "qiè",
+      "translation": "I; the woman speaking"
+    },
+    {
+      "offset": 235,
+      "content": "斷腸",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "duàn cháng",
+      "translation": "heartbroken"
+    },
+    {
+      "offset": 236,
+      "content": "時",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "shí",
+      "translation": "the proper time"
+    },
+    {
+      "offset": 237,
+      "content": "春風",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "chūn fēng",
+      "translation": "spring breeze"
+    },
+    {
+      "offset": 238,
+      "content": "不",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 239,
+      "content": "相識",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xiāng shí",
+      "translation": "know; be acquainted"
+    },
+    {
+      "offset": 240,
+      "content": "何事",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "hé shì",
+      "translation": "why; for what reason"
+    },
+    {
+      "offset": 241,
+      "content": "入",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "rù",
+      "translation": "enter"
+    },
+    {
+      "offset": 242,
+      "content": "羅幃",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "luó wéi",
+      "translation": "silk bed-curtain"
+    },
+    {
+      "offset": 243,
+      "content": "岱宗",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "dài zōng",
+      "translation": "Mount Tai"
+    },
+    {
+      "offset": 244,
+      "content": "夫",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "fú",
+      "translation": "now; indeed (particle)"
+    },
+    {
+      "offset": 245,
+      "content": "如何",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "rú hé",
+      "translation": "how; what is it like"
+    },
+    {
+      "offset": 246,
+      "content": "齊魯",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "qí lǔ",
+      "translation": "Qi and Lu, regions around Mount Tai"
+    },
+    {
+      "offset": 247,
+      "content": "青",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "qīng",
+      "translation": "blue-green"
+    },
+    {
+      "offset": 248,
+      "content": "未了",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "wèi liǎo",
+      "translation": "not end; remain unbroken"
+    },
+    {
+      "offset": 249,
+      "content": "造化",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zào huà",
+      "translation": "Nature; creative force"
+    },
+    {
+      "offset": 250,
+      "content": "鍾",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "zhōng",
+      "translation": "concentrate; gather"
+    },
+    {
+      "offset": 251,
+      "content": "神秀",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "shén xiù",
+      "translation": "supernatural beauty"
+    },
+    {
+      "offset": 252,
+      "content": "陰陽",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yīn yáng",
+      "translation": "north and south slopes; yin and yang"
+    },
+    {
+      "offset": 253,
+      "content": "割",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "gē",
+      "translation": "divide; cut apart"
+    },
+    {
+      "offset": 254,
+      "content": "昏曉",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "hūn xiǎo",
+      "translation": "dusk and dawn"
+    },
+    {
+      "offset": 255,
+      "content": "盪胸",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "dàng xiōng",
+      "translation": "stir the heart"
+    },
+    {
+      "offset": 256,
+      "content": "生",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "shēng",
+      "translation": "give rise to"
+    },
+    {
+      "offset": 257,
+      "content": "層雲",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "céng yún",
+      "translation": "layered clouds"
+    },
+    {
+      "offset": 258,
+      "content": "決眥",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jué zì",
+      "translation": "strain one's eyes wide"
+    },
+    {
+      "offset": 259,
+      "content": "入",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "rù",
+      "translation": "enter"
+    },
+    {
+      "offset": 260,
+      "content": "歸鳥",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "guī niǎo",
+      "translation": "returning birds"
+    },
+    {
+      "offset": 261,
+      "content": "會當",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "huì dāng",
+      "translation": "shall certainly"
+    },
+    {
+      "offset": 262,
+      "content": "凌",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "líng",
+      "translation": "ascend; surpass"
+    },
+    {
+      "offset": 263,
+      "content": "絕頂",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jué dǐng",
+      "translation": "highest summit"
+    },
+    {
+      "offset": 264,
+      "content": "一覽",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yī lǎn",
+      "translation": "view all at once"
+    },
+    {
+      "offset": 265,
+      "content": "眾山",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "zhòng shān",
+      "translation": "all the other mountains"
+    },
+    {
+      "offset": 266,
+      "content": "小",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "xiǎo",
+      "translation": "small"
+    },
+    {
+      "offset": 267,
+      "content": "人生",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "rén shēng",
+      "translation": "human life"
+    },
+    {
+      "offset": 268,
+      "content": "不",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 269,
+      "content": "相見",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xiāng jiàn",
+      "translation": "see one another"
+    },
+    {
+      "offset": 270,
+      "content": "動",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "dòng",
+      "translation": "often; at every turn"
+    },
+    {
+      "offset": 271,
+      "content": "如",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "rú",
+      "translation": "like"
+    },
+    {
+      "offset": 272,
+      "content": "參",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "shēn",
+      "translation": "Shen, a constellation"
+    },
+    {
+      "offset": 273,
+      "content": "與",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "yǔ",
+      "translation": "and"
+    },
+    {
+      "offset": 274,
+      "content": "商",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "shāng",
+      "translation": "Shang, a constellation"
+    },
+    {
+      "offset": 275,
+      "content": "今夕",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jīn xī",
+      "translation": "this evening"
+    },
+    {
+      "offset": 276,
+      "content": "復",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "fù",
+      "translation": "again; what is more"
+    },
+    {
+      "offset": 277,
+      "content": "何夕",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "hé xī",
+      "translation": "what evening"
+    },
+    {
+      "offset": 278,
+      "content": "共",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "gòng",
+      "translation": "share"
+    },
+    {
+      "offset": 279,
+      "content": "此",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "cǐ",
+      "translation": "this"
+    },
+    {
+      "offset": 280,
+      "content": "燈燭光",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "dēng zhú guāng",
+      "translation": "lamplight"
+    },
+    {
+      "offset": 281,
+      "content": "少壯",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "shào zhuàng",
+      "translation": "youth and prime"
+    },
+    {
+      "offset": 282,
+      "content": "能",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "néng",
+      "translation": "can; how long can"
+    },
+    {
+      "offset": 283,
+      "content": "幾時",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jǐ shí",
+      "translation": "how long"
+    },
+    {
+      "offset": 284,
+      "content": "鬢髮",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "bìn fà",
+      "translation": "temples and hair"
+    },
+    {
+      "offset": 285,
+      "content": "各",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "gè",
+      "translation": "both; each"
+    },
+    {
+      "offset": 286,
+      "content": "已",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "yǐ",
+      "translation": "already"
+    },
+    {
+      "offset": 287,
+      "content": "蒼",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "cāng",
+      "translation": "gray"
+    },
+    {
+      "offset": 288,
+      "content": "訪舊",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "fǎng jiù",
+      "translation": "visit old friends"
+    },
+    {
+      "offset": 289,
+      "content": "半",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bàn",
+      "translation": "half"
+    },
+    {
+      "offset": 290,
+      "content": "為",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wéi",
+      "translation": "have become"
+    },
+    {
+      "offset": 291,
+      "content": "鬼",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "guǐ",
+      "translation": "ghosts; the dead"
+    },
+    {
+      "offset": 292,
+      "content": "驚呼",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jīng hū",
+      "translation": "cry out in surprise"
+    },
+    {
+      "offset": 293,
+      "content": "熱",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "rè",
+      "translation": "warm; emotionally stirred"
+    },
+    {
+      "offset": 294,
+      "content": "中腸",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "zhōng cháng",
+      "translation": "the heart and entrails; one's innermost feelings"
+    },
+    {
+      "offset": 295,
+      "content": "焉知",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yān zhī",
+      "translation": "who would have known"
+    },
+    {
+      "offset": 296,
+      "content": "二十載",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "èr shí zǎi",
+      "translation": "twenty years"
+    },
+    {
+      "offset": 297,
+      "content": "重",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "chóng",
+      "translation": "again"
+    },
+    {
+      "offset": 298,
+      "content": "上",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "shàng",
+      "translation": "enter; ascend"
+    },
+    {
+      "offset": 299,
+      "content": "君子堂",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "jūn zǐ táng",
+      "translation": "your honorable hall"
+    },
+    {
+      "offset": 300,
+      "content": "昔",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "xī",
+      "translation": "formerly"
+    },
+    {
+      "offset": 301,
+      "content": "別",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "bié",
+      "translation": "part"
+    },
+    {
+      "offset": 302,
+      "content": "君",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jūn",
+      "translation": "you; host"
+    },
+    {
+      "offset": 303,
+      "content": "未婚",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "wèi hūn",
+      "translation": "not yet married"
+    },
+    {
+      "offset": 304,
+      "content": "兒女",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "ér nǚ",
+      "translation": "children"
+    },
+    {
+      "offset": 305,
+      "content": "忽",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "hū",
+      "translation": "suddenly"
+    },
+    {
+      "offset": 306,
+      "content": "成行",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "chéng háng",
+      "translation": "form a row; become a family"
+    },
+    {
+      "offset": 307,
+      "content": "怡然",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yí rán",
+      "translation": "pleasantly; cheerfully"
+    },
+    {
+      "offset": 308,
+      "content": "敬",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jìng",
+      "translation": "respect"
+    },
+    {
+      "offset": 309,
+      "content": "父執",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "fù zhí",
+      "translation": "one's father's friend"
+    },
+    {
+      "offset": 310,
+      "content": "問",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "wèn",
+      "translation": "ask"
+    },
+    {
+      "offset": 311,
+      "content": "我",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "wǒ",
+      "translation": "I"
+    },
+    {
+      "offset": 312,
+      "content": "來",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "lái",
+      "translation": "come"
+    },
+    {
+      "offset": 313,
+      "content": "何方",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "hé fāng",
+      "translation": "what place"
+    },
+    {
+      "offset": 314,
+      "content": "問答",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "wèn dá",
+      "translation": "questions and answers"
+    },
+    {
+      "offset": 315,
+      "content": "乃",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "nǎi",
+      "translation": "then; thus"
+    },
+    {
+      "offset": 316,
+      "content": "未已",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "wèi yǐ",
+      "translation": "not yet finished"
+    },
+    {
+      "offset": 317,
+      "content": "驅",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "qū",
+      "translation": "send; urge"
+    },
+    {
+      "offset": 318,
+      "content": "兒",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "ér",
+      "translation": "children"
+    },
+    {
+      "offset": 319,
+      "content": "羅",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "luó",
+      "translation": "lay out; arrange"
+    },
+    {
+      "offset": 320,
+      "content": "酒漿",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jiǔ jiāng",
+      "translation": "wine and drink"
+    },
+    {
+      "offset": 321,
+      "content": "夜雨",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yè yǔ",
+      "translation": "night rain"
+    },
+    {
+      "offset": 322,
+      "content": "剪",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jiǎn",
+      "translation": "cut"
+    },
+    {
+      "offset": 323,
+      "content": "春韭",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "chūn jiǔ",
+      "translation": "spring chives"
+    },
+    {
+      "offset": 324,
+      "content": "新炊",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xīn chuī",
+      "translation": "freshly cooked rice"
+    },
+    {
+      "offset": 325,
+      "content": "間",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "jiàn",
+      "translation": "mixed with"
+    },
+    {
+      "offset": 326,
+      "content": "黃梁",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "huáng liáng",
+      "translation": "yellow millet"
+    },
+    {
+      "offset": 327,
+      "content": "主",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "zhǔ",
+      "translation": "host"
+    },
+    {
+      "offset": 328,
+      "content": "稱",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "chēng",
+      "translation": "say; declare"
+    },
+    {
+      "offset": 329,
+      "content": "會面",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "huì miàn",
+      "translation": "meeting"
+    },
+    {
+      "offset": 330,
+      "content": "難",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "nán",
+      "translation": "rare; difficult"
+    },
+    {
+      "offset": 331,
+      "content": "一舉",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yī jǔ",
+      "translation": "one raising (of the cup)"
+    },
+    {
+      "offset": 332,
+      "content": "累",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "lěi",
+      "translation": "in succession; repeatedly"
+    },
+    {
+      "offset": 333,
+      "content": "十觴",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "shí shāng",
+      "translation": "ten cups"
+    },
+    {
+      "offset": 334,
+      "content": "十觴",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "shí shāng",
+      "translation": "ten cups"
+    },
+    {
+      "offset": 335,
+      "content": "亦",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yì",
+      "translation": "also"
+    },
+    {
+      "offset": 336,
+      "content": "不",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 337,
+      "content": "醉",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "zuì",
+      "translation": "drunk"
+    },
+    {
+      "offset": 338,
+      "content": "感",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "gǎn",
+      "translation": "moved by"
+    },
+    {
+      "offset": 339,
+      "content": "子",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "zǐ",
+      "translation": "you"
+    },
+    {
+      "offset": 340,
+      "content": "故意",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "gù yì",
+      "translation": "old friendship; thoughtful intention"
+    },
+    {
+      "offset": 341,
+      "content": "長",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "cháng",
+      "translation": "deep; lasting"
+    },
+    {
+      "offset": 342,
+      "content": "明日",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "míng rì",
+      "translation": "tomorrow"
+    },
+    {
+      "offset": 343,
+      "content": "隔",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "gé",
+      "translation": "separate"
+    },
+    {
+      "offset": 344,
+      "content": "山岳",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "shān yuè",
+      "translation": "mountains"
+    },
+    {
+      "offset": 345,
+      "content": "世事",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "shì shì",
+      "translation": "the affairs of the world"
+    },
+    {
+      "offset": 346,
+      "content": "兩",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "liǎng",
+      "translation": "both"
+    },
+    {
+      "offset": 347,
+      "content": "茫茫",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "máng máng",
+      "translation": "vast and uncertain"
+    },
+    {
+      "offset": 348,
+      "content": "絕代",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jué dài",
+      "translation": "peerless; unmatched in her age"
+    },
+    {
+      "offset": 349,
+      "content": "有",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yǒu",
+      "translation": "have"
+    },
+    {
+      "offset": 350,
+      "content": "佳人",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "jiā rén",
+      "translation": "beautiful woman"
+    },
+    {
+      "offset": 351,
+      "content": "幽居",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yōu jū",
+      "translation": "live in seclusion"
+    },
+    {
+      "offset": 352,
+      "content": "在",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "zài",
+      "translation": "be at"
+    },
+    {
+      "offset": 353,
+      "content": "空谷",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "kōng gǔ",
+      "translation": "empty valley"
+    },
+    {
+      "offset": 354,
+      "content": "自云",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zì yún",
+      "translation": "she says of herself"
+    },
+    {
+      "offset": 355,
+      "content": "良家子",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "liáng jiā zǐ",
+      "translation": "daughter of a respectable family"
+    },
+    {
+      "offset": 356,
+      "content": "零落",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "líng luò",
+      "translation": "fallen into ruin; scattered"
+    },
+    {
+      "offset": 357,
+      "content": "依",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yī",
+      "translation": "rely on; among"
+    },
+    {
+      "offset": 358,
+      "content": "草木",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "cǎo mù",
+      "translation": "plants and trees"
+    },
+    {
+      "offset": 359,
+      "content": "關中",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "guān zhōng",
+      "translation": "Guanzhong region"
+    },
+    {
+      "offset": 360,
+      "content": "昔",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "xī",
+      "translation": "formerly"
+    },
+    {
+      "offset": 361,
+      "content": "喪亂",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "sàng luàn",
+      "translation": "war and upheaval"
+    },
+    {
+      "offset": 362,
+      "content": "兄弟",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xiōng dì",
+      "translation": "brothers"
+    },
+    {
+      "offset": 363,
+      "content": "遭",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "zāo",
+      "translation": "suffer; encounter"
+    },
+    {
+      "offset": 364,
+      "content": "殺戮",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "shā lù",
+      "translation": "slaughter"
+    },
+    {
+      "offset": 365,
+      "content": "官高",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "guān gāo",
+      "translation": "high official rank"
+    },
+    {
+      "offset": 366,
+      "content": "何足",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "hé zú",
+      "translation": "what is there to"
+    },
+    {
+      "offset": 367,
+      "content": "論",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "lùn",
+      "translation": "discuss; count for"
+    },
+    {
+      "offset": 368,
+      "content": "不得",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "bù dé",
+      "translation": "be unable to"
+    },
+    {
+      "offset": 369,
+      "content": "收",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "shōu",
+      "translation": "gather; bury"
+    },
+    {
+      "offset": 370,
+      "content": "骨肉",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "gǔ ròu",
+      "translation": "flesh and blood; family"
+    },
+    {
+      "offset": 371,
+      "content": "世情",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "shì qíng",
+      "translation": "human feelings; worldly ways"
+    },
+    {
+      "offset": 372,
+      "content": "惡",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "è",
+      "translation": "harsh; cruel"
+    },
+    {
+      "offset": 373,
+      "content": "衰歇",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "shuāi xiē",
+      "translation": "decline and ruin"
+    },
+    {
+      "offset": 374,
+      "content": "萬事",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "wàn shì",
+      "translation": "all things"
+    },
+    {
+      "offset": 375,
+      "content": "隨",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "suí",
+      "translation": "follow"
+    },
+    {
+      "offset": 376,
+      "content": "轉燭",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "zhuǎn zhú",
+      "translation": "turning candlelight; fickle fortune"
+    },
+    {
+      "offset": 377,
+      "content": "夫婿",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "fū xù",
+      "translation": "husband"
+    },
+    {
+      "offset": 378,
+      "content": "輕薄兒",
+      "charStart": 2,
+      "charEnd": 5,
+      "transliteration": "qīng bó ér",
+      "translation": "frivolous man"
+    },
+    {
+      "offset": 379,
+      "content": "新人",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xīn rén",
+      "translation": "new wife; new beloved"
+    },
+    {
+      "offset": 380,
+      "content": "美",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "měi",
+      "translation": "beautiful"
+    },
+    {
+      "offset": 381,
+      "content": "如玉",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "rú yù",
+      "translation": "like jade"
+    },
+    {
+      "offset": 382,
+      "content": "合昏",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "hé hūn",
+      "translation": "silk tree; mimosa"
+    },
+    {
+      "offset": 383,
+      "content": "尚",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "shàng",
+      "translation": "even"
+    },
+    {
+      "offset": 384,
+      "content": "知",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "zhī",
+      "translation": "know"
+    },
+    {
+      "offset": 385,
+      "content": "時",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "shí",
+      "translation": "the proper time"
+    },
+    {
+      "offset": 386,
+      "content": "鴛鴦",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yuān yāng",
+      "translation": "mandarin ducks"
+    },
+    {
+      "offset": 387,
+      "content": "不",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 388,
+      "content": "獨宿",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "dú sù",
+      "translation": "sleep alone"
+    },
+    {
+      "offset": 389,
+      "content": "但",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "dàn",
+      "translation": "only; merely"
+    },
+    {
+      "offset": 390,
+      "content": "見",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "jiàn",
+      "translation": "see"
+    },
+    {
+      "offset": 391,
+      "content": "新人",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "xīn rén",
+      "translation": "new wife; new beloved"
+    },
+    {
+      "offset": 392,
+      "content": "笑",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "xiào",
+      "translation": "smile; laugh"
+    },
+    {
+      "offset": 393,
+      "content": "那",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "nǎ",
+      "translation": "how could; who"
+    },
+    {
+      "offset": 394,
+      "content": "聞",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "wén",
+      "translation": "hear"
+    },
+    {
+      "offset": 395,
+      "content": "舊人",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "jiù rén",
+      "translation": "former wife; old beloved"
+    },
+    {
+      "offset": 396,
+      "content": "哭",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "kū",
+      "translation": "weep"
+    },
+    {
+      "offset": 397,
+      "content": "在山",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zài shān",
+      "translation": "when in the mountains"
+    },
+    {
+      "offset": 398,
+      "content": "泉水",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "quán shuǐ",
+      "translation": "spring water"
+    },
+    {
+      "offset": 399,
+      "content": "清",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "qīng",
+      "translation": "clear"
+    },
+    {
+      "offset": 400,
+      "content": "出山",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "chū shān",
+      "translation": "when emerging from the mountains"
+    },
+    {
+      "offset": 401,
+      "content": "泉水",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "quán shuǐ",
+      "translation": "spring water"
+    },
+    {
+      "offset": 402,
+      "content": "濁",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "zhuó",
+      "translation": "turbid"
+    },
+    {
+      "offset": 403,
+      "content": "侍婢",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "shì bì",
+      "translation": "maidservant"
+    },
+    {
+      "offset": 404,
+      "content": "賣",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "mài",
+      "translation": "sell"
+    },
+    {
+      "offset": 405,
+      "content": "珠",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "zhū",
+      "translation": "pearls"
+    },
+    {
+      "offset": 406,
+      "content": "迴",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "huí",
+      "translation": "return"
+    },
+    {
+      "offset": 407,
+      "content": "牽",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "qiān",
+      "translation": "pull; draw"
+    },
+    {
+      "offset": 408,
+      "content": "蘿",
+      "charStart": 1,
+      "charEnd": 2,
+      "transliteration": "luó",
+      "translation": "vine"
+    },
+    {
+      "offset": 409,
+      "content": "補",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bǔ",
+      "translation": "repair"
+    },
+    {
+      "offset": 410,
+      "content": "茅屋",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "máo wū",
+      "translation": "thatched hut"
+    },
+    {
+      "offset": 411,
+      "content": "摘花",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zhāi huā",
+      "translation": "pick flowers"
+    },
+    {
+      "offset": 412,
+      "content": "不",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 413,
+      "content": "插髮",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "chā fà",
+      "translation": "put in one's hair"
+    },
+    {
+      "offset": 414,
+      "content": "采柏",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "cǎi bǎi",
+      "translation": "gather cypress"
+    },
+    {
+      "offset": 415,
+      "content": "動",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "dòng",
+      "translation": "often; at every turn"
+    },
+    {
+      "offset": 416,
+      "content": "盈掬",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "yíng jū",
+      "translation": "fill both hands"
+    },
+    {
+      "offset": 417,
+      "content": "天寒",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "tiān hán",
+      "translation": "the weather is cold"
+    },
+    {
+      "offset": 418,
+      "content": "翠袖",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "cuì xiù",
+      "translation": "green sleeves"
+    },
+    {
+      "offset": 419,
+      "content": "薄",
+      "charStart": 4,
+      "charEnd": 5,
+      "transliteration": "báo",
+      "translation": "thin; scant"
+    },
+    {
+      "offset": 420,
+      "content": "日暮",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "rì mù",
+      "translation": "dusk"
+    },
+    {
+      "offset": 421,
+      "content": "倚",
+      "charStart": 2,
+      "charEnd": 3,
+      "transliteration": "yǐ",
+      "translation": "lean against"
+    },
+    {
+      "offset": 422,
+      "content": "修竹",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xiū zhú",
+      "translation": "tall bamboo"
+    }
+  ],
+  "glosses": [
+    {
+      "id": "g001",
+      "start": 0,
+      "end": 2,
+      "content": "The solitary goose is the poem's governing image of the politically exposed outsider. Read allegorically, it contrasts with the paired kingfishers below; the contrast is social as much as visual."
+    },
+    {
+      "id": "g002",
+      "start": 3,
+      "end": 5,
+      "content": "The pond or moat can mean a pond or moat, but traditional readings take it as an image of the court or its shallow, enclosed world. The goose's refusal to look back therefore suggests refusal of compromised advancement, not merely a bird avoiding water."
+    },
+    {
+      "id": "g005",
+      "start": 8,
+      "end": 12,
+      "content": "The paired kingfishers occupy a fabulous tree. The image is deliberately luxurious: the birds have beauty, a mate, and a rare perch, but that very conspicuousness makes them vulnerable to the hunter."
+    },
+    {
+      "id": "g006",
+      "start": 12,
+      "end": 12,
+      "content": "The text is transmitted with variant forms meaning the Three-Pearl Tree and the Three-Trunk Tree. The image belongs to the mythic geography of the Shanhaijing, which describes a wondrous tree growing by the Red River, with pearl-like leaves. It is not a realistic species of tree."
+    },
+    {
+      "id": "g008",
+      "start": 16,
+      "end": 18,
+      "content": "A golden pellet is a hunter's projectile, not a decorative object. The question punctures the apparent security of the kingfishers' splendid nest: distinction attracts the gaze of predators."
+    },
+    {
+      "id": "g010",
+      "start": 19,
+      "end": 26,
+      "content": "These lines shift explicitly from bird imagery to human society. Fine dress is often read as a sign of conspicuous distinction, while eminence can mean an elevated or conspicuous position. The point is that visibility and privilege invite envy and danger; it is not simply a warning against vanity."
+    },
+    {
+      "id": "g012",
+      "start": 23,
+      "end": 26,
+      "content": "The idea that a great household is watched by ghosts echoes Yang Xiong's essay Jiechao. The allusion gives the danger a proverbial, almost cosmic force: eminence itself invites hostile scrutiny."
+    },
+    {
+      "id": "g013",
+      "start": 27,
+      "end": 33,
+      "content": "The speaker returns to the goose's altitude: the remote sky is beyond the fowler's reach. The closing question reverses the hunter's perspective—what can a hunter desire from a bird that has withdrawn beyond his range?"
+    },
+    {
+      "id": "g016",
+      "start": 34,
+      "end": 39,
+      "content": "Orchid and cassia/osmanthus belong to the classical vocabulary of fragrant plants. Since the Songs of Chu, fragrant vegetation can figure cultivated virtue and integrity; their seasonal flourishing here is natural, not performed for an audience."
+    },
+    {
+      "id": "g018",
+      "start": 40,
+      "end": 45,
+      "content": "The idea that the plants flourish of their own accord makes their beauty self-sufficient: the season is beautiful because their life unfolds according to its own nature. This prepares the poem's rejection of virtue practiced merely to win recognition."
+    },
+    {
+      "id": "g020",
+      "start": 46,
+      "end": 51,
+      "content": "the forest-dweller is usually understood as a recluse who recognizes the plants' fragrance. The line is not wholly celebratory: the next couplet asks whether even appreciative recognition risks turning natural fragrance into something to be plucked and possessed."
+    },
+    {
+      "id": "g023",
+      "start": 52,
+      "end": 58,
+      "content": "The plants' innate nature is the poem's thesis. The plants possess an intrinsic nature; they do not flower in order to be selected by a beautiful or discerning patron. In the classical political-poetic register, the beautiful person may suggest the patron whose recognition is desired."
+    },
+    {
+      "id": "g026",
+      "start": 59,
+      "end": 65,
+      "content": "The secluded person and solitary purity place the speaker in the tradition of the self-cultivating recluse. Washing away stagnant cares is more than relaxing after work: it imagines withdrawal as a purification of the mind from worldly entanglement."
+    },
+    {
+      "id": "g029",
+      "start": 66,
+      "end": 72,
+      "content": "The high-flying bird becomes a messenger for an emotion that cannot be conveyed directly. The poem's central tension is that the speaker's sincerity is real, yet the distance between different kinds of beings—or different moral worlds—may make it impossible to communicate."
+    },
+    {
+      "id": "g033",
+      "start": 76,
+      "end": 87,
+      "content": "flying and sinking contrasts creatures that fly with those that sink. Their separation is presented as a natural pattern, not merely a temporary misunderstanding; the final question asks what can console a person whose sincerity has no adequate recipient."
+    },
+    {
+      "id": "g037",
+      "start": 88,
+      "end": 100,
+      "content": "The winter-green southern orange is a moral emblem, not just a botanical curiosity. It strongly recalls Qu Yuan's 'Ode to the Orange Tree,' which praises the tree for remaining rooted in the south and refusing to change its nature. Zhang's orange likewise makes constancy visible under pressure."
+    },
+    {
+      "id": "g041",
+      "start": 98,
+      "end": 100,
+      "content": "The phrase 'a heart that endures the cold of the year' recalls the Analects: only when winter comes do we recognize the pine and cypress that are last to wither. Read alongside Qu Yuan's 'Ode to the Orange Tree,' the orange joins a classical lineage of plants whose unchanging nature figures moral integrity."
+    },
+    {
+      "id": "g042",
+      "start": 101,
+      "end": 106,
+      "content": "The orange is fit to be offered to an honored guest, yet distance and obstruction prevent the offering. The blocked gift can be read as the poet's own difficulty in presenting his worth to someone capable of recognizing it."
+    },
+    {
+      "id": "g045",
+      "start": 107,
+      "end": 112,
+      "content": "The poem's statement that fate depends on what one encounters, and that its cycles cannot be traced, refuses an easy account of success and failure. This is a meditation on the opacity of political fate, not a neat statement that everything happens for a reason."
+    },
+    {
+      "id": "g046",
+      "start": 113,
+      "end": 121,
+      "content": "Peach and plum trees carry a specific political resonance here. The Han Shi waizhuan tells of planting them for their shade and fruit; by contrast, Zhang asks why the orange's shade should be ignored. The contrast suggests that the court favors familiar, useful, or fashionable talent while overlooking a worthy alternative."
+    },
+    {
+      "id": "g048",
+      "start": 122,
+      "end": 136,
+      "content": "The descent from Zhongnan is framed through a sequence of looking back, moonlight, and blue-green mountain haze. The backward glance makes the route already traveled feel like a remembered landscape, rather than a mere geographical detail."
+    },
+    {
+      "id": "g053",
+      "start": 137,
+      "end": 142,
+      "content": "The meeting at the farmhouse is presented through an unceremonious welcome: children open a thornwood gate. This domestic simplicity contrasts with formal hospitality and helps establish the poem's ideal of unforced fellowship."
+    },
+    {
+      "id": "g056",
+      "start": 143,
+      "end": 148,
+      "content": "Bamboo, trailing vine, and the narrow path are conventional signs of a secluded mountain dwelling. Here they are not simply decorative scenery: the plants make the threshold between the cultivated world and the recluse's space feel porous."
+    },
+    {
+      "id": "g061",
+      "start": 156,
+      "end": 162,
+      "content": "Pine-wind may refer to the old qin melody or musical mode known as Wind-in-the-Pines, as traditional annotations explain; it can also be heard as song mingling with wind in the pines. The phrase deliberately lets music and landscape overlap."
+    },
+    {
+      "id": "g064",
+      "start": 168,
+      "end": 170,
+      "content": "forgetting worldly calculation is a Daoist-inflected ideal: freedom from calculating intention, manipulation, and the urge to gain advantage. The happiness of the visit comes from temporarily suspending social ambition, not from acquiring anything."
+    },
+    {
+      "id": "g065",
+      "start": 171,
+      "end": 183,
+      "content": "The poem stages a deliberately impossible drinking party: the poet, moon, and shadow make three, but neither companion can drink or answer. The conceit turns loneliness into imaginative play without pretending that the loneliness has disappeared."
+    },
+    {
+      "id": "g068",
+      "start": 184,
+      "end": 201,
+      "content": "The moon cannot understand drinking and the shadow only follows the body. Their companionship is therefore temporary and asymmetrical; the insistence on enjoying spring 'while it lasts' introduces time and mortality beneath the playful scene."
+    },
+    {
+      "id": "g073",
+      "start": 202,
+      "end": 222,
+      "content": "The song-and-dance sequence makes the moon and shadow appear responsive, then admits that sobriety and intoxication end in separation. The final promise to meet in the Milky Way converts an earthly, temporary friendship into a fantastical one."
+    },
+    {
+      "id": "g076",
+      "start": 216,
+      "end": 222,
+      "content": "A friendship free of ordinary feeling is paradoxical: the moon and shadow are companions precisely because they have no human feelings or claims. The promised meeting in the remote Milky Way projects the reunion into the sky; it is an imaginative resolution, not a literal promise."
+    },
+    {
+      "id": "g078",
+      "start": 223,
+      "end": 236,
+      "content": "Yan and Qin are distant northern and western regions, not just decorative place names. The poem cuts between the absent husband's spring in Yan and the wife's spring in Qin, making the same season register as hope for him and heartbreak for her."
+    },
+    {
+      "id": "g080",
+      "start": 229,
+      "end": 236,
+      "content": "The parallel clauses are the emotional hinge: when the husband begins to think of returning, the wife is already suffering from longing. The temporal coincidence does not produce reunion; it exposes how differently the same separation is experienced."
+    },
+    {
+      "id": "g083",
+      "start": 237,
+      "end": 242,
+      "content": "The spring breeze entering the woman's gauze curtain is personified as an unwelcome visitor. Her question is not simply about weather: the stranger's entry sharpens her awareness of the absent husband and the intimacy she lacks."
+    },
+    {
+      "id": "g085",
+      "start": 243,
+      "end": 248,
+      "content": "the revered peak is an honorific name for Mount Tai, the eastern sacred peak and chief of the Five Marchmounts. Qi and Lu gives the mountain a regional scale: its green mass seems to extend across the territories of two ancient states."
+    },
+    {
+      "id": "g087",
+      "start": 249,
+      "end": 254,
+      "content": "The language of cosmic creation and yin-yang brings cosmology into a concrete landscape. The mountain seems to gather the generative power of Heaven and Earth, while its opposite slopes divide daylight and shadow so sharply that one massif creates its own dawn and dusk."
+    },
+    {
+      "id": "g089",
+      "start": 255,
+      "end": 260,
+      "content": "The clouds seem to rise into and unsettle the viewer's chest; the returning birds draw the eye to the mountain's immense scale. These are not detached landscape details: the body of the observer is caught up in the mountain's movement."
+    },
+    {
+      "id": "g091",
+      "start": 261,
+      "end": 266,
+      "content": "The final couplet transforms looking into a vow to climb. It also echoes Mencius 7A.24: Confucius climbed the Eastern Mountain and felt Lu small, then climbed Mount Tai and felt all beneath Heaven small. Du Fu turns that inherited saying into an aspiration to reach the summit himself."
+    },
+    {
+      "id": "g093",
+      "start": 267,
+      "end": 274,
+      "content": "Shen and Shang are the Shen and Shang stars, whose risings and settings make them appear never to meet. The image has an early textual pedigree in the Zuozhuan story of the sons of Gaoxin, whose separation is explained through the two constellations; it gives friendship's long absence a cosmic pattern."
+    },
+    {
+      "id": "g095",
+      "start": 275,
+      "end": 280,
+      "content": "The exclamation 'What sort of night is this?' echoes the language of the Shijing poem 'Bound Together,' where the speaker marvels at the night of a longed-for meeting. In Du Fu, the borrowed exclamation makes an ordinary reunion feel almost unbelievable."
+    },
+    {
+      "id": "g096",
+      "start": 281,
+      "end": 294,
+      "content": "Youth, whitening hair, and the discovery that half one's old acquaintances are dead compress twenty years into a few lines. The emotional shock is not only private aging: it registers the mortality and social devastation of the An Lushan era."
+    },
+    {
+      "id": "g100",
+      "start": 295,
+      "end": 303,
+      "content": "The phrase 'gentleman's hall' is an honorific way to name the friend's home, not necessarily a formal hall. The understated phrase makes the return to a familiar domestic space feel momentous after two decades."
+    },
+    {
+      "id": "g103",
+      "start": 304,
+      "end": 320,
+      "content": "The term for a father's friend is a classical kinship expression drawn from the Liji. The children greet Du Fu through an inherited social relationship, while their presence makes the passage of a generation visible."
+    },
+    {
+      "id": "g108",
+      "start": 321,
+      "end": 326,
+      "content": "The rain-cut spring chives and newly cooked yellow millet are concrete signs of welcome. The meal's modest freshness matters: friendship is expressed through labor and food, not grand ceremony."
+    },
+    {
+      "id": "g110",
+      "start": 327,
+      "end": 341,
+      "content": "The host's repeated toasts are explained by the rarity of reunion. The phrase for 'old affection' means long-standing friendship, not a deliberate intention; the wine is a measure of feeling rather than an exact count."
+    },
+    {
+      "id": "g114",
+      "start": 342,
+      "end": 347,
+      "content": "The mountains that will separate them tomorrow return the poem to its opening image of impossible meetings. The closing uncertainty prevents the warm meal from becoming a sentimental resolution."
+    },
+    {
+      "id": "g116",
+      "start": 348,
+      "end": 358,
+      "content": "The beautiful woman is introduced through the conventional pairing of exceptional beauty and secluded virtue. The poem gives her a specific wartime history, but commentators have disagreed about whether she should also be read as an allegorical figure for the poet or for principled people displaced by political disorder."
+    },
+    {
+      "id": "g120",
+      "start": 359,
+      "end": 370,
+      "content": "The reference to the disorder in Guanzhong and the killing of her brothers places the woman's fall within the violence of the An Lushan rebellion. Her inability to gather and bury her family makes political catastrophe intimate and bodily."
+    },
+    {
+      "id": "g124",
+      "start": 371,
+      "end": 378,
+      "content": "The poem turns from war to the fickleness of society: people abandon those whose fortunes decline. The husband's new attachment is not an isolated domestic failing but part of a larger world in which loyalty collapses when status changes."
+    },
+    {
+      "id": "g127",
+      "start": 379,
+      "end": 388,
+      "content": "The new woman, the day-closing albizia, and the paired mandarin ducks form a sequence of comparisons. Even plants and birds seem to follow rhythms of pairing and fidelity that the husband violates."
+    },
+    {
+      "id": "g130",
+      "start": 389,
+      "end": 396,
+      "content": "The sharp antithesis between the new woman's laughter and the old woman's weeping makes the injustice audible. The question is accusatory: the husband sees one woman's happiness while refusing to hear the other's suffering."
+    },
+    {
+      "id": "g132",
+      "start": 397,
+      "end": 402,
+      "content": "The spring-water proverb is interpretively contested. Some traditional readings make it the woman's reproach of a husband corrupted by leaving the mountains; others read it as her own resolve to remain pure in seclusion. Modern scholarship has argued for the latter from the following lines, but the poem leaves room for the tension between them."
+    },
+    {
+      "id": "g133",
+      "start": 403,
+      "end": 416,
+      "content": "The servant sells the woman's pearls, the hut is patched with vines, and she gathers cypress rather than adorning herself with flowers. These details turn chastity and withdrawal into material hardship; they also resist treating her virtue as a purely abstract emblem."
+    },
+    {
+      "id": "g138",
+      "start": 417,
+      "end": 422,
+      "content": "The thin green sleeves and the straight bamboo close the poem with an image of exposed but unbending integrity. The woman is physically vulnerable to cold, yet the final posture keeps her associated with uprightness and self-possession."
+    }
+  ]
+}

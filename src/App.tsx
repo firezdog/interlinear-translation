@@ -19,6 +19,7 @@ const initialPassageOptions = [
     { key: "jing-ye-si", name: "靜夜思 (Jing Ye Si)" },
     { key: "notes-underground", name: "Notes From Underground" },
     { key: "hong-lou-meng", name: "Dream of the Red Chamber" },
+    { key: "tang-shi", name: "Tang Poetry" },
 ];
 
 type SaveStatus = "idle" | "saving" | "saved" | "error";
@@ -245,7 +246,7 @@ function App() {
             <h1 className="py-3 text-3xl font-bold tracking-tight">
                 Interlinear Translation
             </h1>
-            <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+            <div className="passage-toolbar mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
                 <label>
                     <span className="pr-3">Select Passage:</span>
                     <select
