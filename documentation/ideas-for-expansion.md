@@ -35,13 +35,10 @@ So: AI authoring is a strong fit for **producing** shipped passages (and for pow
 
 ## Deploy action (GitHub Pages)
 
-**Direction:** add a GitHub Actions workflow that builds the static bundle and publishes it to a dedicated branch (commonly `gh-pages`) so the app can be demoed on GitHub Pages without a server.
+**Status:** shipped. [`.github/workflows/deploy-pages.yml`](../.github/workflows/deploy-pages.yml) builds on push to `main` (and `workflow_dispatch`) and publishes via the official Actions Pages flow (`actions/upload-pages-artifact` + `actions/deploy-pages`)—no `gh-pages` branch, no third-party deploy actions.
 
-- **Trigger:** push to `main` (and optionally manual `workflow_dispatch`).
-- **Build:** `npm ci` → `npm run build` (webpack output already lands in `dist/`, including copied `public/passages/`).
-- **Publish:** deploy the `dist/` contents to `gh-pages` (e.g. `peaceiris/actions-gh-pages` or `actions/upload-pages-artifact` + `actions/deploy-pages`).
-- **Repo settings:** enable Pages from the `gh-pages` branch (or from GitHub Actions, depending on the publish method).
+- **Build:** `npm ci` → `npm test` → `PUBLIC_PATH=/interlinear-translation/ npm run build` → upload `dist/`. Failed tests block the deploy.
+- **Base path:** webpack `output.publicPath` and passage fetches (`src/clients/basePath.ts`) both honor `PUBLIC_PATH`, so the project site at `https://firezdog.github.io/interlinear-translation/` resolves assets and `/passages/...` correctly. Local `npm start` keeps the default `/`.
+- **One-time repo setup:** Settings → Pages → Source → **GitHub Actions**.
 
-**Build notes:** webpack currently sets `publicPath: "/"`. That works for a user/org site (`username.github.io`) or a custom domain; a project site under `username.github.io/repo-name/` needs a configurable base path (e.g. `PUBLIC_PATH` / `homepage`) so asset and passage URLs resolve correctly. The local `PUT /api/passage` middleware must stay out of the deploy build—persistence for the demo depends on the browser-storage work above.
-
-**Open questions:** branch-based deploy vs. the newer Actions Pages artifact flow; whether deploys should also run tests; and how to set `publicPath` for project vs. root Pages hosting.
+The local `PUT /api/passage` middleware is not part of the deploy artifact. Save on the live demo still depends on the browser-persistence work above.
