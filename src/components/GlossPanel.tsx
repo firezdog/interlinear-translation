@@ -1,10 +1,10 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Gloss, Passage } from "@/passage/types";
-import { glossSpanText } from "@/passage/projectPassage";
+import { Gloss } from "@/passage/types";
+import type { PassageIndex } from "@/passage/indexPassage";
 import type { TokenRange } from "@/passage/selection";
 
 function GlossPanel({
-    passage,
+    index,
     glosses,
     selectedToken,
     selectionRange,
@@ -13,7 +13,7 @@ function GlossPanel({
     onAddGloss,
     onUpdateGloss,
 }: {
-    passage: Passage;
+    index: PassageIndex;
     glosses: Gloss[];
     selectedToken: number;
     selectionRange: TokenRange | null;
@@ -85,7 +85,7 @@ function GlossPanel({
 
     const draftSpan =
         selectionRange != null
-            ? glossSpanText(passage, {
+            ? index.glossSpanText({
                   id: "draft",
                   start: selectionRange.start,
                   end: selectionRange.end,
@@ -149,7 +149,7 @@ function GlossPanel({
                                                 className="span gloss-card-span-toggle"
                                                 onClick={() => onSelectGloss(g)}
                                             >
-                                                {glossSpanText(passage, g)}
+                                                {index.glossSpanText(g)}
                                             </button>
                                             {editing ? (
                                                 <>
@@ -213,7 +213,7 @@ function GlossPanel({
                                         onClick={() => onSelectGloss(g)}
                                     >
                                         <span className="span">
-                                            {glossSpanText(passage, g)}
+                                            {index.glossSpanText(g)}
                                         </span>
                                         <div className="body">{g.content}</div>
                                     </button>

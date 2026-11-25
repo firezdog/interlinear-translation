@@ -1,5 +1,6 @@
 import React from "react";
-import { Gloss, Passage, Token } from "@/passage/types";
+import { Gloss, Token } from "@/passage/types";
+import type { PassageIndex } from "@/passage/indexPassage";
 import { LineStudyPanel } from "@/components/LineStudyPanel";
 import { WordPanel } from "@/components/WordPanel";
 import { GlossPanel } from "@/components/GlossPanel";
@@ -8,10 +9,11 @@ import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
 function StudyRail({
     studyTokens,
     wordToken,
-    passage,
+    index,
     selectedGlosses,
     selectedToken,
     selectionRange,
+    highlightRange,
     focusedGloss,
     onSelectToken,
     onSelectGloss,
@@ -21,10 +23,11 @@ function StudyRail({
 }: {
     studyTokens: Token[];
     wordToken: Token | null;
-    passage: Passage | null;
+    index: PassageIndex | null;
     selectedGlosses: Gloss[];
     selectedToken: number;
     selectionRange: TokenRange | null;
+    highlightRange: TokenRange | null;
     focusedGloss: Gloss | null;
     onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
     onSelectGloss: (gloss: Gloss) => void;
@@ -40,14 +43,14 @@ function StudyRail({
             <LineStudyPanel
                 tokens={studyTokens}
                 selectedToken={selectedToken}
-                selectionRange={selectionRange}
-                focusedGloss={focusedGloss}
+                highlightRange={highlightRange}
+                glossFocused={focusedGloss != null}
                 onSelectToken={onSelectToken}
             />
             <WordPanel token={wordToken} onUpdateToken={onUpdateToken} />
-            {passage ? (
+            {index ? (
                 <GlossPanel
-                    passage={passage}
+                    index={index}
                     glosses={selectedGlosses}
                     selectedToken={selectedToken}
                     selectionRange={selectionRange}

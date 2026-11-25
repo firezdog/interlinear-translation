@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { GlossPanel } from "@/components/GlossPanel";
+import { indexPassage } from "@/passage/indexPassage";
 import { Gloss, Passage } from "@/passage/types";
 
 const passage: Passage = {
@@ -46,7 +47,7 @@ describe("GlossPanel", () => {
         const onSelectGloss = jest.fn();
         render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={glosses}
                 selectedToken={2}
                 selectionRange={{ start: 2, end: 2 }}
@@ -107,7 +108,7 @@ describe("GlossPanel", () => {
 
         const { rerender, container } = render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={glosses}
                 selectedToken={2}
                 selectionRange={{ start: 2, end: 2 }}
@@ -123,7 +124,7 @@ describe("GlossPanel", () => {
 
         rerender(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={glosses}
                 selectedToken={2}
                 selectionRange={{ start: 2, end: 2 }}
@@ -148,7 +149,7 @@ describe("GlossPanel", () => {
 
         const { rerender, container } = render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={[]}
                 selectedToken={-1}
                 selectionRange={null}
@@ -164,7 +165,7 @@ describe("GlossPanel", () => {
 
         rerender(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={glosses}
                 selectedToken={2}
                 selectionRange={{ start: 2, end: 2 }}
@@ -183,7 +184,7 @@ describe("GlossPanel", () => {
         const onAddGloss = jest.fn();
         render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={[]}
                 selectedToken={0}
                 selectionRange={{ start: 0, end: 2 }}
@@ -206,7 +207,7 @@ describe("GlossPanel", () => {
         const onAddGloss = jest.fn();
         render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={[]}
                 selectedToken={0}
                 selectionRange={{ start: 0, end: 1 }}
@@ -227,7 +228,7 @@ describe("GlossPanel", () => {
         const onUpdateGloss = jest.fn();
         render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={glosses}
                 selectedToken={2}
                 selectionRange={{ start: 2, end: 2 }}
@@ -256,7 +257,7 @@ describe("GlossPanel", () => {
         const onUpdateGloss = jest.fn();
         render(
             <GlossPanel
-                passage={passage}
+                index={indexPassage(passage)}
                 glosses={glosses}
                 selectedToken={2}
                 selectionRange={{ start: 2, end: 2 }}

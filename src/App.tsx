@@ -10,7 +10,12 @@ import {
     CreatePassageDialog,
     type CreatePassageResult,
 } from "@/components/CreatePassageDialog";
-import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
+import {
+    highlightRangeFor,
+    tokenIdInRange,
+    type SelectTokenOpts,
+    type TokenRange,
+} from "@/passage/selection";
 
 const initialPassageOptions = [
     { key: "oku-no-hosomichi", name: "Oku No Hosomichi" },
@@ -51,6 +56,11 @@ function App() {
         index && selectedToken >= 0
             ? (index.tokenById.get(selectedToken) ?? null)
             : null;
+
+    const highlightRange = useMemo(
+        () => highlightRangeFor(focusedGloss, selectionRange),
+        [focusedGloss, selectionRange]
+    );
 
     const studyFocus = useMemo(() => {
         if (focusedGloss) return focusedGloss;
@@ -123,7 +133,7 @@ function App() {
                 setSelectionAnchor(offset);
                 setSelectionRange({ start: offset, end: offset });
                 setFocusedGloss((g) => {
-                    if (g && (offset < g.start || offset > g.end)) return null;
+                    if (g && !tokenIdInRange(offset, g.start, g.end)) return null;
                     return g;
                 });
                 return offset;
@@ -136,7 +146,7 @@ function App() {
         setFocusedGloss((prev) => {
             if (prev?.id === gloss.id) return null;
             setSelectedToken((sel) =>
-                sel < gloss.start || sel > gloss.end ? gloss.start : sel
+                tokenIdInRange(sel, gloss.start, gloss.end) ? sel : gloss.start
             );
             return gloss;
         });
@@ -297,8 +307,7 @@ function App() {
                     <ReadingColumn
                         index={index}
                         selectedToken={selectedToken}
-                        selectionRange={selectionRange}
-                        focusedGloss={focusedGloss}
+                        highlightRange={highlightRange}
                         showTransliteration={showTransliteration}
                         onSelectToken={onSelectToken}
                     />
@@ -306,10 +315,11 @@ function App() {
                 <StudyRail
                     studyTokens={studyTokens}
                     wordToken={wordToken}
-                    passage={passage}
+                    index={index}
                     selectedGlosses={selectedGlosses}
                     selectedToken={selectedToken}
                     selectionRange={selectionRange}
+                    highlightRange={highlightRange}
                     focusedGloss={focusedGloss}
                     onSelectToken={onSelectToken}
                     onSelectGloss={onSelectGloss}

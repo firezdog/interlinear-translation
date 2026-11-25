@@ -1,52 +1,41 @@
 import React, { useMemo } from "react";
-import { Gloss } from "@/passage/types";
 import type { PassageIndex } from "@/passage/indexPassage";
 import { projectPassage } from "@/passage/projectPassage";
-import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
+import {
+    segmentInFocus,
+    tokenIdInRange,
+    type SelectTokenOpts,
+    type TokenRange,
+} from "@/passage/selection";
 
 function ReadingColumn({
     index,
     selectedToken,
-    selectionRange,
-    focusedGloss,
+    highlightRange,
     showTransliteration,
     onSelectToken,
 }: {
     index: PassageIndex;
     selectedToken: number;
-    selectionRange: TokenRange | null;
-    focusedGloss: Gloss | null;
+    highlightRange: TokenRange | null;
     showTransliteration: boolean;
     onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
 }) {
     const { paragraphs } = useMemo(() => projectPassage(index), [index]);
     const glossesByToken = index.glossesByToken;
 
-    const inSpan = (offset: number) => {
-        if (focusedGloss) {
-            return offset >= focusedGloss.start && offset <= focusedGloss.end;
-        }
-        return !!(
-            selectionRange &&
-            offset >= selectionRange.start &&
-            offset <= selectionRange.end
-        );
-    };
-
-    const segmentIsFocus = (start: number, end: number) => {
-        if (focusedGloss) {
-            return focusedGloss.start <= end && focusedGloss.end >= start;
-        }
-        if (selectionRange) {
-            return selectionRange.start <= end && selectionRange.end >= start;
-        }
-        return selectedToken >= start && selectedToken <= end;
-    };
+    const tokenHighlighted = (tokenId: number) =>
+        !!highlightRange &&
+        tokenIdInRange(tokenId, highlightRange.start, highlightRange.end);
 
     return (
         <div className="reading-column" dir="auto">
             {paragraphs.map((para) => {
-                const focus = segmentIsFocus(para.segment.start, para.segment.end);
+                const focus = segmentInFocus(
+                    para.segment,
+                    selectedToken,
+                    highlightRange
+                );
                 return (
                     <div
                         key={`${para.segment.start}-${para.segment.end}`}
@@ -70,7 +59,7 @@ function ReadingColumn({
                                 const cls = [
                                     "tok",
                                     hasGloss ? "tok-has-gloss" : "",
-                                    inSpan(token.offset) ? "tok-in-span" : "",
+                                    tokenHighlighted(token.offset) ? "tok-in-span" : "",
                                 ]
                                     .filter(Boolean)
                                     .join(" ");
@@ -103,7 +92,11 @@ function ReadingColumn({
                                               {i > 0 ? " " : null}
                                               <button
                                                   type="button"
-                                                  className={`tok${inSpan(token.offset) ? " tok-in-span" : ""}`}
+                                                  className={`tok${
+                                                      tokenHighlighted(token.offset)
+                                                          ? " tok-in-span"
+                                                          : ""
+                                                  }`}
                                                   aria-pressed={
                                                       selectedToken === token.offset
                                                   }

@@ -1,5 +1,5 @@
-import { indexPassage, type PassageIndex } from "@/passage/indexPassage";
-import { Gloss, Passage, Segment, Token, TokenId } from "@/passage/types";
+import type { PassageIndex } from "@/passage/indexPassage";
+import { Gloss, Segment, Token, TokenId } from "@/passage/types";
 
 export type TextRun = { type: "text"; value: string };
 export type TokenRun = { type: "token"; token: Token };
@@ -70,13 +70,7 @@ function studyTokensFor(
     return index.tokensInRange(seg.start, seg.end);
 }
 
-/** Slice of segment text covering a gloss’s tokens (includes interstitial spaces). */
-function glossSpanText(passage: Passage, gloss: Gloss): string {
-    return indexPassage(passage).glossSpanText(gloss);
-}
-
 export {
     projectPassage,
     studyTokensFor,
-    glossSpanText,
 };

@@ -1,9 +1,5 @@
 import { indexPassage } from "@/passage/indexPassage";
-import {
-    glossSpanText,
-    projectPassage,
-    studyTokensFor,
-} from "@/passage/projectPassage";
+import { projectPassage, studyTokensFor } from "@/passage/projectPassage";
 import { Passage } from "@/passage/types";
 
 const poem: Passage = {
@@ -95,15 +91,5 @@ describe("studyTokensFor", () => {
 
     it("returns empty when nothing is selected", () => {
         expect(studyTokensFor(index, -1, null)).toEqual([]);
-    });
-});
-
-describe("glossSpanText", () => {
-    it("slices segment text including interstitial spaces", () => {
-        expect(
-            glossSpanText(poem, { id: "x", start: 0, end: 2, content: "x" })
-        ).toBe(
-            "床前 明月 光"
-        );
     });
 });

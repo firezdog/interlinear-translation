@@ -1,18 +1,23 @@
 import React, { useEffect, useRef } from "react";
-import { Gloss, Token } from "@/passage/types";
-import type { SelectTokenOpts, TokenRange } from "@/passage/selection";
+import { Token } from "@/passage/types";
+import {
+    tokenIdInRange,
+    type SelectTokenOpts,
+    type TokenRange,
+} from "@/passage/selection";
 
 function LineStudyPanel({
     tokens,
     selectedToken,
-    selectionRange,
-    focusedGloss,
+    highlightRange,
+    glossFocused,
     onSelectToken,
 }: {
     tokens: Token[];
     selectedToken: number;
-    selectionRange: TokenRange | null;
-    focusedGloss: Gloss | null;
+    highlightRange: TokenRange | null;
+    /** True when highlight comes from a focused gloss (caption wording). */
+    glossFocused: boolean;
     onSelectToken: (offset: number, opts?: SelectTokenOpts) => void;
 }) {
     const selectedRef = useRef<HTMLButtonElement | null>(null);
@@ -25,24 +30,13 @@ function LineStudyPanel({
         });
     }, [selectedToken, tokens]);
 
-    const caption = focusedGloss
+    const caption = glossFocused
         ? "Gloss span (aligned study)"
-        : selectionRange && selectionRange.start !== selectionRange.end
+        : highlightRange && highlightRange.start !== highlightRange.end
           ? "Selected span"
           : tokens.length > 0
             ? "Paragraph in focus"
             : "\u00a0";
-
-    const inSpan = (offset: number) => {
-        if (focusedGloss) {
-            return offset >= focusedGloss.start && offset <= focusedGloss.end;
-        }
-        return !!(
-            selectionRange &&
-            offset >= selectionRange.start &&
-            offset <= selectionRange.end
-        );
-    };
 
     return (
         <section className="study-panel study-panel-study" aria-label="Line study">
@@ -65,7 +59,16 @@ function LineStudyPanel({
                                         : undefined
                                 }
                                 type="button"
-                                className={`study-unit${inSpan(token.offset) ? " tok-in-span" : ""}`}
+                                className={`study-unit${
+                                    highlightRange &&
+                                    tokenIdInRange(
+                                        token.offset,
+                                        highlightRange.start,
+                                        highlightRange.end
+                                    )
+                                        ? " tok-in-span"
+                                        : ""
+                                }`}
                                 aria-pressed={selectedToken === token.offset}
                                 onClick={(e) =>
                                     onSelectToken(token.offset, {
