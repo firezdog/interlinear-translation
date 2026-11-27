@@ -10,5 +10,10 @@ export default defineConfig([
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"], languageOptions: { globals: globals.browser } },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {
+    files: ["dev/**/*.{js,cjs}"],
+    languageOptions: { globals: globals.node },
+    rules: { "@typescript-eslint/no-require-imports": "off" },
+  },
   {ignores: ["dist/", "coverage/", "webpack.config.js", "jest.config.js"]}
 ]);

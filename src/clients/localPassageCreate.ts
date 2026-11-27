@@ -1,7 +1,6 @@
 import { Passage, Segment, Token } from "@/passage/types";
 import { assertPassage } from "@/passage/validatePassage";
-
-export type TokenizeMode = "whitespace" | "cjv";
+import type { PassageCreateClient, TokenizeMode } from "@/clients/types";
 
 type CharSpan = {
     content: string;
@@ -94,4 +93,16 @@ function createPassage(text: string, mode: TokenizeMode): Passage {
     });
 }
 
-export { createPassage };
+const localPassageCreateClient: PassageCreateClient = {
+    id: "local",
+    label: "Local tokenize",
+    submittingLabel: "Creating…",
+    async create({ text, mode }) {
+        if (!mode) {
+            throw new Error("tokenize mode is required for local create");
+        }
+        return createPassage(text, mode);
+    },
+};
+
+export { localPassageCreateClient, createPassage };

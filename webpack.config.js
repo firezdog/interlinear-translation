@@ -3,6 +3,8 @@ const fs = require("fs")
 const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CopyPlugin = require("copy-webpack-plugin")
+require("dotenv").config()
+const { aiPassageMiddleware } = require("./dev/aiPassageMiddleware")
 
 const PASSAGE_KEY_RE = /^[a-z0-9-]+$/
 const PAGE_RE = /^\d+$/
@@ -103,7 +105,11 @@ module.exports = {
             if (!devServer?.app) {
                 throw new Error("webpack-dev-server is not defined")
             }
-            // Run before static middleware so PUT isn't treated as a static miss.
+            // Run before static middleware so API routes aren't treated as static misses.
+            middlewares.unshift({
+                name: "ai-passage",
+                middleware: aiPassageMiddleware,
+            })
             middlewares.unshift({
                 name: "passage-write",
                 middleware: passageWriteMiddleware,

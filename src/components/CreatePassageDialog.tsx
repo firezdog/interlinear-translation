@@ -1,11 +1,16 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import {
-    createPassage,
-    type TokenizeMode,
-} from "@/passage/createPassage";
+    getPassageCreateClient,
+    passageCreateClients,
+} from "@/clients/passageCreate";
+import type {
+    PassageCreateClientId,
+    TokenizeMode,
+} from "@/clients/types";
 import { FileClient } from "@/clients/file";
 
 const PASSAGE_KEY_RE = /^[a-z0-9-]+$/;
+const DEFAULT_CREATE_CLIENT: PassageCreateClientId = "ai";
 
 export type CreatePassageResult = {
     key: string;
@@ -25,10 +30,15 @@ function CreatePassageDialog({
     const titleId = useId();
     const [title, setTitle] = useState("");
     const [key, setKey] = useState("");
+    const [createClientId, setCreateClientId] =
+        useState<PassageCreateClientId>(DEFAULT_CREATE_CLIENT);
     const [mode, setMode] = useState<TokenizeMode>("whitespace");
     const [text, setText] = useState("");
     const [error, setError] = useState<string | null>(null);
     const [submitting, setSubmitting] = useState(false);
+    const [elapsedSec, setElapsedSec] = useState(0);
+
+    const createClient = getPassageCreateClient(createClientId);
 
     useEffect(() => {
         const el = dialogRef.current;
@@ -44,11 +54,25 @@ function CreatePassageDialog({
         if (!open) return;
         setTitle("");
         setKey("");
+        setCreateClientId(DEFAULT_CREATE_CLIENT);
         setMode("whitespace");
         setText("");
         setError(null);
         setSubmitting(false);
+        setElapsedSec(0);
     }, [open]);
+
+    useEffect(() => {
+        if (!submitting) {
+            setElapsedSec(0);
+            return;
+        }
+        setElapsedSec(0);
+        const id = window.setInterval(() => {
+            setElapsedSec((s) => s + 1);
+        }, 1000);
+        return () => window.clearInterval(id);
+    }, [submitting]);
 
     const onSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -72,7 +96,11 @@ function CreatePassageDialog({
         setSubmitting(true);
         setError(null);
         try {
-            const passage = createPassage(text, mode);
+            const passage = await createClient.create({
+                text,
+                title: trimmedTitle,
+                mode,
+            });
             await FileClient.getClient().write(trimmedKey, 1, passage);
             onCreated({ key: trimmedKey, title: trimmedTitle });
             onClose();
@@ -126,28 +154,49 @@ function CreatePassageDialog({
                 </label>
 
                 <fieldset className="create-passage-field create-passage-mode">
-                    <legend>Tokenize</legend>
-                    <label className="inline-flex items-center gap-2 cursor-pointer">
-                        <input
-                            type="radio"
-                            name="tokenize-mode"
-                            checked={mode === "whitespace"}
-                            onChange={() => setMode("whitespace")}
-                            disabled={submitting}
-                        />
-                        Whitespace
-                    </label>
-                    <label className="inline-flex items-center gap-2 cursor-pointer">
-                        <input
-                            type="radio"
-                            name="tokenize-mode"
-                            checked={mode === "cjv"}
-                            onChange={() => setMode("cjv")}
-                            disabled={submitting}
-                        />
-                        CJV
-                    </label>
+                    <legend>Create with</legend>
+                    {passageCreateClients.map((client) => (
+                        <label
+                            key={client.id}
+                            className="inline-flex items-center gap-2 cursor-pointer"
+                        >
+                            <input
+                                type="radio"
+                                name="create-client"
+                                checked={createClientId === client.id}
+                                onChange={() => setCreateClientId(client.id)}
+                                disabled={submitting}
+                            />
+                            {client.label}
+                        </label>
+                    ))}
                 </fieldset>
+
+                {createClient.id === "local" ? (
+                    <fieldset className="create-passage-field create-passage-mode">
+                        <legend>Tokenize</legend>
+                        <label className="inline-flex items-center gap-2 cursor-pointer">
+                            <input
+                                type="radio"
+                                name="tokenize-mode"
+                                checked={mode === "whitespace"}
+                                onChange={() => setMode("whitespace")}
+                                disabled={submitting}
+                            />
+                            Whitespace
+                        </label>
+                        <label className="inline-flex items-center gap-2 cursor-pointer">
+                            <input
+                                type="radio"
+                                name="tokenize-mode"
+                                checked={mode === "cjv"}
+                                onChange={() => setMode("cjv")}
+                                disabled={submitting}
+                            />
+                            CJV
+                        </label>
+                    </fieldset>
+                ) : null}
 
                 <label className="create-passage-field">
                     <span>Text</span>
@@ -166,6 +215,14 @@ function CreatePassageDialog({
                     </p>
                 ) : null}
 
+                {submitting && createClient.id === "ai" ? (
+                    <p className="create-passage-status" role="status">
+                        Waiting on Gemini (tokenize + gloss). This can take
+                        15–60s
+                        {elapsedSec > 0 ? ` · ${elapsedSec}s` : "…"}
+                    </p>
+                ) : null}
+
                 <div className="create-passage-actions">
                     <button
                         type="button"
@@ -180,7 +237,7 @@ function CreatePassageDialog({
                         className="gloss-compose-submit"
                         disabled={submitting}
                     >
-                        {submitting ? "Creating…" : "Create"}
+                        {submitting ? createClient.submittingLabel : "Create"}
                     </button>
                 </div>
             </form>

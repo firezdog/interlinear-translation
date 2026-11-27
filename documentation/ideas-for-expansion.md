@@ -27,9 +27,12 @@ Fits the existing `InterlinearClient` (`read` / `write`): a storage-backed or hy
 | **Bring-your-own key (BYOK)** in the browser | Yes, if they supply a key | User pastes an API key (stored locally); app calls the provider from the client. Privacy/cost sit with the user; public demos must warn about key handling. |
 | **Shared demo API key** | Fragile | Easy to abuse; cost and rate limits land on the project owner. Poor fit for an open Pages site. |
 | **Authoring offline / in Cursor** | For the maintainer | Agent-assisted authoring in the repo (or via a local tool) produces JSON that ships in `public/passages/`. Visitors get the result, not the agent. |
+| **Dev-only create middleware** | For the maintainer (local `npm start`) | `POST /api/ai/passage` on webpack-dev-server calls Gemini with `GEMINI_API_KEY` from `.env`. The key never enters the bundle or the Pages deploy; production stays static and AI create is unavailable there. |
 | **Backend / serverless proxy** | Yes, with hosting | A small API can mediate LLM calls (auth, quotas, prompts). Leaves pure static hosting. |
 
 So: AI authoring is a strong fit for **producing** shipped passages (and for power users with their own keys). It does not, by itself, give every GitHub Pages visitor a free shared agent unless you add keys-per-user or a backend.
+
+**Local AI create:** copy `.env.example` → `.env`, set `GEMINI_API_KEY`, then `npm start`. New Passage → “AI (Gemini)” uses the middleware; Local tokenize works without a key. Dev-only — key never ships.
 
 **Open questions:** scope of assistance (full passage bootstrap vs. gloss suggestions only); whether output must validate against `interlinear.schema.json` before Save; and whether agent features are demo-only for the maintainer or productized for end users via BYOK.
 

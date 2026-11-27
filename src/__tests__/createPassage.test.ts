@@ -1,4 +1,4 @@
-import { createPassage } from "@/passage/createPassage";
+import { createPassage } from "@/clients/localPassageCreate";
 import { assertPassage } from "@/passage/validatePassage";
 
 describe("createPassage", () => {

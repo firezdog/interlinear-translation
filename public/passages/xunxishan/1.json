@@ -1,0 +1,553 @@
+{
+  "offset": 0,
+  "length": 52,
+  "segments": [
+    {
+      "text": "尋 西山 隱者 不遇",
+      "start": 0,
+      "end": 3
+    },
+    {
+      "text": "絕頂 一 茅茨，",
+      "start": 4,
+      "end": 6
+    },
+    {
+      "text": "直上 三十 里；",
+      "start": 7,
+      "end": 9
+    },
+    {
+      "text": "扣關 無 僮僕，",
+      "start": 10,
+      "end": 12
+    },
+    {
+      "text": "窺室 惟 案几。",
+      "start": 13,
+      "end": 15
+    },
+    {
+      "text": "若非 巾 柴車？",
+      "start": 16,
+      "end": 18
+    },
+    {
+      "text": "應是 釣 秋水。",
+      "start": 19,
+      "end": 21
+    },
+    {
+      "text": "差池 不 相見，",
+      "start": 22,
+      "end": 24
+    },
+    {
+      "text": "黽勉 空 仰止。",
+      "start": 25,
+      "end": 27
+    },
+    {
+      "text": "草色 新雨 中，",
+      "start": 28,
+      "end": 30
+    },
+    {
+      "text": "松聲 晚窗 裡；",
+      "start": 31,
+      "end": 33
+    },
+    {
+      "text": "及茲 契 幽絕，",
+      "start": 34,
+      "end": 36
+    },
+    {
+      "text": "自足 蕩 心耳。",
+      "start": 37,
+      "end": 39
+    },
+    {
+      "text": "雖無 賓主 意，",
+      "start": 40,
+      "end": 42
+    },
+    {
+      "text": "頗得 清淨 理。",
+      "start": 43,
+      "end": 45
+    },
+    {
+      "text": "興盡 方 下山，",
+      "start": 46,
+      "end": 48
+    },
+    {
+      "text": "何必 待 之子。",
+      "start": 49,
+      "end": 51
+    }
+  ],
+  "tokens": [
+    {
+      "offset": 0,
+      "content": "尋",
+      "charStart": 0,
+      "charEnd": 1,
+      "transliteration": "xún",
+      "translation": "seeking"
+    },
+    {
+      "offset": 1,
+      "content": "西山",
+      "charStart": 2,
+      "charEnd": 4,
+      "transliteration": "Xīshān",
+      "translation": "West Mountain"
+    },
+    {
+      "offset": 2,
+      "content": "隱者",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "yǐnzhě",
+      "translation": "the hermit"
+    },
+    {
+      "offset": 3,
+      "content": "不遇",
+      "charStart": 8,
+      "charEnd": 10,
+      "transliteration": "bùyù",
+      "translation": "without meeting"
+    },
+    {
+      "offset": 4,
+      "content": "絕頂",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "juédǐng",
+      "translation": "highest peak"
+    },
+    {
+      "offset": 5,
+      "content": "一",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "yī",
+      "translation": "a single"
+    },
+    {
+      "offset": 6,
+      "content": "茅茨",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "máocí",
+      "translation": "thatched cottage"
+    },
+    {
+      "offset": 7,
+      "content": "直上",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zhíshàng",
+      "translation": "straight up"
+    },
+    {
+      "offset": 8,
+      "content": "三十",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "sānshí",
+      "translation": "thirty"
+    },
+    {
+      "offset": 9,
+      "content": "里",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "lǐ",
+      "translation": "li"
+    },
+    {
+      "offset": 10,
+      "content": "扣關",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "kòuguān",
+      "translation": "knocking at the door"
+    },
+    {
+      "offset": 11,
+      "content": "無",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wú",
+      "translation": "there is no"
+    },
+    {
+      "offset": 12,
+      "content": "僮僕",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "tóngpú",
+      "translation": "servant boy"
+    },
+    {
+      "offset": 13,
+      "content": "窺室",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "kuīshì",
+      "translation": "peering into the room"
+    },
+    {
+      "offset": 14,
+      "content": "惟",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "wéi",
+      "translation": "only"
+    },
+    {
+      "offset": 15,
+      "content": "案几",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "ànjǐ",
+      "translation": "table and desk"
+    },
+    {
+      "offset": 16,
+      "content": "若非",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "ruòfēi",
+      "translation": "if not"
+    },
+    {
+      "offset": 17,
+      "content": "巾",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "jīn",
+      "translation": "riding in"
+    },
+    {
+      "offset": 18,
+      "content": "柴車",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "cháichē",
+      "translation": "a rustic cart"
+    },
+    {
+      "offset": 19,
+      "content": "應是",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "yìngshì",
+      "translation": "surely it is"
+    },
+    {
+      "offset": 20,
+      "content": "釣",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "diào",
+      "translation": "fishing in"
+    },
+    {
+      "offset": 21,
+      "content": "秋水",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "qiūshuǐ",
+      "translation": "autumn waters"
+    },
+    {
+      "offset": 22,
+      "content": "差池",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "chāchí",
+      "translation": "missing each other"
+    },
+    {
+      "offset": 23,
+      "content": "不",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "bù",
+      "translation": "not"
+    },
+    {
+      "offset": 24,
+      "content": "相見",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "xiāngjiàn",
+      "translation": "meeting"
+    },
+    {
+      "offset": 25,
+      "content": "黽勉",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "mǐnmiǎn",
+      "translation": "having strived"
+    },
+    {
+      "offset": 26,
+      "content": "空",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "kōng",
+      "translation": "in vain"
+    },
+    {
+      "offset": 27,
+      "content": "仰止",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "yǎngzhǐ",
+      "translation": "looking up in respect"
+    },
+    {
+      "offset": 28,
+      "content": "草色",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "cǎosè",
+      "translation": "color of grass"
+    },
+    {
+      "offset": 29,
+      "content": "新雨",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "xīnyǔ",
+      "translation": "fresh rain"
+    },
+    {
+      "offset": 30,
+      "content": "中",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "zhōng",
+      "translation": "amidst"
+    },
+    {
+      "offset": 31,
+      "content": "松聲",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "sōngshēng",
+      "translation": "sound of pines"
+    },
+    {
+      "offset": 32,
+      "content": "晚窗",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "wǎnchuāng",
+      "translation": "evening window"
+    },
+    {
+      "offset": 33,
+      "content": "裡",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "lǐ",
+      "translation": "within"
+    },
+    {
+      "offset": 34,
+      "content": "及茲",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "jízī",
+      "translation": "reaching this place"
+    },
+    {
+      "offset": 35,
+      "content": "契",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "qì",
+      "translation": "accords with"
+    },
+    {
+      "offset": 36,
+      "content": "幽絕",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "yōujué",
+      "translation": "transcendent solitude"
+    },
+    {
+      "offset": 37,
+      "content": "自足",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "zìzú",
+      "translation": "is naturally enough to"
+    },
+    {
+      "offset": 38,
+      "content": "蕩",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "dàng",
+      "translation": "cleanse"
+    },
+    {
+      "offset": 39,
+      "content": "心耳",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "xīn'ěr",
+      "translation": "mind and ears"
+    },
+    {
+      "offset": 40,
+      "content": "雖無",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "suīwú",
+      "translation": "although lacking"
+    },
+    {
+      "offset": 41,
+      "content": "賓主",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "bīnzhǔ",
+      "translation": "host and guest"
+    },
+    {
+      "offset": 42,
+      "content": "意",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "yì",
+      "translation": "exchange"
+    },
+    {
+      "offset": 43,
+      "content": "頗得",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "pǒdé",
+      "translation": "fully grasping"
+    },
+    {
+      "offset": 44,
+      "content": "清淨",
+      "charStart": 3,
+      "charEnd": 5,
+      "transliteration": "qīngjìng",
+      "translation": "pure stillness"
+    },
+    {
+      "offset": 45,
+      "content": "理",
+      "charStart": 6,
+      "charEnd": 7,
+      "transliteration": "lǐ",
+      "translation": "principle"
+    },
+    {
+      "offset": 46,
+      "content": "興盡",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "xìngjìn",
+      "translation": "the mood exhausted"
+    },
+    {
+      "offset": 47,
+      "content": "方",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "fāng",
+      "translation": "only then"
+    },
+    {
+      "offset": 48,
+      "content": "下山",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "xiàshān",
+      "translation": "descend the mountain"
+    },
+    {
+      "offset": 49,
+      "content": "何必",
+      "charStart": 0,
+      "charEnd": 2,
+      "transliteration": "hébì",
+      "translation": "what need is there to"
+    },
+    {
+      "offset": 50,
+      "content": "待",
+      "charStart": 3,
+      "charEnd": 4,
+      "transliteration": "dài",
+      "translation": "wait for"
+    },
+    {
+      "offset": 51,
+      "content": "之子",
+      "charStart": 5,
+      "charEnd": 7,
+      "transliteration": "zhīzǐ",
+      "translation": "this gentleman"
+    }
+  ],
+  "glosses": [
+    {
+      "id": "poem-overview",
+      "start": 0,
+      "end": 51,
+      "content": "'尋西山隱者不遇' (Seeking the Hermit of Western Mountain and Not Finding Him) by Qiu Wei (邱為, 694–789?), collected in the 'Three Hundred Tang Poems'. It exemplifies the 'visiting the hermit without meeting him' subgenre, turning unfulfilled expectations into a deeper Daoist/Chan aesthetic realization."
+    },
+    {
+      "id": "title-subgenre",
+      "start": 0,
+      "end": 3,
+      "content": "'尋...不遇' was a popular theme in Tang poetry (compare Jia Dao's '尋隱者不遇'). Rather than disappointment, the failure to meet often highlights the recluse's unfettered freedom and leads the poet to communion with nature."
+    },
+    {
+      "id": "allusion-jinchaiche",
+      "start": 17,
+      "end": 18,
+      "content": "巾柴車: '巾' functions as a verb meaning to curtain or equip a cart with cloth, alluding to Tao Yuanming's 'Gui Qulai Xi Ci' (歸去來兮辭): '或命巾車，或棹孤舟' (Sometimes ordering a curtained cart, sometimes rowing a solitary skiff)."
+    },
+    {
+      "id": "allusion-qiushui",
+      "start": 21,
+      "end": 21,
+      "content": "秋水: Alludes both to seasonal mountain waters and to the Zhuangzi ('秋水' chapter and the story of Zhuangzi fishing contentedly by the Pu River)."
+    },
+    {
+      "id": "allusion-yangzhi",
+      "start": 27,
+      "end": 27,
+      "content": "仰止: From Shijing (Classic of Poetry), Mao 218: '高山仰止，景行行止' (Looking up to the lofty mountain, walking the grand highway); denotes deep moral or spiritual reverence."
+    },
+    {
+      "id": "sensory-parallelism",
+      "start": 28,
+      "end": 33,
+      "content": "Couplet pairing vibrant visual stillness ('草色新雨中') with auditory tranquility ('松聲晚窗裡'), marking the turn from searching for the hermit to directly experiencing the recluse's tranquil hermitage."
+    },
+    {
+      "id": "allusion-xingjin",
+      "start": 46,
+      "end": 51,
+      "content": "The ending alludes to Wang Huizhi (Wang Ziyou) in Shishuo Xinyu (世說新語), who journeyed on a snowy night to visit Dai Kui, only to turn back at the gate because: '吾本乘興而行，興盡而返，何必見戴！' ('I came on a whim of high spirits, and now that the spirit is spent I return; why must I see Dai?'). '之子' is an archaism from the Shijing meaning 'this person / this gentleman'."
+    }
+  ]
+}
